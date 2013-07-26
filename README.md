@@ -1,5 +1,5 @@
 Riddim: A Rhythm Analysis and Decomposition Tool Based on Independent Subspace Analysis
-======
+------------
 
 This repo contains all the source code (MATLAB m-files, MEX and C/C++ files) for Riddim, a Dartmouth College master's thesis.
 
