@@ -1,0 +1,38 @@
+-------------------------------------------------------
+-------------------------------------------------------
+ZingZong1
+-------------------------------------------------------
+-------------------------------------------------------
+
+in GKC
+1) Hop & Size must be positive
+2) not sure what Pad does . . .
+
+size  hop   pad  #components  quality
+512   16     0     7           2 horrible extraction
+256   16     0     7           2 terrible
+128   16     0     7           6 smaller snare crossover
+ 64   16     0     7           5 crossover on snare
+ 64   16     0     8           4 too much cross over
+ 32   16     0     7           5 crossover on snare + whistle
+
+
+-------------------------------------------------------
+size  hop   pad  #components  quality
+
+512   32     0     7           2 horrible extraction
+256   32     0     7           2 terrible
+128   32     0     7           7 okay, some crosst
+ 64   32     0     7           5 a bit crossover on snare
+ 32   32     0     8           4 too much cross over
+
+Jade Jade
+
+ 128   32     0     7          6 nice extraction
+
+in ONSETPLOTTING
+good snare onset detection a bit of overkill . . .
+[times, louds, types] = extractOnsets(y, sr, 1/16, -26, -56, 0, 4);
+
+decent kick onset detection
+[times, louds, types] = extractOnsets(y, sr, 1/4, -26, -56, 0, 4);

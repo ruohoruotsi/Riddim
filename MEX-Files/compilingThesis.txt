@@ -1,0 +1,2 @@
+ mex -g mexPruneOnsets.cpp BandOnsets.cpp dspUtils.c
+ mex -g mexBandOnsets.cpp BandOnsets.cpp dspUtils.c

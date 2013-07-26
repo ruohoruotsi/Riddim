@@ -1,0 +1,25 @@
+% debug this mofo.
+iroro_initialSignal.mat      
+figure;
+plot(iroro_debug_variable);
+
+load io_after_filter.mat          
+figure;
+plot(iroro_debug_variable);
+
+
+load io_after_rectify.mat         
+figure;
+plot(iroro_debug_variable);
+
+iroro_debug_afterconv.mat    
+figure;
+plot(iroro_debug_variable);
+
+iroro_debug_b4conv.mat       
+figure;
+plot(iroro_debug_variable);
+
+iroro_gaussenv.mat           
+figure;
+plot(iroro_debug_variable);

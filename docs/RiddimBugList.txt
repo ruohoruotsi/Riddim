@@ -1,0 +1,39 @@
+
+**** Riddim Bug Report ****
+
+************************************************************************
+
+1) Need a variable pruning algorithm for y3 on artful.mat
+   impossible to get hihat rhythm because the essential rhythmic
+   flourishes occur less within the prunining time threshold (ie 
+   too fast. April 1 2001
+
+************************************************************************
+
+2) rewrite or @ least reconsider the Moore loudness model, is this 
+   really pertinent for your extraction of percussive rhythms? 
+   April 1 2001
+
+************************************************************************
+
+3) For immediate compositional use, add a utility to add and remove 
+   onsets. April 2 2001
+
+
+************************************************************************
+
+4) For y4 on zingzong with diffprec = 4,  and plotOnsets(y4, 1/10, .7)
+   the zeroth element of the onsets has a value.  this shouldn't be.
+   April 2 2001
+
+************************************************************************
+
+5) Serious problems with onset accuracy on zingzong y4.  
+   plotOnsets(y4, 1/16, .4). Lots of missed onsets, Take a look at the
+   smoothed signal because the errors could be coming from the very
+   spiky nature of the signal. Also in addition to missed accuracy on
+   onsets, "hits" are off my several 10s of milliseconds . .no good.
+   April 2 2001
+
+
+************************************************************************

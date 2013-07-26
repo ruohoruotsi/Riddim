@@ -1,0 +1,1 @@
+function [] = plotfft(xin, sf)% do an fft and plot the magnitude% response, which is the square% root of the power spectrum % densityZ = fft(xin, sf);Pzz = Z.*conj(Z)/sf;Pzz = Pzz.^(.5);f = sf*(0:sf/2)/sf;subplot(2,1,1), plot(f, Pzz(1:(sf/2)+1), '-');subplot(2,1,2), plot(unwrap(angle(Z)));
