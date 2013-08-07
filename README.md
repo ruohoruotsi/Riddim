@@ -3,7 +3,7 @@ Riddim: A Rhythm Analysis and Decomposition Tool Based on Independent Subspace A
 
 This repo contains all the source code (MATLAB m-files, MEX and C/C++ files) for Riddim, a Dartmouth College master's thesis.
 
-This work has been [cited](http://scholar.google.com/scholar?oi=bibs&hl=en&cites=9249905419987405037) 20 times since its original publication in 2001. The author is grateful for the support of [Michael Casey](http://eamusic.dartmouth.edu/~mcasey/index.html), J.-F. Cardoso and [Anssi Klapuri](http://www.cs.tut.fi/~klap/) whose research and support was essential to this work. The source code and supporting materials have commited here, uniquely for archival and pedagodgical reasons. 
+This work has been [cited](http://scholar.google.com/scholar?oi=bibs&hl=en&cites=9249905419987405037) 20 times since its original publication in 2001. The author is grateful for the support of [Michael Casey](http://eamusic.dartmouth.edu/~mcasey/index.html), J.-F. Cardoso and [Anssi Klapuri](http://www.cs.tut.fi/~klap/) whose research and support was essential to this work. The source code and supporting materials have been commited here, uniquely for archival and pedagodgical reasons. 
 
 
 #### Citations
