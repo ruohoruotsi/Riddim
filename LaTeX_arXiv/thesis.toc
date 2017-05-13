@@ -1,0 +1,57 @@
+\contentsline {chapter}{Abstract}{ii}
+\contentsline {chapter}{Acknowledgments}{iii}
+\contentsline {chapter}{Table of Contents}{v}
+\contentsline {chapter}{List of Tables}{viii}
+\contentsline {chapter}{List of Figures}{ix}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Some Personal Compositional Perspectives on Rhythm}{1}
+\contentsline {section}{\numberline {1.2}Towards a General Perceptual, Transcriptive Computational Tool}{3}
+\contentsline {section}{\numberline {1.3}Thesis Structure}{3}
+\contentsline {chapter}{\numberline {2}Rhythm}{5}
+\contentsline {section}{\numberline {2.1}Understanding Rhythm Through Modeling}{5}
+\contentsline {section}{\numberline {2.2}Time}{6}
+\contentsline {subsection}{\numberline {2.2.1}Temporal Representations in Music}{6}
+\contentsline {subsection}{\numberline {2.2.2}Causal versus Non-Causal Analysis}{7}
+\contentsline {subsection}{\numberline {2.2.3}Specious Present and Auditory Stores}{9}
+\contentsline {subsection}{\numberline {2.2.4}Synchronisation}{9}
+\contentsline {section}{\numberline {2.3}Definitions}{10}
+\contentsline {section}{\numberline {2.4}Pulse}{11}
+\contentsline {subsection}{\numberline {2.4.1}Pulse Outside A Metrical Context}{12}
+\contentsline {subsubsection}{ The Fastest Pulse }{13}
+\contentsline {subsection}{\numberline {2.4.2}Beat Induction}{13}
+\contentsline {subsection}{\numberline {2.4.3}Tempo}{14}
+\contentsline {section}{\numberline {2.5}Grouping}{15}
+\contentsline {subsection}{\numberline {2.5.1}Meter}{16}
+\contentsline {subsection}{\numberline {2.5.2}Accentuation}{17}
+\contentsline {section}{\numberline {2.6}Expressive Timing}{19}
+\contentsline {subsection}{\numberline {2.6.1}Tempo Curves}{21}
+\contentsline {subsection}{\numberline {2.6.2}Expression and Structure}{22}
+\contentsline {section}{\numberline {2.7}A West African Concept of Rhythmic Time}{22}
+\contentsline {subsection}{\numberline {2.7.1}Misunderstandings...}{22}
+\contentsline {subsection}{\numberline {2.7.2}Asymmetric Cognitive Clocks}{23}
+\contentsline {chapter}{\numberline {3}Description of Algorithms}{25}
+\contentsline {section}{\numberline {3.1}System Architecture}{25}
+\contentsline {subsection}{\numberline {3.1.1}The MATLAB{\texttrademark } Platform}{27}
+\contentsline {subsection}{\numberline {3.1.2}Native C subroutines via the MEX interface}{27}
+\contentsline {section}{\numberline {3.2}Independent Subspace Analysis}{28}
+\contentsline {subsection}{\numberline {3.2.1}Motivation}{28}
+\contentsline {subsection}{\numberline {3.2.2}The Mechanics of Mixing and Unmixing}{29}
+\contentsline {subsubsection}{Decomposing the Mixing Matrix}{33}
+\contentsline {subsection}{\numberline {3.2.3}Principle Component Analysis}{33}
+\contentsline {subsubsection}{Statistical Independence and Mutual Information}{34}
+\contentsline {subsubsection}{Summary}{35}
+\contentsline {subsection}{\numberline {3.2.4}Independent Subspace Analysis}{37}
+\contentsline {section}{\numberline {3.3}Detecting Onset Points}{44}
+\contentsline {subsection}{\numberline {3.3.1}Rectification and Smoothing}{48}
+\contentsline {subsection}{\numberline {3.3.2}Amplitude Envelope Peak Detection}{49}
+\contentsline {section}{\numberline {3.4}Determination Of A Per-Stream Lowest Level Pulse}{56}
+\contentsline {subsection}{\numberline {3.4.1}The Greatest Common Divisor (GCD) of the IOIs}{56}
+\contentsline {subsection}{\numberline {3.4.2}Histogram Representation of Intra Frame IOIs}{57}
+\contentsline {chapter}{\numberline {4}Results}{61}
+\contentsline {section}{\numberline {4.1}{\it Riddim}}{62}
+\contentsline {chapter}{\numberline {5}Conclusions and and Future Directions}{65}
+\contentsline {section}{\numberline {5.1}Automatic Music Transcription}{65}
+\contentsline {section}{\numberline {5.2}{\it Riddim} in Real-time}{66}
+\contentsline {section}{\numberline {5.3}Live Improvised Performance and the Meta DJ}{66}
+\contentsline {chapter}{List of References}{68}
+\contentsline {chapter}{Bibliography}{72}

@@ -1,0 +1,617 @@
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% This LaTeX package is used to create theses and dissertations at
+% the Bregman studio @ Dartmouth College It has several options which 
+% are described below.  Multiple options can be included as a
+% comma separated list.  See the examples section for common uses.
+%
+%
+% Options:
+%   manuscript,standard: this specifies which format of thesis you will
+%     be creating.  Manuscript format has the references at the end of each
+%     chapter, while standard format has one reference section for the
+%     whole document.  standard is the default.
+%
+%   topnum,bottomnum: this specifies whether you prefer your page
+%     numbers on the top right or bottom center of the page.
+%     bottomnum is the default.
+%
+%   sequential,nonsequential: this specifies whether you want numbering
+%     of figures, equations, and tables reset to 1 at the beginning of 
+%     each chapter (nonsequential), or if you want the numbers to 
+%     be sequential throughout the whole document.  Manuscript format
+%     is always nonsequential and ignores this option.
+%
+%
+% Examples:
+%   For a standard format masters thesis:
+%     \usepackage{emusicthesis}
+%
+%   For a manuscript format PhD. dissertation:
+%     \usepackage[manuscript]{emusicthesis}
+%
+%   For a standard format thesis with a four member committee,
+%   and page numbers on the top:
+%     \usepackage[4committee,topnum]{emusicthesis}
+%
+%
+% Notes: 
+%   Portions of this package were derived frome the chapterbib
+%   package (Version 1.5 (09-OCT-1995) Donald Arseneau), therefore 
+%   you should be sure not to use that package with this one due 
+%   to inevitable conflicts.
+%
+%   You will also need the file emusicbiblio.bst for creating the
+%   bibliography.
+%
+%   This package has been disigned to comply with the library's
+%   format guidlines using either a 10pt or 12pt font, which is
+%   specified in the \documentclass line.
+%
+%   By default the department named on the title page is Electrical
+%   Engineering, but that can be changed by putting the command:
+%     \dept{My Department}
+%   in the main .tex file before any of the chapters are included.
+%
+%   The acknowledgements, preface, and dedication sections are not
+%   required, but the abstract section is.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\@ifundefined{DeclareOption}{}{% LaTeX2e option
+\ProvidesPackage{emusicthesis}[2000/04/05 \space  v 1.0]
+
+\DeclareOption{manuscript}{\def\@wantmanuscript{true}}
+\DeclareOption{standard}{}
+
+\DeclareOption{topnum}{\def\@topnumbers{true}}
+\DeclareOption{bottomnum}{}
+
+\DeclareOption{nonsequential}{\def\@nonsequential{true}}
+\DeclareOption{sequential}{}
+
+% \DeclareOption{3committee}{}
+
+\ProcessOptions 
+}
+
+\@ifundefined{@wantmanuscript}{
+
+\@ifundefined{@extra@b@citeb}{
+% this is for use without the cite package
+\def\@citex[#1]#2{%
+  \let\@citea\@empty
+  \@cite{\@for\@citeb:=#2\do
+    {\@citea\def\@citea{,\penalty\@m\ }%
+     \edef\@citeb{\expandafter\@firstofone\@citeb\@empty}%
+     \if@filesw\immediate\write\@auxout{\string\citation{\@citeb}}\fi
+     \if@filesw\immediate\write12{\string\citation{\@citeb}}\fi
+     \@ifundefined{b@\@citeb}{\mbox{\reset@font\bfseries ?}%
+       \G@refundefinedtrue
+       \@latex@warning
+         {Citation `\@citeb' on page \thepage \space undefined}}%
+       {\hbox{\csname b@\@citeb\endcsname}}}}{#1}}
+}
+{
+% this is for use with the cite package
+\def\@nocite#1{\xdef\@no@sparg{\@ignsp#1 \! }% remove *ALL* spaces
+ \if@filesw \immediate\write\@auxout {\string\citation {\@no@sparg}}\fi
+ \if@filesw \immediate\write12{\string\citation{\@no@sparg}}\fi}
+}
+
+}
+{
+
+% this section is basically chapterbib
+
+\newenvironment{cbunit}%
+{\global\advance\c@inputfile\@ne \xdef\the@ipfilectr{@-\the\c@inputfile}%
+  \immediate\write\@auxout{\string\gdef\string\@extra@binfo{\@exele@b@citeb}}}%
+{\gdef\the@ipfilectr{}%
+  \immediate\write\@auxout{\string\gdef\string\@extra@binfo{\@exele@b@citeb}}
+  }
+
+\let\cb@include\include
+\def\include#1{\clearpage \cbunit \xdef\@currentipfile{#1}%
+  \cb@include{#1}
+\refsforcb
+\global\let\@currentipfile\@savedjobname\endcbunit}
+
+\newcommand\cbinput[1]{\cbunit \xdef\@currentipfile{#1}%
+  \input{#1}\global\let\@currentipfile\@savedjobname\endcbunit}
+
+\@ifundefined{@extra@binfo}{
+  \def\bibcite#1#2{\global\@namedef{b@#1\@extra@binfo}{#2}}
+}{}
+
+\@ifundefined{@exele@b@citeb}{%
+ \def\@citex[#1]#2{%
+   \let\@citea\@empty
+   \@cite{\@for\@citeb:=#2\do
+     {\@citea\let\@citea\citepunct
+      \edef\@citeb{\expandafter\@iden\@citeb}%
+      \ifnum0=\value{mychapcitecount}
+      \if@filesw\immediate\write\@auxout{\string\bibstyle{ieeetr}}\fi
+      \if@filesw\immediate\write\@auxout{\string\bibdata{\@reffile}}\fi
+      \setcounter{mychapcitecount}{1}
+      \fi
+      \if@filesw\immediate\write\@auxout{\string\citation{\@citeb}}\fi
+      \if@filesw\immediate\write12{\string\citation{\@citeb}}\fi
+      \@ifundefined{b@\@citeb \@exele@b@citeb}{\mbox{\reset@font\bf ?}%
+         \@warning{Citation `\@citeb' in file `\@currentipfile'
+             on page \thepage \space undefined}\G@refundefinedtrue}%
+      {\hbox{\citeform{\csname b@\@citeb \@exele@b@citeb\endcsname}}}}}{#1}}
+}{}% 2nd arg of \@ifundefined{@exele@b@citeb}
+
+\def\@iden#1{#1}
+
+\@ifundefined{citeform}{\let\citeform=\relax}{}
+\@ifundefined{citepunct}{\def\citepunct{,\penalty\@m\ }}{}
+
+\xdef\@savedjobname{\jobname}% save root file name as a macro
+\let\@currentipfile\@savedjobname
+\gdef\the@ipfilectr{}
+\def\@exele@b@citeb{\the@ipfilectr}
+\newcount\c@inputfile \global\c@inputfile=0
+
+\gdef\@extra@binfo{}  % in case .aux files are left from old run.
+
+\@ifundefined{reset@font}{\let\reset@font\relax}{}
+\@ifundefined{G@refundefinedtrue}{\let\G@refundefinedtrue\relax}{}
+
+\let\cb@bibliographystyle\bibliographystyle
+\def\cb@roottest{2\ifx\the@ipfilectr\@empty 1\else2\fi}
+
+\def\bibliographystyle#1{\if\cb@roottest\cb@bibliographystyle{#1}\fi}
+
+\def\bibliography#1{\if\cb@roottest
+   \if@filesw\immediate\write\@auxout{\string\bibdata{#1}}\fi
+   \fi \@input{\@currentipfile.bbl}}
+
+\@ifundefined{PackageWarning}{\def\cb@warning{\@warning}}%
+ {\def\cb@warning{\PackageWarning{chapterbib}}}
+
+\let\@test@defiii\@testdef
+
+\def\@testdef#1#2#3{%
+  \if#1b\relax\@test@defiii b{#2\@extra@binfo}{#3}%
+  \else \@test@defiii #1{#2}{#3}\fi
+}
+
+\@ifundefined{bibname}{\def\bibname{Bibliography}}{}
+
+% end of chapterbib section
+}
+
+\newcounter{myfigcount}
+\newcounter{mytablecount}
+\newcounter{mychapcitecount}
+\newcounter{mychaptercount}
+\newcounter{myappendixcount}
+
+\def\myusefigurespage{%
+  \gdef\@myusefigurespage{true}
+}
+
+\def\myusetablespage{%
+  \gdef\@myusetablespage{true}
+}
+
+
+\makeatletter
+
+\setlength{\oddsidemargin}{.7in}
+\setlength{\textwidth}{5.6in}
+\setlength{\marginparsep}{.2in}
+\setlength{\marginparwidth}{1in}
+
+\setlength{\topmargin}{-0.3in}
+\setlength{\headheight}{0.25in}
+\setlength{\headsep}{0.25in}
+\setlength{\textheight}{8.6in}
+\setlength{\footskip}{.5in}
+
+\brokenpenalty=10000
+
+\renewcommand{\baselinestretch}{1.6}
+\renewcommand{\arraystretch}{0.81} % 1.3 spacing for tables and arrays
+
+\def\@makechapterhead#1{%
+  {\parindent \z@ 
+   \raggedright 
+   \normalfont
+   \interlinepenalty\@M
+   \large \bfseries \thechapter\hspace{0.5em} #1\par\nobreak
+   \vskip 1ex
+  }}
+
+\def\@makeschapterhead#1{%
+  {\parindent \z@ 
+   \raggedright
+   \normalfont
+   \interlinepenalty\@M
+   \large \bfseries #1\par\nobreak
+   \vskip 1ex
+  }}
+
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+                                     {2.0ex}%
+                                     {0.01ex}%
+                                     {\normalfont\normalsize\bfseries}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+                                     {2.0ex}%
+                                     {0.01ex}%
+                                     {\normalfont\normalsize\bfseries}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+                                     {2.0ex}%
+                                     {0.01ex}%
+                                     {\normalfont\normalsize\bfseries}}
+
+\def\cl@chapter{%
+  \setcounter{mychapcitecount}{0}%
+  \@ifundefined{@wantmanuscript}{
+    \@ifundefined{@nonsequential}{
+      \@elt{section}\@elt{footnote}
+    }{
+      \@elt{equation}\@elt{figure}\@elt{footnote}\@elt{section}\@elt{table}
+    }
+  }{
+    \@elt{equation}\@elt{figure}\@elt{footnote}\@elt{section}\@elt{table}
+  }}
+\def\thefigure{\addtocounter{myfigcount}{\value{figure}}\@ifundefined{@wantmanuscript}{\@ifundefined{@nonsequential}{\@arabic\c@figure}{\thechapter.\@arabic\c@figure}}{\thechapter.\@arabic\c@figure}}
+\def\thetable{\addtocounter{mytablecount}{\value{table}}\@ifundefined{@wantmanuscript}{\@ifundefined{@nonsequential}{\@arabic\c@table}{\thechapter.\@arabic\c@table}}{\thechapter.\@arabic\c@table}}
+\def\theequation{\@ifundefined{@wantmanuscript}{\@ifundefined{@nonsequential}{\arabic{chapter}.\arabic{equation}}{\arabic{chapter}.\arabic{equation}}}{\arabic{chapter}.\arabic{equation}}}
+
+
+\def\@xfloat#1[#2]{\ifhmode \@bsphack\@floatpenalty -\@Mii\else
+   \@floatpenalty-\@Miii\fi\def\@captype{#1}\ifinner
+      \@parmoderr\@floatpenalty\z@
+    \else\@next\@currbox\@freelist{\@tempcnta\csname ftype@#1\endcsname
+       \multiply\@tempcnta\@xxxii\advance\@tempcnta\sixt@@n
+       \@tfor \@tempa :=#2\do
+                        {\if\@tempa h\advance\@tempcnta \@ne\fi
+                         \if\@tempa t\advance\@tempcnta \tw@\fi
+                         \if\@tempa b\advance\@tempcnta 4\relax\fi
+                         \if\@tempa p\advance\@tempcnta 8\relax\fi
+         }\global\count\@currbox\@tempcnta}\@fltovf\fi
+    \global\setbox\@currbox\vbox\bgroup
+    \def\baselinestretch{1}\@normalsize
+    \boxmaxdepth\z@
+    \hsize\columnwidth \@parboxrestore}
+
+\long\def\@footnotetext#1{\insert\footins{\def\baselinestretch{1}\footnotesize
+    \interlinepenalty\interfootnotelinepenalty
+    \splittopskip\footnotesep
+    \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
+    \hsize\columnwidth \@parboxrestore
+   \edef\@currentlabel{\csname p@footnote\endcsname\@thefnmark}\@makefntext
+    {\rule{\z@}{\footnotesep}\ignorespaces
+      #1\strut}}}
+
+\def\thebibliography#1{\chapter*{References
+\@mkboth{}{}}\list
+ {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin
+\labelwidth
+ \advance\leftmargin\labelsep
+ \usecounter{enumi}}
+ \def\newblock{\hskip .11em plus .33em minus .07em}
+ \sloppy\clubpenalty4000\widowpenalty4000
+ \sfcode`\.=1000\relax}
+\let\endthebibliography=\endlist
+
+
+\def\thesisbib{\chapter*{Bibliography
+\@mkboth{}{}}\trivlist
+% {[\arabic{enumi}]}{\settowidth\labelwidth{}\leftmargin
+%\labelwidth
+% \advance\leftmargin\labelsep
+% \usecounter{enumi}}
+ \def\newblock{\hskip .11em plus .33em minus .07em}
+ \sloppy\clubpenalty4000\widowpenalty4000
+ \sfcode`\.=1000\relax}
+\let\endthesisbib=\endtrivlist
+
+\def\dept#1{\gdef\@dept{#1}}
+
+%\def\majorprofessor#1{\gdef\@majorprofessor{#1}}
+%\def\firstcommittee#1{\gdef\@firstcommittee{#1}}
+%\def\secondcommittee#1{\gdef\@secondcommittee{#1}}
+%\def\thirdcommittee#1{\gdef\@thirdcommittee{#1}}
+%\def\fourthcommittee#1{\gdef\@fourthcommittee{#1}}
+%\def\deanofgradschool#1{\gdef\@deanofgradschool{#1}}
+
+\def\copyrightyear#1{\gdef\@copyrightyear{#1}} % \author, \title in report
+\def\@title{}\def\@author{}\def\@dept{Electro-Acoustic Music}
+
+\def\@majorprofessor{} \def\@firstcommittee{} \def\@secondcommittee{}
+\def\@thirdcommittee{} \def\@fourthcommittee{} \def\@deanofgradschool{}
+
+
+\def\@copyrightyear{\number\the\year}
+
+\def\@reffile{references}
+
+\def\reffile#1{%
+  \def\@reffile{#1}
+}
+
+\def\abstract#1{%
+  \def\@abstract{#1}
+}
+
+%\def\copyright#1{%
+%  \def\@copyright{#1}
+%}
+
+\def\acknowledgements#1{%
+  \def\@acknowledgements{#1}
+}
+
+\def\preface#1{%
+  \def\@preface{#1}
+}
+
+\def\dedication#1{%
+  \def\@dedication{#1}
+}
+
+
+\def\@bibliofileext{bib}
+\def\@bibliofile{\jobname\@bibliofileext}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% the fun starts here . . .
+% Print title page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\titlep{%
+\thispagestyle{empty}%
+\begin{center}{
+    \MakeUppercase{\@title}}
+\end{center}
+
+\begin{center}
+    \vspace{3mm}
+    A Thesis \\
+    
+    \vspace{3mm}
+    Submitted to the Faculty \\ 
+    
+    \vspace{3mm}
+    in partial fulfillment of the requirements for the \\
+    
+    \vspace{3mm}
+    degree of \\
+    
+    \vspace{3mm}
+    Master of Arts\\
+    
+    \vspace{3mm}
+    in\\
+    
+    \vspace{2mm}
+    \MakeUppercase{\@dept} \\
+    
+    \vspace{2mm}
+    by \\
+    
+    \vspace{3mm}
+    {\@author} \\
+
+    \vspace{3mm}
+    DARTMOUTH COLLEGE \\
+    Hanover, New Hampshire \\
+    \vspace{3mm}
+
+    May 23, 2001 
+    
+    \vspace{11mm}
+    
+    \begin{tabular*}{6in}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+      & & {\comprof} \\
+      & & \signature{\@majorprofessor\\ {{\small (Chair) Eric Lyon }}} \\
+      & & \signature{\@firstcommittee \\{{\small Jon H. Appleton}}} \\
+      & & \signature{\@secondcommittee \\{{\small Hany Farid }}} \\
+      \signature{\@deanofgradschool \\{Dean of Graduate Studies}} & &\\
+    \end{tabular*}
+  \end{center}
+}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Committee and signature Formatting stuff
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\comprof{%
+  \begin{minipage}[t]{3.0in}
+    \begin{center}
+      \vspace{2mm}
+      Examining Committee:
+      \vspace{1mm}
+    \end{center}
+  \end{minipage}
+}
+
+\long\def\signature#1{%
+  \begin{minipage}[t]{5in}
+    \vspace{.12in}
+      \hbox{\hfil\shortstack{\vrule width 2.5in height 0.4pt \\#1}}
+  \end{minipage}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\startingpages{%
+  \titlep
+% iroro havoc here
+  \copyrightpage
+  \setcounter{page}{0}
+  \pagestyle{plain}
+  \pagenumbering{roman}
+  \immediate\openout12=\@bibliofile.aux
+  \immediate\write12{\string\bibstyle{emusicbiblio}}
+  \immediate\write12{\string\bibdata{\@reffile}}
+  \@ifundefined{@abstract}{}{
+    \doourabstract{\@abstract}
+    }
+  \@ifundefined{@acknowledgements}{}{
+    \doouracknowledgements{\@acknowledgements}
+    }
+  \@ifundefined{@preface}{}{
+    \doourpreface{\@preface}
+    }
+  \@ifundefined{@dedication}{}{
+    \doourdedication{\@dedication}
+    }
+  \contentspages
+  }
+
+\def\doourabstract#1{%
+  \sloppy
+  \chapter*{Abstract}
+  \addcontentsline{toc}{chapter}{Abstract}
+  \@ifundefined{@phddissertation}{
+    \thispagestyle{plain}
+  }{
+    \thispagestyle{empty}
+    \pagestyle{empty}
+  }
+  \input{#1}
+  \newpage
+  \pagestyle{plain}
+}
+
+\def\doouracknowledgements#1{%
+  \chapter*{Acknowledgments}
+  \addcontentsline{toc}{chapter}{Acknowledgments}
+  \input{#1}
+}
+
+\def\copyrightpage{%
+  \def\baselinestretch{1.3}
+  \null\vfill
+  \begin{center}
+    \large
+%    \copyright\ Copyright \@copyrightyear\ by iroro orife \\
+    \copyright\ 2001 iroro orife \\
+    All Rights Reserved 
+  \end{center}
+  %  \vfill\newpage 
+  }
+
+
+\def\doourpreface#1{%
+  \chapter*{Preface}
+  \addcontentsline{toc}{chapter}{Preface}
+  \input{#1}
+}
+
+\def\contentspages{\newpage
+  \addcontentsline{toc}{chapter}{Table of Contents}
+  \tableofcontents
+  \newpage
+  \@ifundefined{@myusetablespage}{}{
+    {\addvspace{10pt}
+    \let\saveaddvspace=\addvspace
+    \def\addvspace##1{}
+    \addcontentsline{toc}{chapter}{List of Tables}
+    \listoftables
+    \let\addvspace=\saveaddvspace}
+  \newpage
+  }
+  \@ifundefined{@myusefigurespage}{}{
+    {\addvspace{10pt}
+    \let\saveaddvspace=\addvspace
+    \def\addvspace##1{}
+    \addcontentsline{toc}{chapter}{List of Figures}
+    \listoffigures
+    \let\addvspace=\saveaddvspace}
+  \newpage
+  }
+  \pagenumbering{arabic}
+  \@ifundefined{@topnumbers}{
+  }{
+    \pagestyle{myheadings}
+  }
+  }
+
+\def\doourdedication#1{%
+  \pagestyle{plain}
+  \include{#1}
+}
+
+\def\newchapter#1{%
+  \ifnum0=\value{mychaptercount}
+    \startingpages
+    \setcounter{mychaptercount}{1}
+  \fi
+  \include{#1}
+}
+
+\def\newappendix#1{%
+  \ifnum0=\value{myappendixcount}
+    \startappendix
+    \setcounter{myappendixcount}{1}
+  \fi
+  \include{#1}
+}
+
+\def\startappendix{%
+  \@ifundefined{@wantmanuscript}{
+    \addcontentsline{toc}{chapter}{List of References}
+%    \bibliographystyle{emusicbiblio}
+    \bibliographystyle{ieeetr}
+    \bibliography{\@reffile}
+    \newpage
+  }{}
+
+  \appendix
+  % This causes latex to number equations, tables, figures with
+  % A-1, A-2, ... 
+  \renewcommand{\theequation}{\Alph{chapter}.\arabic{equation}}
+  \renewcommand{\thetable}{\Alph{chapter}.\arabic{table}}
+  \renewcommand{\thefigure}{\Alph{chapter}.\arabic{figure}}
+}
+
+% used for manuscript form chapter references
+\def\refsforcb{%
+  \@ifundefined{@wantmanuscript}{
+  }{
+    \ifnum0=\value{mychapcitecount}
+      \relax
+    \else
+      \newpage
+      \addcontentsline{toc}{chapter}{List of References}
+      \bibliography{\@reffile}
+      \bibliographystyle{ieeetr}
+      \newpage
+    \fi
+  }
+}
+
+\def\biblio{%
+  \ifnum0=\value{myappendixcount}
+    \startappendix
+  \fi
+  \ifnum0=\value{myfigcount}
+    \relax
+  \else
+    \if@filesw\immediate\write\@auxout{\string\myusefigurespage}\fi
+  \fi
+  \ifnum0=\value{mytablecount}
+    \relax
+  \else
+    \if@filesw\immediate\write\@auxout{\string\myusetablespage}\fi
+  \fi
+  \addcontentsline{toc}{chapter}{Bibliography}
+  \@input{\@bibliofile.bbl}
+}
+
+\let\@enddocumenthook\biblio
+

@@ -1,0 +1,170 @@
+\begin{thebibliography}{10}
+
+\bibitem{Desain:92}
+P.~Desain, ``Can computer music benefit from cognitive models of rhythm
+  perception,'' in {\em Proceedings of the 1991 International Computer Music
+  Conference}, pp.~42--45, International Computer Music Association, 1992.
+
+\bibitem{Gardenfors:2000}
+P.~Gardenfors, {\em Conceptual Spaces: The Geometry of Thought}.
+\newblock Massachusetts Institute of Technology, Cambridge, Mass: The MIT
+  Press, 2000.
+
+\bibitem{Smith:99}
+L.~M. Smith, {\em A Multiresolution Time-Frequency Analysis and Interpretation
+  Of Musical Rhythm}.
+\newblock PhD thesis, Department of Computer Science, The University of Western
+  Australia, 1999.
+
+\bibitem{Honing:93}
+H.~Honing, ``Issues in the representation of time and structure in music,''
+  {\em Contemporary Music Review}, vol.~9, pp.~221--239, 1993.
+
+\bibitem{Clarke:87}
+E.~F. Clarke, ``Levels of structure in the organization of musical time,'' {\em
+  Contemporary Music Review}, vol.~2, pp.~211--238, 1987.
+
+\bibitem{Todd:94}
+N.~Todd, ``The auditory primal sketch: A multiscale model of rhythmic
+  grouping,'' {\em Journal of New Music Research}, vol.~23, pp.~25--70, 1994.
+
+\bibitem{Gabrielsson:89}
+A.~Gabrielsson, {\em The Complexities of Rhythm}, pp.~93+.
+\newblock New Jersey, USA: Lawrence Erlbaum Associates Inc., 1989.
+
+\bibitem{Fraisse:63}
+P.~Fraisse, {\em The Psychology of Time}.
+\newblock New York, N.Y.: Harper and Row, 1963.
+
+\bibitem{Parncutt:94}
+R.~Parncutt, ``A perceptual model of pulse salience and metrical accent in
+  musical rhythms,'' {\em Music Perception}, vol.~11, no.~4, pp.~409--464,
+  1994.
+
+\bibitem{Jones:76}
+M.~Jones, ``Our lost dimension: Toward a new theory of perception, attention
+  and memory,'' {\em Psychological Review}, vol.~83, pp.~323--355, 1976.
+
+\bibitem{Clarke:85structure}
+E.~Clarke, {\em Structure and Expression in Rhythmic Performance},
+  pp.~209--236.
+\newblock London: Academic Press, Inc., 1985.
+
+\bibitem{Scheirer:98tempo}
+E.~D. Scheirer, ``Tempo and beat analysis of acoustic musical signals,'' {\em
+  J.Acoust.Soc.Am}, vol.~103, no.~1, pp.~588--601, 1998.
+
+\bibitem{Magill:97}
+J.~Magill and J.~Pressing, ``Asymmetric cognitive clock structures in west
+  african rhythms,'' {\em Music Perception}, vol.~15(2), pp.~189--222, 1997.
+
+\bibitem{Pantaleoni:72}
+H.~Pantaleoni, ``Three principles of timing in anlo dance drumming,'' {\em
+  African Music Society Journal}, pp.~50--63, 1972.
+
+\bibitem{Large:94}
+E.~Large and J.~Kolen, ``Resonance and the perception of musical meter,'' {\em
+  Connection Science}, vol.~6, pp.~177--208, 1994.
+
+\bibitem{Goto:98}
+M.~Goto and Y.~Muraoka, ``An audio-based real-time beat tracking system and its
+  applications,'' in {\em Proceedings of the International Computer Music
+  Conference}, Computer Music Association, 1998.
+
+\bibitem{Bregman:90}
+A.~Bregman, {\em Auditory Scene Analysis: The Perceptual Organization of
+  Sound}.
+\newblock Massachusetts Institute of Technology, Cambridge, Mass: MIT Press,
+  1990.
+
+\bibitem{Lerdahl:83}
+F.~Lerdahl and R.~Jackendoff, {\em A Generative Theory of Tonal Music}.
+\newblock Massachusetts Institute of Technology, Cambridge, Mass: The MIT
+  Press, 1983.
+
+\bibitem{Halsband:94}
+U.~Halsband, F.~Binkofski, and M.~Camp, ``The role of the perception of
+  rhythmic grouping in musical performance: Evidence from motor-skill
+  development in piano playing,'' {\em Music Perception}, vol.~11, no.~3,
+  pp.~265--288, 1994.
+
+\bibitem{Berliner:94}
+P.~F. Berliner, {\em Thinking in Jazz: The Infinite Art of Improvisation}.
+\newblock The University of Chicago Press, Chicago 60637: The University of
+  Chicago Press, 1994.
+
+\bibitem{Hamer:2000}
+M.~Hamer, ``All that jazz,'' 2000.
+
+\bibitem{Clarke:85}
+E.~Clarke, ``Some aspects of rhythm and expression in performances of erik
+  satie's gnossienne no. 5,'' {\em Music Perception}, vol.~2, no.~3,
+  pp.~299--329, 1985.
+
+\bibitem{Desain:91}
+P.~Desain and H.~Honing, ``Tempo curves considered harmful: A critical review
+  of the representation of timing in computer music,'' in {\em Proceedings of
+  the 1991 International Computer Music}, pp.~143--149, International Computer
+  Music Association, 1991.
+
+\bibitem{Desain:91towards}
+P.~Desain and H.~Honing, ``Towards a calculus for expressive timing in music,''
+  {\em Computers in Music Research}, vol.~3, pp.~43--120, 1991.
+
+\bibitem{Bilmes:93}
+J.~Bilmes, ``Timing is of the essence: Perceptual and computational techniques
+  for representing, learning, and reproducing expressive timing in percussive
+  rhythm,'' Master's thesis, Massachusetts Institute of Technology., 1993.
+
+\bibitem{Casey:2000}
+M.~A. Casey, ``Separation of mixed audio sources by independent subspace
+  analysis,'' in {\em Proceedings of the 2000 International Computer Music},
+  pp.~154--161, International Computer Music Association, 2000.
+
+\bibitem{Farid:99}
+H.~Farid, ``Separating reflections from images using independent components
+  analysis,'' {\em Journal of the Optical Society of America}, vol.~16, no.~9,
+  pp.~2136--2145, 1999.
+
+\bibitem{Strang:93}
+G.~Strang, {\em Introduction to Linear Algebra}.
+\newblock Box 821060 Wellesley MA 02181: Wellesley-Cambridge Press, 1993.
+
+\bibitem{Cook:97}
+D.~Cook, ``Statistics 501 lecture notes,'' 1997.
+
+\bibitem{Knuth:98}
+K.~H. Knuth, {\em Difficulties Applying Recent Blind Source Separation
+  Techniques to EEG and MEG}, pp.~209--222.
+\newblock Dordrecht, 1997.
+
+\bibitem{hyvarinen:99survey}
+A.~Hyv{\"a}rinen and E.~Oja, ``Independent component analysis: A tutorial,''
+  1999.
+
+\bibitem{smaragdis:97}
+P.~Smaragdis, ``Information-theoretic approaches to source separation,''
+  Master's thesis, Massachusetts Institute of Technology, 1997.
+
+\bibitem{Klapuri:99}
+A.~Klapuri, ``Sound onset detection by applying psychoacoustic knowledge,'' in
+  {\em Proceedings of the 1999 IEEE International Conference on Acoustics,
+  Speech and Signal Processing (ICASSP)}, 1999.
+
+\bibitem{Seppanen:99}
+J.~Sepp{\"a}nen, ``Finding the metrical grid in musical signals.'' 1999.
+
+\bibitem{Scheirer:98}
+E.~Scheirer, {\em Using Musical Knowledge to Extract Expressive Performance
+  Information from Audio Recordings}.
+\newblock Mahwah, NJ: Lawrence Erlbaum Assoc., 1998.
+
+\bibitem{Warren:93}
+R.~M. Warren, {\em Perception of Acoustic Sequences: Global Integration versus
+  Temporal Resolution}, pp.~37--68.
+\newblock New York, NY, USA: Oxford University Press Inc., 1993.
+
+\bibitem{Klapuri:98}
+A.~Klapuri, ``Automatic transcription of music: Introduction,'' 1999.
+
+\end{thebibliography}

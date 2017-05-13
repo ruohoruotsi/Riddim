@@ -1,0 +1,31 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 1}{\ignorespaces Live performance with Riddim}}{2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 2}{\ignorespaces ``For a swinging performance the first of each pair of eight notes is played longer than the second. The melody line also hangs behind the cymbal beat, except for the occasional off-beat synchronisation, which keeps the band together'' \cite {Hamer:2000}}}{19}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 3}{\ignorespaces ``Imagining the beat as an ``elliptical figure'', the drummer or bass player can play either ``ahead of the beat'' (that is, on the front part of the elliptical figure), ``behind the beat'', (that is on the very end of the elliptical figure or in varying degrees toward the center of the figure or ``on the beat'' (that is, the center of the figure)'' \cite [p. 151]{Berliner:94}.}}{21}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 4}{\ignorespaces Riddim: The System Architecture }}{26}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 5}{\ignorespaces The waveform (time-series) representation of several conga hits 451 samples long.}}{30}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 6}{\ignorespaces A histogram representation of Figure \global \advance \c@myfigcount \c@figure \relax 5\hbox {} that approximates a probability density function close to a spiky Gaussian.}}{30}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 7}{\ignorespaces From \cite {Farid:99}, the bottom left shows an ideal joint probability density function of two independent signals in $X$. The linear mixing of the signals in equation 3.3\hbox {} transforms the distribution by rotating it with $R_{2}$, scaling it with $S$ and rotating it with $R_{1}$. ICA tries to estimate $M^{-1}$ by finding rotation matrices $R_{1}^{-1}$ and $R_{2}^{-1}$, and scaling matrix $S^{-1}$ that transforms the joint PDF of the mixed signals back to a square.}}{32}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 8}{\ignorespaces Principal Component Analysis: $Y1$ and $Y2$ show directions of the first two principle components \cite {Cook:97}.}}{34}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 9}{\ignorespaces High Level Functional Blocks of the ISA Algorithm}}{36}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 10}{\ignorespaces Details of the ISA algorithm}}{38}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 11}{\ignorespaces A waveform of an eight second excerpt of a recording of Soukous music from the Congo}}{39}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 12}{\ignorespaces The extracted kick drum from the Soukous music}}{40}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 13}{\ignorespaces The extracted snare drum from the Soukous music}}{41}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 14}{\ignorespaces The extracted human vocal chants from the Soukous music}}{42}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 15}{\ignorespaces The extracted whistle blow from the Soukous music}}{43}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 16}{\ignorespaces ``Amplitude Modulated'' white noise from a musical signal has the same rhythmic percept as the signal}}{45}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 17}{\ignorespaces The soukous kick drum after its been half-wave rectified}}{47}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 18}{\ignorespaces When using peaks in the {\sl first order difference function} to determine onset times, the estimation is sometimes late with slowly onsetting sounds and local maxima may be picked as separate onsets.}}{50}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 19}{\ignorespaces Comparison of the First Order Difference and Relative Difference function of a signal, the grid lines correspond to peaks in the RDF above a particular threshold}}{51}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 20}{\ignorespaces A separated Soukous vocal chant, gridlines indicate time points where onsets are detected. The threshold value is set to .3}}{52}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 21}{\ignorespaces The FOD represents well the loudness of an onsetting sound, the loudness is thus calculated by taking the inner product of a Gaussian window centered about the FOD peak in question}}{54}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 22}{\ignorespaces Onset Detection Data Path}}{55}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 23}{\ignorespaces The error function from one 500 msec frame of onset times extracted from the soukous kick drum. The largest indice with the lowest local minima is 96. Thus the lowest level pulse corresponds to the time in seconds represented by histogram bin 96}}{59}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 24}{\ignorespaces A plot of the trajectory of the lowest level pulse}}{60}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 25}{\ignorespaces A screen shot of {\it Riddim} in the Start Mode, with an open dialog box to choose a WAV file to analyse}}{62}
+\contentsline {figure}{\numberline {\global \advance \c@myfigcount \c@figure \relax 26}{\ignorespaces A screen shot of {\it Riddim} in the Analysis Mode. Shown are an extracted kick drum and the detected onsets indicated by the grid lines.}}{63}
+\addvspace {10\p@ }

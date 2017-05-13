@@ -1,0 +1,170 @@
+\begin{thesisbib}
+
+\item[]
+Berliner, P.~F., {\em Thinking in Jazz: The Infinite Art of Improvisation}.
+\newblock The University of Chicago Press, Chicago 60637: The University of
+  Chicago Press, 1994.
+
+\item[]
+Bilmes, J., {\em Timing is of the Essence: Perceptual and Computational
+  Techniques for Representing, Learning, and Reproducing Expressive Timing in
+  Percussive Rhythm}.
+\newblock Masters thesis, Massachusetts Institute of Technology., 1993.
+
+\item[]
+Bregman, A., {\em Auditory Scene Analysis: The Perceptual Organization of
+  Sound}.
+\newblock Massachusetts Institute of Technology, Cambridge, Mass: MIT Press,
+  1990.
+
+\item[]
+Casey, M.~A., ``Separation of Mixed Audio Sources By Independent Subspace
+  Analysis,'' in {\em Proceedings of the 2000 International Computer Music},
+  pp. 154--161, International Computer Music Association, 2000.
+
+\item[]
+Clarke, E., ``Some Aspects of Rhythm and Expression in Performances of Erik
+  Satie's Gnossienne No. 5,'' {\em Music Perception}, vol.~2, pp. 299--329,
+  1985.
+
+\item[]
+Clarke, E., {\em Structure and Expression in Rhythmic Performance}, pp.
+  209--236.
+\newblock London: Academic Press, Inc., 1985.
+
+\item[]
+Clarke, E.~F., ``Levels of Structure in the Organization of Musical Time,''
+  {\em Contemporary Music Review}, vol.~2, pp. 211--238, 1987.
+
+\item[]
+Cook, D., ``Statistics 501 Lecture Notes,'', 1997.
+
+\item[]
+Desain, P., ``Can Computer Music Benefit from Cognitive Models of Rhythm
+  Perception,'' in {\em Proceedings of the 1991 International Computer Music
+  Conference}, pp. 42--45, International Computer Music Association, 1992.
+
+\item[]
+Desain, P. and Honing, H., ``Tempo Curves Considered Harmful: A Critical Review
+  of the Representation of Timing in Computer Music,'' in {\em Proceedings of
+  the 1991 International Computer Music}, pp. 143--149, International Computer
+  Music Association, 1991.
+
+\item[]
+Desain, P. and Honing, H., ``Towards a Calculus for Expressive Timing in
+  Music,'' {\em Computers in Music Research}, vol.~3, pp. 43--120, 1991.
+
+\item[]
+Farid, H., ``Separating Reflections from Images Using Independent Components
+  Analysis,'' {\em Journal of the Optical Society of America}, vol.~16, pp.
+  2136--2145, 1999.
+
+\item[]
+Fraisse, P., {\em The Psychology of Time}.
+\newblock New York, N.Y.: Harper and Row, 1963.
+
+\item[]
+Gabrielsson, A., {\em The Complexities of Rhythm}, pp. 93+.
+\newblock New Jersey, USA: Lawrence Erlbaum Associates Inc., 1989.
+
+\item[]
+Gardenfors, P., {\em Conceptual Spaces: The Geometry of Thought}.
+\newblock Massachusetts Institute of Technology, Cambridge, Mass: The MIT
+  Press, 2000.
+
+\item[]
+Goto, M. and Muraoka, Y., ``An Audio-Based Real-Time Beat Tracking System and
+  Its Applications,'' in {\em Proceedings of the International Computer Music
+  Conference}, Computer Music Association, 1998.
+
+\item[]
+Halsband, U., Binkofski, F., and Camp, M., ``The Role of the Perception of
+  Rhythmic Grouping in Musical Performance: Evidence from Motor-Skill
+  Development in Piano Playing,'' {\em Music Perception}, vol.~11, pp.
+  265--288, 1994.
+
+\item[]
+Hamer, M., ``All That Jazz,'', 2000.
+
+\item[]
+Honing, H., ``Issues in the Representation of Time and Structure in Music,''
+  {\em Contemporary Music Review}, vol.~9, pp. 221--239, 1993.
+
+\item[]
+Hyv{\"a}rinen, A. and Oja, E., ``Independent Component Analysis: A Tutorial,'',
+  1999.
+
+\item[]
+Jones, M., ``Our Lost Dimension: Toward a New Theory of Perception, Attention
+  and Memory,'' {\em Psychological Review}, vol.~83, pp. 323--355, 1976.
+
+\item[]
+Klapuri, A., ``Automatic Transcription of Music: Introduction,'', 1999.
+
+\item[]
+Klapuri, A., ``Sound Onset Detection by Applying Psychoacoustic Knowledge,'' in
+  {\em Proceedings of the 1999 IEEE International Conference on Acoustics,
+  Speech and Signal Processing (ICASSP)}, 1999.
+
+\item[]
+Knuth, K.~H., {\em Difficulties Applying Recent Blind Source Separation
+  Techniques to EEG and MEG}, pp. 209--222.
+\newblock Dordrecht, 1997.
+
+\item[]
+Large, E. and Kolen, J., ``Resonance and the Perception of Musical Meter,''
+  {\em Connection Science}, vol.~6, pp. 177--208, 1994.
+
+\item[]
+Lerdahl, F. and Jackendoff, R., {\em A Generative Theory of Tonal Music}.
+\newblock Massachusetts Institute of Technology, Cambridge, Mass: The MIT
+  Press, 1983.
+
+\item[]
+Magill, J. and Pressing, J., ``Asymmetric Cognitive Clock Structures in West
+  African Rhythms,'' {\em Music Perception}, vol.~15(2), pp. 189--222, 1997.
+
+\item[]
+Pantaleoni, H., ``Three Principles of Timing in Anlo Dance Drumming,'' {\em
+  African Music Society Journal}, pp. 50--63, 1972.
+
+\item[]
+Parncutt, R., ``A Perceptual Model of Pulse Salience and Metrical Accent in
+  Musical Rhythms,'' {\em Music Perception}, vol.~11, pp. 409--464, 1994.
+
+\item[]
+Scheirer, E., {\em Using Musical Knowledge to Extract Expressive Performance
+  Information from Audio Recordings}.
+\newblock Mahwah, NJ: Lawrence Erlbaum Assoc., 1998.
+
+\item[]
+Scheirer, E.~D., ``Tempo and Beat Analysis of Acoustic Musical Signals,'' {\em
+  J.Acoust.Soc.Am}, vol.~103, pp. 588--601, 1998.
+
+\item[]
+Sepp{\"a}nen, J., ``Finding the Metrical Grid in Musical Signals,'' 1999.
+
+\item[]
+Smaragdis, P., {\em Information-theoretic Approaches to Source Separation}.
+\newblock Masters thesis, Massachusetts Institute of Technology, 1997.
+
+\item[]
+Smith, L.~M., {\em A Multiresolution Time-Frequency Analysis and Interpretation
+  Of Musical Rhythm}.
+\newblock PhD thesis, Department of Computer Science, The University of Western
+  Australia, 1999.
+
+\item[]
+Strang, G., {\em Introduction to Linear Algebra}.
+\newblock Box 821060 Wellesley MA 02181: Wellesley-Cambridge Press, 1993.
+
+\item[]
+Todd, N., ``The Auditory Primal Sketch: A Multiscale Model of Rhythmic
+  Grouping,'' {\em Journal of New Music Research}, vol.~23, pp. 25--70, 1994.
+
+\item[]
+Warren, R.~M., {\em Perception of Acoustic Sequences: Global Integration versus
+  Temporal Resolution}, pp. 37--68.
+\newblock New York, NY, USA: Oxford University Press Inc., 1993.
+
+\end{thesisbib}
