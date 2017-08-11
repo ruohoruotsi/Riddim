@@ -1,0 +1,55 @@
+
+The goal of this work is to better understand rhythm.  
+To accomplish this I aim to implement a comprehensive 
+analysis tool that incorporates the strengths of 
+disparate models of various aspects of rhythm. These 
+include a robust onset detection scheme based on 
+pychoacoustic principles, a Tempogram (tempo tracking),
+quantization & estimation of Expressive Timing (if 
+applicable) and a Rhythmogram (representation of 
+rhythmic grouping)
+
+This tool will accept arbitrarily polyphonic audio data, 
+perform an Independent Subspace Analysis (ISA) to 
+indentify and "un-mix" the various sources.  Then the 
+rhythmic analyses described above will be applied to each of
+the "un-mixed" audio streams to extract the pertinent 
+rhythmic features.
+
+By this I hope to show the utility ISA technique for
+Blind Source Separation (BSS) as a worthy preprocessor and
+facilitator to rhythmic feature detection. I also hope
+to demonstrate that the various above algorithms can complement
+each other in providing a more complete rhythmic representation.
+
+
+----------------------------------------------------------------
+
+- Functional Goal - see design document
+
+- Deliverable Goal 
+  a data CD-R with executable binaries and source code that implement
+  the functional goal
+  
+----------------------------------------------------------------
+
+Outline
+
+- Background - notions of rhythm, notes on incorporated research (see
+  leigh smith paper for details)
+
+- Approach and Operation - Design and Operation of the system
+
+- Test Results - empirical test results
+
+- Documentation - a CDRom with a manual, source code, binaries, etc.
+
+----------------------------------------------------------------
+
+Practicalia
+
+- Deliverables 
+- Production Schedule 
+- Resources   
+   
+----------------------------------------------------------------

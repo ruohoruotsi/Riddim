@@ -1,0 +1,72 @@
+; Visual Thought 1.0
+
+(header
+  (program "vthought")
+  (version "1.4")
+  (buildDate "$Date: 1998/07/17 01:33:32 $")
+  (writeDate "Sat May 26, 2001 4:15:31 PM ")
+  (documentPath "D:\Thesis\Design Documents\AllThatJazz.vthought")
+)
+
+(document
+  (palette F)
+  (layout
+    (page "Letter")
+    (units "Inches")
+    (orientation "portrait")
+    (numberOfPages 1 1)
+    (scale 100)
+    (margins 18 18 18 18)
+  )
+)
+
+(views
+  (view
+    (location 265 177)
+    (size 771 732)
+    (zoom 1)
+    (documentLocation 0 111)
+    (gridSnap T)
+    (gridVisibility F)
+    (gridSpacing 9)
+    (pageBreaks T)
+    (toolVisibility T)
+    (rulerVisibility T)
+  )
+)
+
+(shapes
+  (shape
+    (id 1)
+    (layer 0)
+    (type "Square-Bracketed Rectangle")
+    (location 265.5 607.5)
+    (size 513 279)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled F)
+      (fillColor 65535 65535 65535)
+      (stroked F)
+      (strokeColor 0 0 0)
+      (lineWidth 0)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText F)
+    (textVerticalAlignment "center")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc Text})
+    (image "D:\Thesis\Design Documents\AllthatJazz.gif")
+  )
+)
+
+(connections
+)
+
+(groups
+)

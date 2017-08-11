@@ -1,0 +1,19 @@
+
+To Do List January 2001
+
+1) Read and understand the Tempogram implmentation
+
+2) Read and understand the ISA code from MKC 
+
+3) Test End to End the ISA -> Onset Detection -> Tempogram
+
+4) Make a work progress schedule by Jan 5
+
+5) download and install the Windows version of Latex
+
+6) write the first chapter and abstract of the Thesis
+
+7) send the abstract as well as designs to Leigh Smith by Jan 5.
+
+8) try to make contact with the rhythmogram guy.
+

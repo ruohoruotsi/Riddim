@@ -1,0 +1,45 @@
+; Visual Thought 1.0
+
+(header
+  (program "vthought")
+  (version "1.4")
+  (buildDate "$Date: 1998/07/17 01:33:32 $")
+  (writeDate "Mon Nov 27, 2000 7:08:40 AM ")
+  (documentPath "D:\Thesis\AutoCorrelation.vthought")
+)
+
+(document
+  (palette F)
+  (layout
+    (page "Letter")
+    (units "Inches")
+    (orientation "portrait")
+    (numberOfPages 1 1)
+    (scale 100)
+    (margins 18 18 18 18)
+  )
+)
+
+(views
+  (view
+    (location 284 187)
+    (size 632 723)
+    (zoom 1)
+    (documentLocation 0 119)
+    (gridSnap T)
+    (gridVisibility T)
+    (gridSpacing 9)
+    (pageBreaks T)
+    (toolVisibility T)
+    (rulerVisibility T)
+  )
+)
+
+(shapes
+)
+
+(connections
+)
+
+(groups
+)

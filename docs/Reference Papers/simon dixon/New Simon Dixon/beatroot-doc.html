@@ -1,0 +1,414 @@
+<HTML>
+<TITLE>BeatRoot Version 0.2 User Documentation</TITLE>
+<H1>BeatRoot Version 0.2 User Documentation</H1>
+<EM>Simon Dixon</EM>
+<a href="mailto:simon@oefai.at">simon@oefai.at</a><BR>
+Austrian Research Institute for Artificial Intelligence,<BR>
+Schottengasse 3, Vienna 1010, Austria.
+<P>
+BeatRoot is a musical beat tracking and visualisation system.
+A full description of the beat tracking algorithms appears in the paper:
+<em>Automatic Extraction of Tempo and Beat from Expressive Performances</em>
+which is to appear in the
+Journal of New Music Research, 30(1), 2001.
+The graphical user interface is described in the paper:
+<em>An Interactive Beat Tracking and Visualisation System</em>
+presented at the International Computer Music Conference (2001).
+The file you are reading now is the user documentation for BeatRoot.
+The software and the papers mentioned above are available for
+<a href="http://www.oefai.at/~simon/beatroot/">download</a>.
+<P>
+Of course, the software is supplied as is,
+with no claims to any functionality or fitness for any purpose.
+Nevertheless, I hope you find it useful.
+<HR>
+<H2>BeatRoot Installation Instructions</H2>
+<UL>
+<LI>System requirements: Linux system with JDK1.3 installed. (Timidity is
+also necessary if you want playback of beat tracking of MIDI files.)
+I use the Debian Linux distribution (potato). With other distributions you
+might need to download the source version and change a few variables to get
+the program to work.
+<LI><a href="http://www.oefai.at/~simon/beatroot/">Download</a>
+the file <font face=courier><b>beatroot-0.2.tgz</b></font>
+<LI>Unpack the tar archive using:<BR>
+<font face=courier><b>tar zxf beatroot-0.2.tgz</b></font>
+<LI>Change to the beatroot-0.2 directory:<BR>
+<font face=courier><b>cd beatroot-0.2</b></font>
+<LI>Edit the file <BR>
+<font face=courier><b>.beatrootrc</b></font><BR>
+and copy it to your home directory. The parameters listed in this file must
+be given correct values for the system to function fully. You may add other
+parameter settings if you wish.
+<LI>Run the program:<BR>
+<font face=courier><b>beatroot</b></font><BR>
+Details of options and usage are given below.
+<LI>If this fails, or you wish to modify the program, you can download the
+source code <font face=courier><b>beatroot-0.2-src.tgz</b></font>, edit the
+<font face=courier><b>makefile</b></font> and/or source as necessary, and
+rebuild the program. The source code is provided free under the
+<a href="http://www.gnu.org/licenses/gpl.txt">GNU Public License</a>
+(see the file gpl.txt).
+</UL>
+<HR>
+<H2>BeatRoot Usage Instructions</H2>
+
+<H3>Usage Summary</H3>
+<FONT face=courier>
+beatroot<BR>
+beatroot [ -P <em>parameterFile</em> ] [ --<em>parameter</em>=<em>value</em> ... ] -g<BR>
+beatroot [ -P <em>parameterFile</em> ] [ --<em>parameter</em>=<em>value</em> ... ] -a <em>audioFile</em><BR>
+beatroot [ -P <em>parameterFile</em> ] [ --<em>parameter</em>=<em>value</em> ... ] -m <em>midiFile</em><BR>
+</FONT>
+<P>
+BeatRoot may be run in GUI (graphical user interface) or batch mode.
+The graphical mode is the default if no options are given.
+If any parameters or options are specified on the command line, then the
+default is to run in batch mode.
+Graphical mode is selected explicitly with the
+<FONT face=courier>-g</FONT> switch.
+<P>
+In graphical mode, the input file names are entered using
+the GUI. Parameter settings can be entered via the command
+line, the GUI or a file of parameter settings.
+Parameter settings are read from the file
+<FONT face=courier>~/.beatrootrc</FONT> (if it exists),
+then from any file specified using the
+<FONT face=courier>-P</FONT> switch, then from any command line parameters,
+and finally any parameters entered in the GUI Options field.
+Full details of parameter settings are given below.
+<P>
+In batch mode, all input file names are specified on the command line.
+Parameter settings are read from the file
+<FONT face=courier>~/.beatrootrc</FONT> (if it exists),
+then from any file specified using the
+<FONT face=courier>-P</FONT> switch and then from any command line parameters.
+Audio input files are specified with the <FONT face=courier>-a</FONT> switch,
+and MIDI input files with the <FONT face=courier>-m</FONT> switch.
+
+<H3>File formats</H3>
+Audio files may be in WAV or SND (i.e. SUN's .snd format, not Macintosh's)
+format.
+All files are assumed to be 1 or 2 channel, 16-bit linear PCM coded,
+at any sampling rate. If you have data in other formats, a utility like
+<FONT face=courier><B>sox</B></FONT> can be used to convert it to one of
+the standard formats accepted by BeatRoot.
+<P>
+MIDI files may be any standard midi file (type 0 or type 1), or the text
+MIDI format produced by the <FONT face=courier><B>mf2t</B></FONT> program.
+BeatRoot also accepts the Match file format, which you have probably never
+heard of if you don't work at OeFAI.
+<P>
+BeatRoot recognises the following filename extensions: .wav, .snd, .mid, .tmf,
+.match; if a file has any other extension (or the wrong one), its format
+should be set explicitly using the <B>format</B> parameter (see below).
+
+<HR>
+<H2>BeatRoot Graphical User Interface</H2>
+
+<H3>Introduction</H3>
+You might want to start by reading the
+<a href="http://www.oefai.at/~simon/pub/icmc2001.ps.gz">ICMC paper</a>
+to get an overview of the system.
+Click on <B>New</B> to open an audio or MIDI file.
+The system performs beat tracking automatically and marks the beats
+on the visual display with red vertical lines.
+Click on <B>Play</B> to listen to the results.
+Errors can be corrected using the mouse: the left button moves beats,
+the middle button adds new beats and the right button deletes beats.
+<P>
+Note that large audio
+files will take a few seconds to load. It is not recommended to use files
+that are larger than about 40% of the amount of RAM your system has.
+For example, a 5 minute stereo WAV file with 44.1kHz sampling rate is
+about 50MB, which is about the limit if you have 128MB RAM.
+
+<H3>Detailed description of GUI components and controls</H3>
+The graphical user interface consists of two main components, the data display
+(at the top) and the control panel (at the bottom).<BR>
+The data display consists of the following components:
+<UL>
+<LI>Scrollbar: directly below the data display is a scrollbar, used to view
+different parts of a piece.
+<LI>Time line: at the bottom of the data display is a time axis, showing
+the time in seconds from the beginning of the input data.
+<LI>Onset times: short blue vertical lines mark the onset times of notes
+in MIDI (i.e. note-on messages) or audio (as detected by the onset detection
+algorithm, which is a simple time-domain algorithm, not designed to accurately
+find all onsets).
+<LI>Amplitude envelope (audio input only): the amplitude envelope is shown
+in green, calculated from an RMS average of a 20ms window of audio data,
+with 50% overlap between successive windows (default parameter settings).
+<LI>Spectrogram (audio input only; not used by default): it is possible
+to show a spectrogram of the audio data in addition to the amplitude
+envelope and onset times, but this is really slow and has been disabled
+by default.
+<LI>Piano roll notation (MIDI input only): the pitches and durations of notes
+are shown as blue horizontal lines in standard piano roll notation.
+<LI>Beat times: red vertical lines mark the times of beats, as computed
+by BeatRoot or entered by the user.
+<LI>Inter-beat intervals: the times between pairs of beats are shown
+(in milliseconds) at the top of the data display. The resolution is around
+5ms when the view range contains 5 seconds of data. (Note that audio onset
+detection uses a resolution of 10ms by default.)
+</UL>
+The mouse is used to edit the beat times on the data display as follows:
+<UL>
+<LI>Use the left mouse button to move beats by clicking on a beat line and
+dragging it to the desired location.
+<LI>Use the middle mouse button to add a new beat at the cursor location.
+<LI>Use the right mouse button to delete a beat at the cursor location.
+<LI>By clicking with the left mouse button on the time axis,
+you can select a region of the music. A single click will select from
+the current point to the end of the file. The selected region is highlighted
+in grey in the area above the time line. A region bounded at both ends
+can be selected by clicking at one end and dragging to the other end.
+The selected region can be
+cleared by clicking the right mouse button on the time axis.
+</UL>
+The control panel consists of the following components:
+<UL>
+<LI><B>File name:</B> the name of the currently loaded data file. This field is
+not editable.  (To change files use the <B>New</B> button.)
+<LI><B>Options:</B> any number of options may be specified in the format<BR>
+<em>parameter</em>=<em>value</em><BR>
+with the only spaces being between the value and the next parameter
+(if there is one).
+For a list of parameters, see the batch mode section below.
+<LI><B>View Range:</B> this is the number of seconds of data
+that are visible on the screen.
+This can be increased or decreased with the <B>+</B> and <B>-</B>
+buttons respectively, or a value can be entered in the text field between the
+two buttons.
+<LI><B>New</B> button: load a new data file (audio or midi).
+A window will appear which allows you to select the data file.
+This will clear any currently loaded data. When the file is loaded, beat
+tracking will be performed automatically. For large data files, you will
+have to wait a few seconds while the data is processed.
+<LI><B>Load beats</B> button: load a file of beat times (assumed to be one
+you previously saved using BeatRoot).
+<LI><B>Clear</B> button: delete all of the beats. If a region is selected,
+only the beats in that region will be deleted.
+<LI><B>Re-track</B> button: performs beat tracking on the whole file (no
+region selected) or from the selected region to the end of the file. 
+If a region is selected, the tempo and phase of beats before the region will
+be used as the basis for further beats. Note that there is no way to retrack
+only the middle of a file. Therefore if you plan to use this button,
+all manual changes should be made in chronological order,
+that is from the beginning to the end of the file.
+<LI><B>Undo</B> button: undoes one operation (only), restoring the previous
+list of beats after a clear, re-track or load beats command.
+<LI><B>Cut file</B> button: not for general use.
+(It divides a midi file into several files, using the beat positions as
+file boundaries.)
+<LI><B>Save beats</B> button: saves the beat times
+in text MIDI format, using the file name of the input file (without extension)
+appended by "-beatTrackData.tmf".
+<LI><B>Save beats as</B> button: saves the beats times in MIDI or text MIDI
+format, allowing the user to specify the file name.
+<LI><B>Save all</B> button: saves the input data and beat data together in
+the same format as the input data (i.e. audio or MIDI). Note that the beat
+times cannot be retrieved from such a file when the input data is audio.
+<LI><B>Play</B> button: plays the input data with a percussion instrument
+sounding at each beat time. Note that there will be a time delay before a
+large audio file starts playing. Play requests are queued.
+<LI><B>Stop</B> button: stop the playback. If you have pressed <B>Play</B>
+more than once, the next file will start playing automatically.
+<LI><B>Quit</B> button: end the program.
+</UL>
+<H3>Bugs</H3>
+There are no known bugs (or else I would have fixed them!).
+Please mail bug reports to 
+<a href="mailto:simon@oefai.at">simon@oefai.at</a>.<BR>
+Sometimes the system stops responding. As far as I can tell, this is
+a bug in the Java runtime environment. It is generally accompanied by
+a Java Exception message on the shell window where the program was launched.
+Let me know if you work out how to cause (or fix) this problem.
+
+<HR>
+<H2>BeatRoot Parameter Settings</H2>
+
+BeatRoot uses default values for all parameters, chosen to give reasonable
+performance across a range of data. For specific data sets, alternative
+parameter settings can be specified on the command line, the options field of
+the graphical user interface, or in a parameter file.
+On startup, the system reads the file
+<FONT face=courier>~/.beatrootrc</FONT>,
+then any parameter file specified with the
+<FONT face=courier>-P</FONT> option,
+then the command line parameters (assuming they come after the
+<FONT face=courier>-P</FONT> option),
+and finally any settings in the options field of the GUI.
+If a parameter is set more than once, the later setting overrides the earlier
+value.
+Parameter settings are always of the form:<BR>
+<em>parameter</em>=<em>value</em><BR>
+with no spaces. In files, each parameter setting is on a line by itself;
+in the text box, successive settings are separated by spaces, and on the 
+command line, the parameter settings are preceded by -- (two minus signs)
+and separated by spaces. Warning: parameter names are case sensitive.
+<P>
+Input parameters:
+<UL>
+<LI><B>start</B> (type: double; default value: 0)<BR>
+Start time in seconds relative to the beginning of the file.
+<LI><B>length</B> (type: double; default value: -1)<BR>
+Length of input data to be loaded, in seconds. -1 indicates `to end of file'.
+<LI><B>format</B> (type: string; default value: <em>none</em>)<BR>
+Not necessary if the input file has the expected extension (see above).
+Otherwise this parameter should specify one of the following formats:
+wav, snd, mid, tmf, match.
+<LI><B>channels</B> (type: string; default value: add)<BR>
+What to do with a 2-channel input file. The choices are:
+add (create a 1-channel file containing the sum of the 2 channels),
+subtract (create a 1-channel file containing the difference of the 2 channels),
+both (keep both channels unchanged),
+left (create a 1-channel file consisting of only the left channel of the input)
+and right
+(create a 1-channel file consisting of only the right channel of the input).
+</UL>
+<P>
+Output parameters:
+<UL>
+<LI><B>play</B> (type: string; default value: on)<BR>
+Used in batch mode to select whether audio output should be sent to the
+sound card. Choices: on, off.
+<LI><B>audioOut</B> (type: string; default value: <em>none</em>)<BR>
+Used in batch mode to select a file name for saving audio output.
+By default, audio output is played but not saved.
+<LI><B>stereo</B> (type: string; default value: on)<BR>
+Selects the output format of audio data. Choices: on (input data and beats
+appear on separate channels; incompatible with channels=both), off (input data
+is mixed with beats on the same channel(s)).
+<LI><B>metronome</B> (type: string; default value: <em>useless</em>)<BR>
+This is used to select the click sound used to mark the beats in audio output.
+This should be an audio file containing a single percussion stroke with onset
+as close as possible to the beginning of the file.
+A suitable file (33-metclick.wav) is provided with BeatRoot.
+Set this parameter to the full path name of this file.
+<LI><B>clickTrackOnly</B> (type: string; default value: <em>not used</em>)<BR>
+File name for saving an audio track consisting of clicks at times of
+detected onsets. Not particularly useful, except in demonstrations
+(hearing the audio world from the system's point of view).
+<LI><B>midiOut</B> (type: string; default value: <em>none</em>)<BR>
+Used in batch mode to specify the file name for saving MIDI output
+(i.e. input data + beats).
+<LI><B>tmfDefaults</B> (type: string; default value: see below)<BR>
+Parameter settings for MIDI output, in TMF format, placed at the beginning
+of the MIDI output file.
+By default, this is used so that MIDI channel 1 is panned left,
+and MIDI channel 10 (the beat track) is panned right.
+<LI><B>midiMetronome</B> (type: int; default value: 56)<BR>
+This is used to select the click sound used to mark the beats in MIDI output.
+It specifies the note number used in the MIDI output for beats.
+The standard drum kit settings have many possible sounds, for example:
+sticks (31), thud (32), metronome (33), metronome with bell (34), cowbell (56),
+woodblock (76, 77), muted triangle (80) and open triangle (81).
+</UL>
+Beat induction parameters:
+<UL>
+<LI><B>clusterWidth</B> (type: double; default value: 0.025)<BR>
+Used in the clustering algorithm; in seconds.
+<LI><B>minCluster</B> (type: double; default value: 0.070)<BR>
+Used in the clustering algorithm; the smallest cluster interval, in seconds.
+<LI><B>maxCluster</B> (type: double; default value: 2.500)<BR>
+Used in the clustering algorithm; the largest cluster interval, in seconds.
+<LI><B>minIBI</B> (type: double; default value: 0.250)<BR>
+The minimum inter-beat interval (maximum tempo), in seconds.
+0.250 sec/beat = 240 BPM.
+<LI><B>maxIBI</B> (type: double; default value: 0.750)<BR>
+The maximum inter-beat interval (minimum tempo), in seconds.
+0.750 sec/beat = 80 BPM.
+<LI><B>hopSize</B> (type: double; default value: 0.010)<BR>
+Time resolution for beat induction of audio, in seconds.
+<LI><B>overlap</B> (type: int; default value: 2)<BR>
+The number of hops in a frame: FrameSize = overlap * hopSize.
+FrameSize is the window size for calculating the amplitude envelope of audio
+data.
+<LI><B>peakWidth</B> (type: int; default value: 5)<BR>
+Minimum gap between onsets, expressed as a multiple of the hopSize:
+Peak separation = peakWidth * hopSize.
+<LI><B>thresholdFactor</B> (type: double; default value: 10.0)<BR>
+Used to reject peaks in the slope of the amplitude envelope which have
+an amplitude less than the average amplitude divided by thresholdFactor.
+</UL>
+Beat tracking parameters:
+<UL>
+<LI><B>innerMargin</B> (type: double; default value: 0.040)<BR>
+Used in beat tracking algorithm; in seconds. Should be less than
+IBI * preMarginFactor and IBI * postMarginFactor.
+<LI><B>preMarginFactor</B> (type: double; default value: 0.2)<BR>
+Specifies, as a fraction of the IBI, how early (before its predicted time)
+a beat can be.
+<LI><B>postMarginFactor</B> (type: double; default value: 0.4)<BR>
+Specifies, as a fraction of the IBI, how late (after its predicted time)
+a beat can be.
+<LI><B>correctionFactor</B> (type: double; default value: 50.0)<BR>
+Controls how much an agent's tempo estimate is modified by beats off
+the predicted beat time. The tempo hypothesis is adjusted by
+(predictedTime - actualTime) / correctionFactor.
+<LI><B>expiryTime</B> (type: double; default value: 5.0)<BR>
+Specifies how long an agent survives (in seconds) when it finds no event
+corresponding to its beat prediction. If you get the message
+`Beat tracking failed', it is usually due to this value being too low.
+For example, a 5 second silence in any piece of music will cause all agents
+to give up, and beat tracking to fail, assuming the default expiryTime.
+<LI><B>averageSalience</B> (type: string; default value: off)<BR>
+Specifies whether the agents' evaluation function
+is based on the sum (off) or average (on) of adjusted salience values.
+</UL>
+MIDI beat tracking parameters:
+<UL>
+<LI><B>mergeWidth</B> (type: double; default value: 0.070)<BR>
+Specifies the window size in seconds
+within which notes are grouped as a single rhythmic event.
+<LI><B>salienceType</B> (type: string; default value: additive)<BR>
+Specifies the type of salience calculation. Choices:
+additive, multiplicative, constant.
+<LI><B>durationWeight</B> (type: double; default value: 300.0)<BR>
+Specifies the weight given to duration in the salience calculation.
+<LI><B>pitchWeight</B> (type: double; default value: 4.0)<BR>
+Specifies the weight given to pitch in the salience calculation.
+<LI><B>salienceFilter</B> (type: double; default value: <em>not used</em>)<BR>
+Specifies a salience threshold, below which rhythmic events are considered
+non-salient.
+<LI><B>normaliseSalience</B> (type: string; default value: off)<BR>
+Specifies whether salience calculations should be normalised by a local average.
+Choices: on, off.
+</UL>
+Software paths:
+<UL>
+<LI><B>classpath</B> (type: string; default value: <em>unknown</em>)<BR>
+Specifies where the Java classes for the user interface are found.
+This will be something like <B>/home/simon/beatroot-0.2/</B>
+although your name is probably not simon :)
+<LI><B>timidity</B> (type: string; default value: <em>unknown</em>)<BR>
+Specifies where to find the software synthesis program Timidity, which
+is required for MIDI playback.
+This is available from Debian and RedHat, or from
+<a href="http://www.goice.co.jp/member/mo/timidity/">
+http://www.goice.co.jp/member/mo/timidity/</a>
+<LI><B>m2t</B> (type: string; default value: m2t)<BR>
+Midi to text file conversion software. This is not used any more by BeatRoot,
+but you might need it if you want to use the TMF format.
+Available from
+<a href="http://www.hitsquad.com/smm/programs/mf2t/download.shtml">
+http://www.hitsquad.com/smm/programs/mf2t/download.shtml</a>
+</UL>
+<HR>
+<H2>Links</H2>
+<UL><LI>
+<a href="http://www.oefai.at/~simon">
+Simon Dixon's home page, http://www.oefai.at/~simon</a>
+<LI>
+<a href="http://www.ai.univie.ac.at/oefai/ml/music/musicproject.html">
+Musical Expression Project home page</a>
+<LI><a href="http://www.ai.univie.ac.at">
+Austrian Research Institute for Artificial Intelligence home page</a>
+</UL>
+<HR>
+<ADDRESS>Simon Dixon: updated 13 December 2001 </ADDRESS>
+<a href="mailto:simon@oefai.at">
+Email comments or questions to simon@oefai.at</a>.
+</BODY>
+</HTML>

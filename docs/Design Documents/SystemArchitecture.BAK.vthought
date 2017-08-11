@@ -1,0 +1,327 @@
+; Visual Thought 1.0
+
+(header
+  (program "vthought")
+  (version "1.4")
+  (buildDate "$Date: 1998/07/17 01:33:32 $")
+  (writeDate "Mon Apr 9, 2001 1:52:39 AM ")
+  (documentPath "D:\Thesis\Design Documents\SystemArchitecture.vthought")
+)
+
+(document
+  (palette F)
+  (layout
+    (page "Letter")
+    (units "Inches")
+    (orientation "portrait")
+    (numberOfPages 1 1)
+    (scale 100)
+    (margins 18 18 18 18)
+  )
+)
+
+(views
+  (view
+    (location 272 72)
+    (size 988 836)
+    (zoom 1)
+    (documentLocation 0 7)
+    (gridSnap T)
+    (gridVisibility F)
+    (gridSpacing 9)
+    (pageBreaks T)
+    (toolVisibility T)
+    (rulerVisibility T)
+  )
+)
+
+(shapes
+  (shape
+    (id 1)
+    (layer 0)
+    (type "Right Arrow")
+    (location 288.5497 382.5095)
+    (size 135.1475 35.9959)
+    (rotation 270)
+    (locked F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText F)
+    (textVerticalAlignment "center")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc Text})
+  )
+  (shape
+    (id 2)
+    (layer 1)
+    (type "Rectangle")
+    (location 294.5 269)
+    (size 189 36)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText T)
+    (textVerticalAlignment "center")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc Quantization and estimation of Lowest Level Pulse
+\par })
+  )
+  (shape
+    (id 3)
+    (layer 2)
+    (type "Rectangle")
+    (location 272 279.5)
+    (size 424 101)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed T)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText T)
+    (textVerticalAlignment "top")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard {\b  Interpretation of Timing Information}})
+  )
+  (shape
+    (id 6)
+    (layer 5)
+    (type "Rectangle")
+    (location 292.5 481.5)
+    (size 189 45)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText T)
+    (textVerticalAlignment "center")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc Extraction of onset information per stream})
+  )
+  (shape
+    (id 7)
+    (layer 6)
+    (type "Rectangle")
+    (location 292.5 562.5)
+    (size 207 63)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText T)
+    (textVerticalAlignment "center")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc Separation of input into separate streams using Independent Subspace Analysis (ISA)})
+  )
+  (shape
+    (id 8)
+    (layer 7)
+    (type "Rectangle")
+    (location 275 532.5)
+    (size 370 207)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed T)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText T)
+    (textVerticalAlignment "top")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard {\b\fs26 Extraction of Timing information}})
+  )
+  (shape
+    (id 10)
+    (layer 9)
+    (type "Terminal")
+    (location 292.5 686.5)
+    (size 153 31)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 0)
+      (dash
+        (pattern 2 2)
+        (offset 0)
+      )
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText T)
+    (textVerticalAlignment "center")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc digital audio input})
+  )
+)
+
+(connections
+  (connection
+    (id 4)
+    (layer 3)
+    (rotation 0)
+    (textRotation 0)
+    (locked F)
+    (start 10)
+    (end 7)
+    (curved F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (showText F)
+    (textDistancePercentage 0.45)
+    (textWidth 50)
+    (textOffset -10)
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc })
+    (drawStartArrowhead F)
+    (drawEndArrowhead T)
+    (startArrowhead "StandardArrow")
+    (endArrowhead "OpenThinArrow")
+  )
+  (connection
+    (id 5)
+    (layer 4)
+    (rotation 0)
+    (textRotation 0)
+    (locked F)
+    (start 7)
+    (end 6)
+    (curved F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (showText F)
+    (textDistancePercentage 0.45)
+    (textWidth 50)
+    (textOffset -10)
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc })
+    (drawStartArrowhead F)
+    (drawEndArrowhead T)
+    (startArrowhead "StandardArrow")
+    (endArrowhead "OpenThinArrow")
+  )
+  (connection
+    (id 9)
+    (layer 8)
+    (rotation 0)
+    (textRotation 0)
+    (locked F)
+    (points
+      (322 612)
+      (327 558)
+    )
+    (curved F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (showText F)
+    (textDistancePercentage 0.45)
+    (textWidth 50)
+    (textOffset -10)
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc })
+    (drawStartArrowhead F)
+    (drawEndArrowhead T)
+    (startArrowhead "StandardArrow")
+    (endArrowhead "OpenThinArrow")
+  )
+)
+
+(groups
+)

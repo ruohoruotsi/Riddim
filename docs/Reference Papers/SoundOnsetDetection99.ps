@@ -1,0 +1,4954 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 595.28 841.89 0 1 12 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-Roman FMFONTDEFINE
+2 0 /Times-Italic FMFONTDEFINE
+3 0 /Courier FMFONTDEFINE
+4 1 /Symbol FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 1 0.5 0 0 0 0.5 1]
+[ 0.5 0.4 0.3 0 0.5 0.6 0.7]
+[ 0.8 0.05 0 0 0.2 0.95 1]
+[ 0 0.08 0.16 0 1 0.92 0.84]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(ABSTRACT) 144.98 648.14 T
+1 9 Q
+1.45 (A system was designed, which is able to detect the perceptual) 53.86 631.8 P
+1.7 (onsets of sounds in acoustic signals. The system is general in) 53.86 620.8 P
+0.23 (regard to the sounds involved and was found to be robust for dif-) 53.86 609.8 P
+-0.14 (ferent kinds of signals. This was achieved without assuming regu-) 53.86 598.8 P
+1 (larities in the positions of the onsets. In this paper) 53.86 587.8 P
+1 (, a method is) 241.54 587.8 P
+1.22 (\336rst proposed that can determine the beginnings of sounds that) 53.86 576.8 P
+0.09 (exhibit onset imperfections, i.e., the amplitude envelope of which) 53.86 565.8 P
+3.19 (does not rise monotonically) 53.86 554.8 P
+3.19 (. Then the mentioned system is) 162.6 554.8 P
+1.61 (described, which utilizes band-wise processing and a psychoa-) 53.86 543.8 P
+0.22 (coustic model of intensity coding to combine the results from the) 53.86 532.8 P
+1.63 (separate frequency bands. The performance of the system was) 53.86 521.8 P
+0.36 (validated by applying it to the detection of onsets in musical sig-) 53.86 510.8 P
+(nals that ranged from rock to classical and big band recordings.) 53.86 499.8 T
+0 10 Q
+(1.  INTRODUCTION) 125.96 463.14 T
+1 9 Q
+0.16 (Onset detection plays an important role in the computational seg-) 53.86 446.8 P
+1.37 (mentation and analysis of acoustic signals. It greatly facilitates) 53.86 435.8 P
+2.18 (cut-and-paste operations and editing of audio recordings. The) 53.86 424.8 P
+0.78 (onset information may also be used in audio/video synchroniza-) 53.86 413.8 P
+0.15 (tion and timing, or passed for further analysis and recognition for) 53.86 402.8 P
+(example in an acoustic supervision system.) 53.86 391.8 T
+1.08 (W) 53.86 375.8 P
+1.08 (e use the term) 61.63 375.8 P
+2 F
+1.08 (onset detection) 118.44 375.8 P
+1 F
+1.08 ( to refer to the detection of the) 173.77 375.8 P
+0.35 (beginnings of discrete events in acoustic signals. A percept of an) 53.86 364.8 P
+0.98 (onset is caused by a noticeable change in the intensity) 53.86 353.8 P
+0.98 (, pitch or) 256.34 353.8 P
+0.47 (timbre of the sound [1]. A fundamental problem in the design of) 53.86 342.8 P
+0.96 (an onset detection system is distinguishing genuine onsets from) 53.86 331.8 P
+0.39 (gradual changes and modulations that take place during the ring-) 53.86 320.8 P
+1.38 (ing of a sound. This is also the reason why robust one-by-one) 53.86 309.8 P
+0.91 (detection of onsets has proved to be very hard to attain without) 53.86 298.8 P
+(signi\336cantly limiting the set of application signals.) 53.86 287.8 T
+0.02 (A lot of research related to onset detection has been carried out in) 53.86 271.8 P
+0.03 (recent years. However) 53.86 260.8 P
+0.03 (, only few systems have set out to solve the) 134.27 260.8 P
+1.57 (problem of one-by-one onset detection [1][2][3]. Instead, most) 53.86 249.8 P
+1.52 (systems aim at higher) 53.86 238.8 P
+1.52 (-level information, such as the perceived) 136.49 238.8 P
+2 F
+0.55 (beat) 53.86 227.8 P
+1 F
+0.55 ( of a musical signal [4][5][6], in which case long-term auto-) 69.36 227.8 P
+0.72 (correlations and regularities can be used to remove single errors) 53.86 216.8 P
+(and to tune the sensitivity of the low-level detection process.) 53.86 205.8 T
+1.53 (In this paper) 53.86 189.8 P
+1.53 (, we \336rst propose a mathematical method to cope) 101.56 189.8 P
+1.02 (with sounds that exhibit onset imperfections, i.e., the amplitude) 53.86 178.8 P
+0.57 (envelope of which rises through a complex track and easily pro-) 53.86 167.8 P
+0.3 (duces erroneous extra onsets or an incorrect time value. Then we) 53.86 156.8 P
+2.07 (propose the application of psychoacoustic models of intensity) 53.86 145.8 P
+2.18 (coding, which enable us to determine system parameters that) 53.86 134.8 P
+0.95 (apply to a wide variety of input signals. This allows processing) 313.23 648.8 P
+1.27 (them without a priori knowledge of signal contents or separate) 313.23 637.8 P
+(tuning of parameters.) 313.23 626.8 T
+0.32 (The realized system was validated by applying it to the detection) 313.23 610.8 P
+0.84 (of onsets in musical signals. This was done mainly for two rea-) 313.23 599.8 P
+-0.13 (sons. First, musical signals introduce a rich variety of sounds with) 313.23 588.8 P
+0.02 (a wide range of pitches, timbres and loudnesses. Dif) 313.23 577.8 P
+0.02 (ferent combi-) 501.17 577.8 P
+-0.03 (nations of onsetting and backgrounding sounds are readily availa-) 313.23 566.8 P
+3.72 (ble. Second, verifying the contents of a musical signal is) 313.23 555.8 P
+0.69 (somewhat easier than in the case of environmental sounds. Also) 313.23 544.8 P
+0.5 (the concept) 313.23 533.8 P
+0.5 ( of a perceivable onset is better de\336ned. It should be) 357.21 533.8 P
+0.81 (noted, however) 313.23 522.8 P
+0.81 (, that the algorithm is not limited to musical sig-) 369.16 522.8 P
+0.62 (nals, because the regularities and rhythmic properties of musical) 313.23 511.8 P
+0.6 (signals are not utilized in the detection process. The system per-) 313.23 500.8 P
+1.17 (forms reliably for input signals that ranged from rock music to) 313.23 489.8 P
+(classical and big band recordings, both with and without drums.) 313.23 478.8 T
+0 10 Q
+(2.  SYSTEM OVER) 375.36 458.14 T
+(VIEW) 460.02 458.14 T
+1 9 Q
+0.33 (The earliest onset detection systems typically tried to process the) 313.23 441.8 P
+-0.13 (amplitude envelope of a signal as a whole \050see e.g. [7]\051. Since this) 313.23 430.8 P
+2.39 (was not very ef) 313.23 419.8 P
+2.39 (fective, later proposals have evolved towards) 375.48 419.8 P
+0.91 (band-wise processing. Scheirer was the \336rst to clearly point out) 313.23 408.8 P
+2.72 (the fact that an onset detection algorithm should follow the) 313.23 397.8 P
+1.64 (human auditory system by treating frequency bands separately) 313.23 386.8 P
+1.02 (and then combining results in the end [4]. An earlier system of) 313.23 375.8 P
+1.25 (Bilmes\325) 313.23 364.8 P
+1.25 (s was on the way to the same direction, but his system) 341.24 364.8 P
+-0.03 (only used a high-frequency and a low-frequency band, which was) 313.23 353.8 P
+(not that ef) 313.23 342.8 T
+(fective) 349.56 342.8 T
+([2].) 376.3 342.8 T
+1.21 (Scheirer describes a psychoacoustic demonstration on beat per-) 313.23 326.8 P
+0.74 (ception, which shows that certain kinds of signal simpli\336cations) 313.23 315.8 P
+0.8 (can be performed without af) 313.23 304.8 P
+0.8 (fecting the perceived rhythmic con-) 418.25 304.8 P
+1.25 (tent of a musical signal [4]. When the signal is divided into at) 313.23 293.8 P
+-0.12 (least four frequency bands and the corresponding bands of a noise) 313.23 282.8 P
+1 (signal are controlled by the amplitude envelopes of the musical) 313.23 271.8 P
+0.11 (signal, the noise signal will have a rhythmic percept which is sig-) 313.23 260.8 P
+1.52 (ni\336cantly the same as that of the original signal. On the other) 313.23 249.8 P
+0.73 (hand, this does not hold if only one band is used, in which case) 313.23 238.8 P
+1.61 (the original signal is no more recognizable from its simpli\336ed) 313.23 227.8 P
+(form.) 313.23 216.8 T
+2.78 (The overview of our onset detection system is presented in) 313.23 200.8 P
+1.15 (Figure) 313.23 189.8 P
+1.15 (1. It utilizes the band-wise processing principle as moti-) 338.98 189.8 P
+-0.18 (vated above. First, the overall loudness of the signal is normalized) 313.23 178.8 P
+0.02 (to 70) 313.23 167.8 P
+0.02 (dB level using the model of loudness as proposed by Moore) 333.75 167.8 P
+-0.09 (et al. [8]. Then a \336lterbank divides the signal into 21 non-overlap-) 313.23 156.8 P
+0.17 (ping bands. At each band, we detect) 313.23 145.8 P
+2 F
+0.17 (onset components) 446.67 145.8 P
+1 F
+0.17 (and deter-) 513.51 145.8 P
+-0.17 (mine their time and intensity) 313.23 134.8 P
+-0.17 (. In \336nal phase, the onset components) 415.46 134.8 P
+53.86 654.8 549.92 771.02 R
+7 X
+V
+0 16 Q
+0 X
+(SOUND ONSET DETECTION BY APPL) 149.95 760.36 T
+(YING) 434.73 760.36 T
+(PSYCHOACOUSTIC KNOWLEDGE) 181.44 741.36 T
+2 11 Q
+(Anssi Klapuri) 271.48 720.69 T
+1 F
+(Signal Processing Laboratory) 157.44 701.69 T
+(, T) 286.88 701.69 T
+(ampere University of T) 298.33 701.69 T
+(echnology) 400.51 701.69 T
+(P) 199.32 688.69 T
+(.O.Box 553, FIN-33101 T) 204.21 688.69 T
+(ampere, FINLAND) 318.32 688.69 T
+3 10 Q
+(klap@cs.tut.f) 259.89 676.36 T
+(i) 337.89 676.36 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 1 0.5 0 0 0 0.5 1]
+[ 0.5 0.4 0.3 0 0.5 0.6 0.7]
+[ 0.8 0.05 0 0 0.2 0.95 1]
+[ 0 0.08 0.16 0 1 0.92 0.84]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(are combined to yield onsets.) 53.86 558.09 T
+1.65 (Since we use psychoacoustic models both in onset component) 53.86 542.09 P
+0.38 (detection, in its time and intensity determination, and in combin-) 53.86 531.09 P
+0.7 (ing the results, it is important to use a \336lterbank which can pro-) 53.86 520.09 P
+0.64 (vide input to the models. Therefore, we choose a bank of nearly) 53.86 509.1 P
+1.06 (critical-band \336lters which covers the frequencies from 44) 53.86 498.1 P
+1.06 (Hz to) 269.74 498.1 P
+0.82 (18) 53.86 487.1 P
+0.82 (kHz. The lowest three among the required 21 \336lters are one-) 65.11 487.1 P
+0.46 (octave band-pass \336lters. The remaining eighteen are third-octave) 53.86 476.1 P
+1.75 (band-pass \336lters. All subsequent calculations can be done one) 53.86 465.1 P
+1.8 (band at a time. This reduces the memory requirements of the) 53.86 454.1 P
+0.5 (algorithm in the case of long input signals, assumed that parallel) 53.86 443.1 P
+(processing is not desired.) 53.86 432.1 T
+0.07 (The output of each \336lter is full-wave recti\336ed and then decimated) 53.86 416.1 P
+2.18 (by factor 180 to ease the following computations. Amplitude) 53.86 405.1 P
+0.85 (envelopes are calculated by convolving the band-limited signals) 53.86 394.1 P
+-0.21 (with a 100) 53.86 383.1 P
+-0.21 (ms half-Hanning \050raised cosine\051 window) 93.68 383.1 P
+-0.21 (. This window) 239.22 383.1 P
+-0.21 (performs much the same ener) 53.86 372.1 P
+-0.21 (gy integration as the human auditory) 159.34 372.1 P
+1.21 (system, preserving sudden changes, but masking rapid modula-) 53.86 361.1 P
+(tion [9][4].) 53.86 350.1 T
+0 10 Q
+(3.  CALCULA) 65.35 329.43 T
+(TION OF ONSET COMPONENTS) 126.54 329.43 T
+(3.1   Onset Component Detection) 53.86 312.43 T
+1 9 Q
+0.15 (Several algorithms for picking potential onset candidates from an) 53.86 297.1 P
+0.16 (amplitude envelope function have been presented in the literature) 53.86 286.1 P
+1.97 ([5][6][2][4]. Despite the number of variants, practically all of) 53.86 275.1 P
+0.29 (them are based on the calculation of a \336rst order dif) 53.86 264.1 P
+0.29 (ference func-) 242.54 264.1 P
+0.83 (tion of the signal amplitude envelopes and taking the maximum) 53.86 253.1 P
+(rising slope as an onset or an onset component.) 53.86 242.1 T
+1.76 (In our simulations, it turned out that the \336rst order dif) 53.86 226.1 P
+1.76 (ference) 264.07 226.1 P
+0.75 (function re\337ects well the loudness of an onsetting sound, but its) 53.86 215.1 P
+0.2 (maximum values fail to precisely mark the time of an onset. This) 53.86 204.1 P
+0.04 (is due to two reasons. First, especially low sounds may take some) 53.86 193.1 P
+0.18 (time to come to the point where their amplitude is maximally ris-) 53.86 182.1 P
+0.04 (ing, and thus that point is crucially late from the physical onset of) 53.86 171.1 P
+0.37 (a sound and leads to an incorrect cross-band association with the) 53.86 160.1 P
+1.42 (higher frequencies. Second, the onset track of a sound is most) 53.86 149.1 P
+0.25 (often not monotonically increasing, and thus we would have sev-) 53.86 138.1 P
+53.86 130.39 290.55 771.02 C
+53.86 564.1 290.55 771.02 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+263.62 590.19 291.97 618.53 R
+7 X
+0 0 0 1 0 0 0 K
+V
+2 9 Q
+0 X
+(onset) 263.62 612.53 T
+(compo-) 263.62 601.53 T
+(nents) 263.62 590.53 T
+57.65 708.66 87.87 720 R
+7 X
+V
+0 X
+(sour) 57.65 714 T
+(ce) 73.32 714 T
+263.62 708.66 291.97 720 R
+7 X
+V
+0 X
+(onsets) 266.55 714 T
+144.43 751.56 161.44 762.9 R
+7 X
+V
+1 F
+0 X
+(1) 150.69 756.9 T
+145.06 716.29 161.44 727.63 R
+7 X
+V
+0 X
+(2) 151 721.63 T
+143.18 687.9 160.19 700.49 R
+7 X
+V
+1 8 Q
+0 X
+(21) 147.69 695.16 T
+82.21 697.32 121.89 754.02 R
+7 X
+V
+1 9 Q
+0 X
+(Scale) 92.3 737.02 T
+(signal) 91.3 726.02 T
+(level to) 88.67 715.02 T
+(70) 91.17 704.02 T
+(dB) 102.42 704.02 T
+82.21 697.32 121.89 754.02 R
+0.5 H
+0 Z
+N
+218.27 680.32 263.62 771.02 R
+7 X
+V
+0 X
+(Combine) 224.44 743.02 T
+(results) 229.2 732.02 T
+(to yield) 227.32 721.02 T
+(onsets) 229.7 710.02 T
+218.27 680.32 263.62 771.02 R
+N
+281.1 728.67 286.3 725.67 281.1 722.67 281.1 725.67 4 Y
+V
+263.62 725.67 281.1 725.67 2 L
+N
+155.9 737.01 206.93 771.02 R
+7 X
+V
+0 X
+(Band-wise) 162.17 765.02 T
+(processing) 162.17 754.02 T
+(\050see Fig. 1b\051) 158.8 742.89 T
+155.9 737.01 206.93 771.02 R
+N
+155.9 714.33 206.93 725.67 R
+7 X
+V
+155.9 714.33 206.93 725.67 R
+0 X
+N
+155.9 685.98 206.93 697.32 R
+7 X
+V
+155.9 685.98 206.93 697.32 R
+0 X
+N
+77.01 728.67 82.21 725.67 77.01 722.67 77.01 725.67 4 Y
+V
+57.5 725.67 77.01 725.67 2 L
+N
+65.2 660.14 280.63 671.48 R
+7 X
+V
+0 F
+0 X
+(Figur) 65.2 665.48 T
+(e 1a.) 86.54 665.48 T
+1 F
+(System overview) 106.28 665.48 T
+(.) 167.94 665.48 T
+144.57 754.02 155.9 754.02 2 L
+2 Z
+N
+144.57 720 155.9 720 2 L
+N
+144.57 691.65 155.9 691.65 2 L
+N
+206.93 754.02 218.27 754.02 2 L
+N
+206.93 720 218.27 720 2 L
+N
+206.93 691.65 218.27 691.65 2 L
+N
+76.54 607.2 121.89 641.21 R
+7 X
+V
+0 X
+(Amplitude) 79.96 635.21 T
+(envelope) 82.97 624.21 T
+(extraction) 81.22 613.21 T
+76.54 607.2 121.89 641.21 R
+0 Z
+N
+133.23 607.2 184.25 641.21 R
+7 X
+V
+0 X
+(Onset) 148.24 635.21 T
+(component) 138.74 624.21 T
+(detection) 142.24 613.21 T
+133.23 607.2 184.25 641.21 R
+N
+195.59 601.53 252.28 646.88 R
+7 X
+V
+0 X
+(Determine) 204.94 640.88 T
+(component\325) 200.94 629.88 T
+(s) 243.43 629.88 T
+(time and) 208.31 618.88 T
+(intensity) 208.43 607.88 T
+195.59 601.53 252.28 646.88 R
+N
+65.67 627.2 70.87 624.2 65.67 621.2 65.67 624.2 4 Y
+V
+53.86 624.2 65.67 624.2 2 L
+2 Z
+N
+J
+70.87 652.55 257.95 652.55 257.95 595.86 70.87 595.86 4 Y
+J
+70.87 650.8 70.87 652.55 72.62 652.55 3 L
+N
+[3.56 4.577] 3.56 I
+72.62 652.55 256.2 652.55 2 L
+N
+J
+256.2 652.55 257.95 652.55 257.95 650.8 3 L
+N
+[3.546 4.559] 3.546 I
+257.95 650.8 257.95 597.61 2 L
+N
+J
+257.95 597.61 257.95 595.86 256.2 595.86 3 L
+N
+[3.56 4.577] 3.56 I
+256.2 595.86 72.62 595.86 2 L
+N
+J
+72.62 595.86 70.87 595.86 70.87 597.61 3 L
+N
+[3.546 4.559] 3.546 I
+70.87 597.61 70.87 650.8 2 L
+N
+J
+281.1 627.2 286.3 624.2 281.1 621.2 281.1 624.2 4 Y
+V
+257.95 624.2 281.1 624.2 2 L
+N
+65.2 571.3 280.63 583.94 R
+7 X
+V
+0 F
+0 X
+(Figur) 65.2 577.94 T
+(e 1b.) 86.54 577.94 T
+1 F
+(Processing at each frequency band.) 106.79 577.94 T
+128.03 627.2 133.23 624.2 128.03 621.2 128.03 624.2 4 Y
+V
+121.89 624.2 128.03 624.2 2 L
+N
+190.39 627.2 195.59 624.2 190.39 621.2 190.39 624.2 4 Y
+V
+184.25 624.2 190.39 624.2 2 L
+N
+133.23 680.32 144.57 771.02 R
+7 X
+V
+0 X
+(Filterbank) 0 -90 138.57 744.17 TF
+133.23 680.32 144.57 771.02 R
+0 Z
+N
+121.89 725.67 133.23 725.67 2 L
+2 Z
+N
+[1.493 4.479] 0 I
+90 450 0.65 1.25 180.13 710.44 G
+90 450 0.65 1.25 180.13 710.44 A
+[1.493 4.479] 0 I
+90 450 0.65 1.25 180.13 705.37 G
+90 450 0.65 1.25 180.13 705.37 A
+[1.493 4.479] 0 I
+90 450 0.65 1.25 180.13 700.32 G
+90 450 0.65 1.25 180.13 700.32 A
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+53.86 130.39 290.55 771.02 C
+0 -158.11 1000 841.89 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+1.04 (eral local maxima in the \336rst order dif) 313.23 583.61 P
+1.04 (ference function near the) 457.08 583.61 P
+(physical onset \050see plots with a dashed line in Figure 2\051.) 313.23 572.61 T
+0.41 (W) 313.23 556.61 P
+0.41 (e took an approach that ef) 321 556.61 P
+0.41 (fectively handles both of these prob-) 416.13 556.61 P
+(lems. W) 313.23 545.61 T
+(e begin by calculating a \336rst order dif) 342.51 545.61 T
+(ference function) 477.57 545.61 T
+(,) 401.77 529.61 T
+0.1 (where) 313.23 513.61 P
+2 F
+0.1 (A) 337.56 513.61 P
+1 F
+0.1 (\050) 343.06 513.61 P
+2 F
+0.1 (t) 346.06 513.61 P
+1 F
+0.1 (\051 denotes the amplitude envelope function.) 348.56 513.61 P
+2 F
+0.1 (D) 504.88 513.61 P
+1 F
+0.1 (\050) 511.38 513.61 P
+2 F
+0.1 (t) 514.37 513.61 P
+1 F
+0.1 (\051 is set to) 516.88 513.61 P
+2.3 (zero where signal is below minimum audible \336eld. Then we) 313.23 502.61 P
+0.85 (divide the \336rst order dif) 313.23 491.61 P
+0.85 (ference function by the amplitude enve-) 401.96 491.61 P
+1.25 (lope function to get a \336rst order) 313.23 480.61 P
+2 F
+1.25 ( r) 434.69 480.61 P
+1.25 (elative differ) 441.36 480.61 P
+1.25 (ence function) 488.02 480.61 P
+1.25 (W) 541 480.61 P
+1 F
+1.25 (,) 547.67 480.61 P
+-0.27 (i.e., the amount of change in relation to the signal level. This is the) 313.23 469.61 P
+(same as dif) 313.23 458.61 T
+(ferentiating the logarithm of the amplitude envelope.) 353.56 458.61 T
+0.66 (W) 313.23 426.61 P
+0.66 (e use the relative dif) 321 426.61 P
+0.66 (ference function) 396.48 426.61 P
+2 F
+0.66 (W) 458.78 426.61 P
+1 F
+0.66 (\050) 466.28 426.61 P
+2 F
+0.66 (t) 469.27 426.61 P
+1 F
+0.66 (\051 both to detect onset) 471.77 426.61 P
+1.06 (components and to determine their time. This is psychoacousti-) 313.23 415.61 P
+0.8 (cally relevant, since perceived increase in signal amplitude is in) 313.23 404.61 P
+1.95 (relation to its level, the same amount of increase being more) 313.23 393.61 P
+1.66 (prominent in a quiet signal. According to Moore, the smallest) 313.23 382.61 P
+-0.22 (detectable change in intensity is approximately proportional to the) 313.23 371.61 P
+0.12 (intensity of the signal) 313.23 360.61 P
+0.12 ([10]. That is,) 393.71 360.61 P
+4 F
+0.12 (D) 442.81 360.61 P
+2 F
+0.12 (I) 448.32 360.61 P
+1 F
+0.12 (/) 453.57 360.61 P
+2 F
+0.12 (I) 458.32 360.61 P
+1 F
+0.12 (, the W) 461.32 360.61 P
+0.12 (eber fraction, is a) 487.08 360.61 P
+0.28 (constant. This relationship holds for intensities from about 20) 313.23 349.61 P
+0.28 (dB) 539.42 349.61 P
+2.9 (to about 100) 313.23 338.61 P
+2.9 (dB above the absolute threshold. The function) 366.28 338.61 P
+2.79 ( is equivalent to) 360.87 327.61 P
+2 F
+2.79 (W) 431.51 327.61 P
+1 F
+2.79 (\050) 439.01 327.61 P
+2 F
+2.79 (t) 442.01 327.61 P
+1 F
+2.79 (\051, since the frequency) 444.51 327.61 P
+2 F
+2.79 (f) 535.38 327.61 P
+1 F
+2.79 ( in) 537.88 327.61 P
+0.25 ( is reduced in the division. Thus we detect onset) 374.64 316.61 P
+0.41 (components by a simple peak picking operation, which looks for) 313.23 305.61 P
+-0.19 (peaks above a global threshold) 313.23 294.61 P
+2 F
+-0.19 (T) 425.52 294.61 P
+2 7.2 Q
+-0.15 (det) 430.52 292.36 P
+1 9 Q
+-0.19 ( in the relative dif) 439.32 294.61 P
+-0.19 (ference func-) 502.39 294.61 P
+(tion) 313.23 283.61 T
+2 F
+(W) 329.48 283.61 T
+1 F
+(\050) 336.98 283.61 T
+2 F
+(t) 339.98 283.61 T
+1 F
+(\051.) 342.48 283.61 T
+0.26 (The relative dif) 313.23 267.61 P
+0.26 (ference function ef) 369.08 267.61 P
+0.26 (fectively solves the abovemen-) 437.41 267.61 P
+0.67 (tioned problems by detecting the onset times of low sounds ear-) 313.23 256.61 P
+0.26 (lier and, more importantly) 313.23 245.61 P
+0.26 (, by handling complicated onset tracks,) 407.9 245.61 P
+0.98 (since oscillations in the onset track of a sound do not matter in) 313.23 234.61 P
+-0.06 (relative terms after its amplitude has started rising. T) 313.23 223.61 P
+-0.06 (o clarify this,) 502.3 223.61 P
+1.29 (we plotted the absolute and relative dif) 313.23 212.61 P
+1.29 (ference functions of the) 460.81 212.61 P
+0.16 (onset of a piano sound in Figure 2. Both of the bene\336ts discussed) 313.23 201.61 P
+(can be seen clearly) 313.23 190.61 T
+(.) 380.86 190.61 T
+0 10 Q
+(3.2   Intensity of an Onset Component) 313.23 173.94 T
+1 9 Q
+-0.19 (Simultaneously occurring sounds combine by a linear summation.) 313.23 158.61 P
+0.5 (In determining the intensity of an already detected onset compo-) 313.23 147.61 P
+1.65 (nent, we can assume the level of backgrounding sounds to be) 313.23 136.61 P
+313.23 130.39 549.92 771.02 C
+313.23 589.61 549.92 771.02 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 18 213 551 610 187.09 162.24 301.18 620.12 FMBEGINEPSF
+%%BeginDocument: /home/klap/frame/papers/icassprd.eps
+%!PS-Adobe-2.0 EPSF-1.2
+%%Creator: MATLAB, The Mathworks, Inc.
+%%Title: /home/klap/frame/icassprd.ps
+%%CreationDate: 09/17/98  13:55:37
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%Pages: 1
+%%BoundingBox:    18   213   551   610
+%%EndComments
+
+%%BeginProlog
+
+% MathWorks dictionary
+/MathWorks 160 dict begin
+
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s /show ldef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+
+% orientation switch
+/portraitMode 	0 def
+/landscapeMode 	1 def
+
+% coordinate system mappings
+/dpi2point 0 def
+
+% font control
+/FontSize 0 def
+/FMS {
+	/FontSize xstore		%save size off stack
+	findfont
+	[FontSize 0 0 FontSize neg 0 0]
+	makefont
+	setfont
+	}bdef
+
+/reencode {
+exch dup where
+{pop load} {pop StandardEncoding} ifelse
+exch
+dup 3 1 roll
+findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def
+  currentdict
+end
+definefont pop
+} bdef
+
+/isroman {
+findfont /CharStrings get
+/Agrave known
+} bdef
+
+/FMSR {
+3 1 roll 1 index
+dup isroman
+{reencode} {pop pop} ifelse
+exch FMS
+} bdef
+
+/csm {
+	1 dpi2point div -1 dpi2point div scale
+	neg translate
+	landscapeMode eq {90 rotate} if
+	} bdef
+
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+
+% macros for lines and objects
+/L {
+	lineto
+	stroke
+	} bdef
+/MP {
+	3 1 roll moveto
+	1 sub {rlineto} repeat
+	} bdef
+/AP {
+	{rlineto} repeat
+	} bdef
+/PP {
+	closepath eofill
+	} bdef
+/DP {
+	closepath stroke
+	} bdef
+/MR {
+	4 -2 roll moveto
+	dup  0 exch rlineto
+	exch 0 rlineto
+	neg  0 exch rlineto
+	closepath
+	} bdef
+/FR {
+	MR stroke
+	} bdef
+/PR {
+	MR fill
+	} bdef
+/L1i {
+	{ currentfile picstr readhexstring pop } image
+	} bdef
+
+/tMatrix matrix def
+/MakeOval {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 0 360 arc
+	tMatrix setmatrix
+	} bdef
+/FO {
+	MakeOval
+	stroke
+	} bdef
+/PO {
+	MakeOval
+	fill
+	} bdef
+
+/PD {
+	currentlinecap 1 setlinecap 3 1 roll 2 copy moveto lineto stroke setlinecap
+	} bdef
+
+/FA {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 5 -2 roll arc
+	tMatrix setmatrix
+	stroke
+	} bdef
+/PA {
+	newpath
+	tMatrix currentmatrix pop
+	translate 0 0 moveto scale
+	0 0 1 5 -2 roll arc
+	closepath
+	tMatrix setmatrix
+	fill
+	} bdef
+
+/FAn {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 5 -2 roll arcn
+	tMatrix setmatrix
+	stroke
+	} bdef
+/PAn {
+	newpath
+	tMatrix currentmatrix pop
+	translate 0 0 moveto scale
+	0 0 1 5 -2 roll arcn
+	closepath
+	tMatrix setmatrix
+	fill
+	} bdef
+
+/MRR {
+	/vradius xdef
+	/hradius xdef
+	/lry xdef
+	/lrx xdef
+	/uly xdef
+	/ulx xdef
+	newpath
+	tMatrix currentmatrix pop
+	ulx hradius add uly vradius add translate
+	hradius vradius scale
+	0 0 1 180 270 arc 
+	tMatrix setmatrix
+	lrx hradius sub uly vradius add translate
+	hradius vradius scale
+	0 0 1 270 360 arc
+	tMatrix setmatrix
+	lrx hradius sub lry vradius sub translate
+	hradius vradius scale
+	0 0 1 0 90 arc
+	tMatrix setmatrix
+	ulx hradius add lry vradius sub translate
+	hradius vradius scale
+	0 0 1 90 180 arc
+	tMatrix setmatrix
+	closepath
+	} bdef
+/FRR {
+	MRR stroke } bdef
+/PRR {
+	MRR fill } bdef
+
+/MlrRR {
+	/lry xdef
+	/lrx xdef
+	/uly xdef
+	/ulx xdef
+	/rad lry uly sub 2 div def
+	newpath
+	tMatrix currentmatrix pop
+	ulx rad add uly rad add translate
+	rad rad scale
+	0 0 1 90 270 arc
+	tMatrix setmatrix
+	lrx rad sub lry rad sub translate
+	rad rad scale
+	0 0 1 270 90 arc
+	tMatrix setmatrix
+	closepath
+	} bdef
+/FlrRR {
+	MlrRR stroke } bdef
+/PlrRR {
+	MlrRR fill } bdef
+
+/MtbRR {
+	/lry xdef
+	/lrx xdef
+	/uly xdef
+	/ulx xdef
+	/rad lrx ulx sub 2 div def
+	newpath
+	tMatrix currentmatrix pop
+	ulx rad add uly rad add translate
+	rad rad scale
+	0 0 1 180 360 arc
+	tMatrix setmatrix
+	lrx rad sub lry rad sub translate
+	rad rad scale
+	0 0 1 0 180 arc
+	tMatrix setmatrix
+	closepath
+	} bdef
+/FtbRR {
+	MtbRR stroke } bdef
+/PtbRR {
+	MtbRR fill } bdef
+
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:    18   213   551   610
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: graph1 1
+bplot
+
+/dpi2point 12 def
+portraitMode 0216 7344 csm
+
+    0    18  6403  4769 MR c np
+88 dict begin %Colortable dictionary
+/c0 { 0 0 0 sr} bdef
+/c1 { 1 1 1 sr} bdef
+/c2 { 1 0 0 sr} bdef
+/c3 { 0 1 0 sr} bdef
+/c4 { 0 0 1 sr} bdef
+/c5 { 1 1 0 sr} bdef
+/c6 { 1 0 1 sr} bdef
+/c7 { 0 1 1 sr} bdef
+1 j
+1 sg
+   0    0 6913 5186 PR
+6 w
+0 4225 5356 0 0 -4225 898 4613 4 MP
+PP
+-5356 0 0 4225 5356 0 0 -4225 898 4613 5 MP stroke
+4 w
+DO
+SO
+6 w
+0 sg
+ 898 4613 mt 6254 4613 L
+ 898 4613 mt  898  388 L
+ 898 4613 mt  898 4559 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+ 798 4759 mt 
+(330) s
+1434 4613 mt 1434 4559 L
+1334 4759 mt 
+(340) s
+1969 4613 mt 1969 4559 L
+1869 4759 mt 
+(350) s
+2505 4613 mt 2505 4559 L
+2405 4759 mt 
+(360) s
+3040 4613 mt 3040 4559 L
+2940 4759 mt 
+(370) s
+3576 4613 mt 3576 4559 L
+3476 4759 mt 
+(380) s
+4112 4613 mt 4112 4559 L
+4012 4759 mt 
+(390) s
+4647 4613 mt 4647 4559 L
+4547 4759 mt 
+(400) s
+5183 4613 mt 5183 4559 L
+5083 4759 mt 
+(410) s
+5718 4613 mt 5718 4559 L
+5618 4759 mt 
+(420) s
+6254 4613 mt 6254 4559 L
+6154 4759 mt 
+(430) s
+ 898 4613 mt  952 4613 L
+ 797 4657 mt 
+(0) s
+ 898 4001 mt  952 4001 L
+ 797 4045 mt 
+(1) s
+ 898 3388 mt  952 3388 L
+ 797 3432 mt 
+(2) s
+ 898 2776 mt  952 2776 L
+ 797 2820 mt 
+(3) s
+ 898 2164 mt  952 2164 L
+ 797 2208 mt 
+(4) s
+ 898 1551 mt  952 1551 L
+ 797 1595 mt 
+(5) s
+ 898  939 mt  952  939 L
+ 797  983 mt 
+(6) s
+gs 898 388 5357 4226 MR c np
+1 0 54 1 53 1 54 3 53 3 54 0 53 0 54 1 
+54 -1 53 -2 54 0 53 0 54 -1 53 2 54 1 53 -1 
+54 2 54 2 53 -1 54 1 53 4 54 0 53 0 54 3 
+53 1 54 -3 54 -1 53 0 54 -5 53 -4 54 1 53 0 
+54 -1 54 4 53 6 54 2 53 3 54 4 53 0 54 -4 
+53 -4 54 -5 54 -7 53 -5 54 -3 53 -1 54 1 53 2 
+54 2 53 4 54 6 54 2 53 0 54 2 53 -1 54 -6 
+53 -6 54 -4 54 -6 53 -5 54 1 53 0 54 1 53 4 
+54 4 53 2 54 3 54 2 53 0 54 0 53 0 54 0 
+53 2 54 2 53 2 54 3 54 3 53 0 54 -1 53 2 
+54 -1 53 -1 54 3 54 6 53 5 54 9 53 14 54 14 
+53 15 54 18 53 21 54 18 54 19 53 27 54 25 53 24 
+54 43 53 61 54 39 1862 3633 100 MP stroke
+53 27 54 56 54 -69 53 -226 54 -154 53 -50 54 3 53 -3 
+54 -1 54 14 53 11 54 0 53 4 54 11 53 1 54 -2 
+53 4 54 1 54 -7 53 -6 54 -2 53 -4 54 -8 53 -2 
+54 3 53 0 54 -1 54 5 53 3 54 -2 53 1 54 2 
+53 -1 54 -3 53 -2 53 1 35 -1 -100 4030 38 MP stroke
+DA
+1 0 54 11 53 5 54 26 53 23 54 0 53 1 54 7 
+54 -10 53 -15 54 1 53 -3 54 -4 53 15 54 9 53 -6 
+54 16 54 16 53 -10 54 7 53 30 54 5 53 -5 54 23 
+53 11 54 -24 54 -11 53 -1 54 -35 53 -31 54 8 53 -2 
+54 -9 54 34 53 44 54 17 53 20 54 30 53 -4 54 -34 
+53 -30 54 -34 54 -45 53 -36 54 -22 53 -13 54 9 53 16 
+54 12 53 30 54 43 54 15 53 3 54 17 53 -9 54 -49 
+53 -39 54 -28 54 -50 53 -39 54 -2 53 -2 54 3 53 33 
+54 31 53 18 54 24 54 17 53 0 54 1 53 0 54 2 
+53 16 54 21 53 17 54 26 54 28 53 -2 54 -8 53 11 
+54 -6 53 -12 54 28 54 47 53 42 54 72 53 99 54 81 
+53 62 54 61 53 40 54 -3 54 -23 53 -27 54 -45 53 -64 
+54 -65 53 -60 54 -65 1862 3766 100 MP stroke
+53 -75 54 -59 54 -38 53 -35 54 -27 53 -9 54 -1 53 -1 
+54 -1 54 3 53 2 54 0 53 1 54 3 53 0 54 -1 
+53 2 54 0 54 -2 53 -2 54 0 53 -2 54 -3 53 -1 
+54 1 53 -1 54 -1 54 2 53 1 54 -1 53 0 54 1 
+53 -1 54 -2 53 -1 53 -1 35 -1 -100 4016 38 MP stroke
+SO
+
+gr 
+gs 0 3456 1829 168 MR c np
+
+gr 
+gs 898 388 5357 4226 MR c np
+
+gr 
+gs 0 3456 1829 168 MR c np
+  36   36 1755 3550 FO
+
+gr 
+gs 898 388 5357 4226 MR c np
+1 0 54 -2 53 2 54 4 53 1 54 -2 53 -3 54 0 
+54 3 53 3 54 -2 53 -4 54 -3 53 3 54 4 53 0 
+54 -4 54 -4 53 0 54 4 53 2 54 -2 53 -5 54 -2 
+53 2 54 3 54 0 53 -5 54 -4 53 1 54 3 53 1 
+54 -2 54 -4 53 -2 54 2 53 3 54 0 53 -3 54 -3 
+53 2 54 5 54 3 53 -1 54 -2 53 -1 54 3 53 3 
+54 0 53 -3 54 -3 54 0 53 1 54 1 53 -2 54 -2 
+53 1 54 5 54 4 53 0 54 -4 53 -2 54 1 53 2 
+54 1 53 -1 54 -1 54 2 53 5 54 4 53 1 54 -1 
+53 1 54 4 53 4 54 3 54 -1 53 -2 54 -1 53 -1 
+54 -2 53 -1 54 1 54 4 53 9 54 12 53 9 54 3 
+53 3 54 9 53 10 54 4 54 -2 53 2 54 13 53 26 
+54 28 53 19 54 7 1862 3222 100 MP stroke
+53 1 54 -14 54 -42 53 -55 54 -45 53 -24 54 -5 53 2 
+54 2 54 -2 53 -3 54 -1 53 3 54 3 53 1 54 -2 
+53 -2 54 0 54 2 53 1 54 0 53 -2 54 -2 53 0 
+54 1 53 1 54 -1 54 -3 53 -1 54 0 53 3 54 1 
+53 -1 54 -3 53 -1 53 2 35 2 -100 3406 38 MP stroke
+DA
+1 0 54 -15 53 13 54 23 53 9 54 -15 53 -20 54 0 
+54 21 53 17 54 -10 53 -28 54 -14 53 15 54 24 53 4 
+54 -24 54 -24 53 0 54 21 53 13 54 -14 53 -28 54 -15 
+53 13 54 21 54 -3 53 -29 54 -25 53 4 54 20 53 6 
+54 -19 54 -25 53 -10 54 14 53 19 54 -3 53 -28 54 -20 
+53 14 54 34 54 21 53 -9 54 -17 53 1 54 23 53 21 
+54 -4 53 -24 54 -22 54 -2 53 12 54 1 53 -21 54 -21 
+53 14 54 45 54 35 53 -5 54 -30 53 -19 54 8 53 20 
+54 8 53 -12 54 -11 54 21 53 47 54 38 53 7 54 -7 
+53 7 54 29 53 38 54 24 54 -8 53 -22 54 -14 53 -9 
+54 -16 53 -9 54 11 54 30 53 56 54 76 53 58 54 14 
+53 -2 54 14 53 17 54 -5 54 -22 53 -11 54 18 53 37 
+54 21 53 -22 54 -59 1862 3085 100 MP stroke
+53 -70 54 -63 54 -57 53 -56 54 -46 53 -24 54 -5 53 2 
+54 0 54 -3 53 -3 54 0 53 3 54 2 53 0 54 -2 
+53 -2 54 0 54 2 53 1 54 -2 53 -3 54 -2 53 0 
+54 2 53 -1 54 -3 54 -4 53 -2 54 1 53 2 54 0 
+53 -3 54 -5 53 -1 53 3 35 2 -100 3422 38 MP stroke
+SO
+
+gr 
+gs 0 3110 1883 185 MR c np
+
+gr 
+gs 898 388 5357 4226 MR c np
+
+gr 
+gs 0 3110 1883 185 MR c np
+
+gr 
+gs 898 388 5357 4226 MR c np
+
+gr 
+gs 0 3110 1883 185 MR c np
+  36   36 1809 3221 FO
+
+gr 
+gs 898 388 5357 4226 MR c np
+1 0 54 5 53 0 54 -4 53 -3 54 1 53 4 54 3 
+54 -2 53 -4 54 -1 53 3 54 5 53 -1 54 -4 53 -3 
+54 0 54 5 53 2 54 -3 53 -4 54 -2 53 4 54 4 
+53 0 54 -4 54 -3 53 2 54 4 53 3 54 -2 53 -4 
+54 -1 54 4 53 4 54 -1 53 -4 54 -3 53 2 54 5 
+53 2 54 -4 54 -4 53 0 54 4 53 5 54 0 53 -5 
+54 -2 53 2 54 5 54 2 53 -3 54 -4 53 -1 54 5 
+53 3 54 -1 54 -5 53 -3 54 2 53 5 54 1 53 -5 
+54 -5 53 0 54 5 54 4 53 0 54 -4 53 -2 54 4 
+53 7 54 2 53 -1 54 -2 54 2 53 6 54 6 53 1 
+54 -2 53 1 54 8 54 10 53 4 54 -1 53 0 54 9 
+53 17 54 9 53 -7 54 -9 54 4 53 19 54 21 53 2 
+54 -13 53 1 54 35 1862 2643 100 MP stroke
+53 70 54 40 54 -47 53 -88 54 -64 53 -36 54 -21 53 -8 
+54 0 54 3 53 3 54 1 53 -1 54 1 53 3 54 1 
+53 0 54 0 54 -1 53 0 54 2 53 -1 54 -1 53 -3 
+54 -1 53 1 54 2 54 0 53 -2 54 -3 53 -2 54 2 
+53 1 54 1 53 -1 53 -4 35 -1 -100 2797 38 MP stroke
+DA
+1 0 54 38 53 1 54 -37 53 -31 54 12 53 44 54 26 
+54 -20 53 -40 54 -9 53 33 54 38 53 0 54 -41 53 -35 
+54 12 54 41 53 20 54 -29 53 -44 54 -8 53 35 54 38 
+53 -3 54 -41 54 -28 53 19 54 45 53 25 54 -22 53 -40 
+54 -7 54 36 53 38 54 -3 53 -39 54 -30 53 18 54 46 
+53 20 54 -34 54 -43 53 -1 54 45 53 45 54 -3 53 -42 
+54 -26 53 24 54 43 54 17 53 -26 54 -39 53 -3 54 37 
+53 33 54 -10 54 -42 53 -27 54 17 53 38 54 11 53 -41 
+54 -46 53 1 54 40 54 36 53 0 54 -31 53 -18 54 32 
+53 54 54 27 53 -10 54 -14 54 7 53 35 54 47 53 21 
+54 -15 53 -8 54 34 54 50 53 29 54 -3 53 -14 54 5 
+53 34 54 23 53 -24 54 -45 54 -22 53 6 54 13 53 -4 
+54 -25 53 -19 54 9 1862 2551 100 MP stroke
+53 12 54 -27 54 -68 53 -69 54 -44 53 -24 54 -13 53 -5 
+54 -1 54 1 53 2 54 1 53 -1 54 1 53 1 54 1 
+53 0 54 0 54 -1 53 0 54 1 53 0 54 -2 53 -2 
+54 -1 53 1 54 1 54 -1 53 -2 54 -2 53 -2 54 1 
+53 1 54 0 53 -2 53 -3 35 -1 -100 2798 38 MP stroke
+SO
+
+gr 
+gs 0 2423 1829 184 MR c np
+
+gr 
+gs 898 388 5357 4226 MR c np
+
+gr 
+gs 0 2423 1829 184 MR c np
+  36   36 1755 2533 FO
+
+gr 
+gs 898 388 5357 4226 MR c np
+1 0 54 -1 53 -1 54 -1 53 0 54 2 53 1 54 -2 
+54 -3 53 -1 54 1 53 1 54 0 53 -1 54 -1 53 1 
+54 1 54 1 53 -1 54 -2 53 0 54 1 53 2 54 0 
+53 -1 54 -1 54 0 53 2 54 0 53 0 54 -2 53 0 
+54 1 54 2 53 -1 54 -1 53 -1 54 0 53 2 54 1 
+53 -1 54 -1 54 0 53 1 54 1 53 0 54 -2 53 0 
+54 1 53 3 54 2 54 -1 53 -1 54 0 53 2 54 1 
+53 -1 54 -1 54 -1 53 1 54 2 53 1 54 -3 53 -2 
+54 0 53 3 54 0 54 -1 53 -1 54 0 53 1 54 4 
+53 0 54 -2 53 -1 54 2 54 2 53 0 54 0 53 1 
+54 3 53 4 54 4 54 3 53 3 54 5 53 6 54 6 
+53 5 54 2 53 3 54 8 54 13 53 6 54 2 53 8 
+54 16 53 18 54 17 1862 2025 100 MP stroke
+53 16 54 27 54 47 53 38 54 -27 53 -81 54 -80 53 -51 
+54 -30 54 -10 53 -1 54 -1 53 -2 54 1 53 2 54 2 
+53 0 54 -2 54 -1 53 2 54 1 53 1 54 -1 53 -2 
+54 -1 53 1 54 1 54 0 53 -1 54 -2 53 0 54 1 
+53 1 54 -1 53 -1 53 -2 35 0 -100 2181 38 MP stroke
+DA
+1 0 54 -1 53 -7 54 -7 53 2 54 10 53 3 54 -7 
+54 -15 53 -6 54 5 53 7 54 0 53 -8 54 -5 53 4 
+54 7 54 3 53 -4 54 -10 53 -3 54 8 53 10 54 2 
+53 -8 54 -7 54 3 53 7 54 5 53 -6 54 -10 53 0 
+54 9 54 8 53 -3 54 -9 53 -6 54 3 53 9 54 6 
+53 -3 54 -9 54 -2 53 8 54 8 53 -4 54 -10 53 -2 
+54 9 53 16 54 12 54 -2 53 -9 54 1 53 9 54 6 
+53 -4 54 -7 54 -4 53 4 54 14 53 3 54 -15 53 -15 
+54 5 53 14 54 2 54 -7 53 -7 54 0 53 10 54 19 
+53 4 54 -11 53 -6 54 9 54 13 53 1 54 1 53 3 
+54 13 53 24 54 23 54 14 53 13 54 18 53 21 54 22 
+53 15 54 2 53 -3 54 12 54 24 53 6 54 -14 53 -9 
+54 8 53 9 54 -1 1862 1927 100 MP stroke
+53 -13 54 -20 54 -24 53 -30 54 -42 53 -48 54 -33 53 -17 
+54 -10 54 -4 53 -1 54 0 53 -1 54 1 53 0 54 1 
+53 -1 54 0 54 0 53 0 54 1 53 0 54 -1 53 -1 
+54 0 53 0 54 0 54 0 53 -1 54 -1 53 1 54 0 
+53 0 54 0 53 -1 53 -1 35 0 -100 2173 38 MP stroke
+SO
+
+gr 
+gs 0 1804 1722 167 MR c np
+
+gr 
+gs 898 388 5357 4226 MR c np
+
+gr 
+gs 0 1804 1722 167 MR c np
+  36   36 1648 1897 FO
+
+gr 
+gs 898 388 5357 4226 MR c np
+1 0 54 5 53 1 54 -4 53 -5 54 0 53 5 54 3 
+54 -2 53 -4 54 -2 53 4 54 5 53 0 54 -4 53 -3 
+54 2 54 5 53 2 54 -2 53 -4 54 0 53 3 54 4 
+53 -1 54 -3 54 -3 53 1 54 6 53 2 54 -4 53 -3 
+54 0 54 5 53 3 54 -2 53 -5 54 -2 53 4 54 5 
+53 0 54 -5 54 -3 53 2 54 4 53 1 54 -3 53 -3 
+54 0 53 4 54 4 54 -2 53 -5 54 -4 53 2 54 5 
+53 1 54 -3 54 -4 53 2 54 5 53 2 54 -4 53 -4 
+54 0 53 6 54 4 54 -2 53 -7 54 -4 53 3 54 6 
+53 0 54 -7 53 -5 54 0 54 5 53 2 54 -6 53 -6 
+54 -2 53 6 54 5 54 1 53 -3 54 -3 53 3 54 11 
+53 6 54 0 53 4 54 14 54 19 53 7 54 0 53 8 
+54 21 53 23 54 20 1862 1428 100 MP stroke
+53 21 54 23 54 39 53 106 54 210 53 70 54 -210 53 -235 
+54 -106 54 -35 53 -13 54 -3 53 -1 54 -1 53 0 54 1 
+53 -1 54 -1 54 1 53 1 54 0 53 0 54 -2 53 -2 
+54 -1 53 0 54 0 54 -1 53 -2 54 -2 53 -1 54 1 
+53 0 54 -2 53 -2 53 -1 35 1 -100 1576 38 MP stroke
+DA
+1 0 54 10 53 2 54 -8 53 -11 54 -1 53 11 54 7 
+54 -5 53 -11 54 -3 53 10 54 10 53 0 54 -10 53 -6 
+54 5 54 12 53 4 54 -7 53 -8 54 -1 53 9 54 8 
+53 -1 54 -9 54 -7 53 5 54 13 53 4 54 -8 53 -10 
+54 2 54 11 53 9 54 -5 53 -14 54 -5 53 11 54 13 
+53 -1 54 -13 54 -7 53 6 54 11 53 1 54 -8 53 -9 
+54 1 53 12 54 10 54 -4 53 -16 54 -10 53 7 54 13 
+53 3 54 -11 54 -9 53 4 54 14 53 6 54 -10 53 -14 
+54 1 53 17 54 13 54 -8 53 -20 54 -10 53 10 54 16 
+53 -1 54 -19 53 -15 54 2 54 14 53 2 54 -18 53 -21 
+54 -1 53 17 54 15 54 1 53 -11 54 -10 53 14 54 33 
+53 21 54 3 53 11 54 42 54 51 53 23 54 -2 53 8 
+54 29 53 24 54 11 1862 1327 100 MP stroke
+53 9 54 3 54 -17 53 -22 54 -27 53 -47 54 -59 53 -42 
+54 -16 54 -5 53 -2 54 -1 53 0 54 0 53 0 54 0 
+53 0 54 -1 54 0 53 1 54 0 53 0 54 -1 53 0 
+54 0 53 0 54 -1 54 0 53 0 54 -1 53 0 54 0 
+53 0 54 -1 53 0 53 -1 35 0 -100 1558 38 MP stroke
+SO
+
+gr 
+gs 0 886 1615 173 MR c np
+  36   36 1541  959 FO
+
+gr 
+gs 898 388 5357 4226 MR c np
+
+gr 
+gs 0 886 1615 173 MR c np
+
+gr 
+gs 898 388 5357 4226 MR c np
+1 0 54 3 53 1 54 -3 53 -3 54 -8 53 -13 54 -9 
+54 2 53 6 54 3 53 3 54 4 53 3 54 1 53 0 
+54 0 54 -2 53 -3 54 -3 53 -5 54 -8 53 -5 54 6 
+53 10 54 7 54 2 53 4 54 6 53 4 54 1 53 2 
+54 0 54 -3 53 -5 54 -8 53 -12 54 -11 53 -2 54 7 
+53 7 54 3 54 3 53 9 54 11 53 6 54 3 53 4 
+54 4 53 -1 54 -7 54 -11 53 -12 54 -8 53 -1 54 2 
+53 -2 54 -4 54 1 53 7 54 6 53 2 54 3 53 7 
+54 5 53 -1 54 -6 54 -4 53 -4 54 -4 53 -2 54 -1 
+53 -3 54 -3 53 2 54 8 54 6 53 6 54 9 53 8 
+54 0 53 -5 54 0 54 4 53 -1 54 -4 53 0 54 3 
+53 -1 54 -3 53 4 54 17 54 15 53 4 54 3 53 15 
+54 18 53 11 54 22 1862 820 100 MP stroke
+53 56 54 91 54 105 53 71 54 -15 53 -76 54 -74 53 -81 
+54 -90 54 -79 53 -36 54 -5 53 -1 54 -3 53 0 54 3 
+53 3 54 0 54 -2 53 0 54 2 53 4 54 1 53 -2 
+54 -3 53 0 54 0 54 0 53 -1 54 -2 53 -3 54 1 
+53 2 54 -1 53 -5 53 -2 35 3 -100 959 38 MP stroke
+DA
+1 0 54 2 53 0 54 -1 53 -2 54 -4 53 -8 54 -5 
+54 0 53 2 54 2 53 1 54 3 53 2 54 0 53 0 
+54 0 54 -1 53 -3 54 -3 53 -4 54 -8 53 -5 54 3 
+53 9 54 5 54 3 53 4 54 6 53 4 54 1 53 2 
+54 1 54 -4 53 -5 54 -8 53 -13 54 -14 53 -3 54 6 
+53 6 54 3 54 5 53 11 54 14 53 9 54 4 53 5 
+54 4 53 -2 54 -9 54 -13 53 -14 54 -10 53 -2 54 1 
+53 -3 54 -6 54 1 53 8 54 8 53 3 54 4 53 11 
+54 9 53 -3 54 -8 54 -7 53 -6 54 -6 53 -3 54 -2 
+53 -6 54 -5 53 3 54 12 54 11 53 11 54 15 53 13 
+54 0 53 -9 54 0 54 6 53 -1 54 -8 53 -1 54 4 
+53 -1 54 -5 53 7 54 23 54 19 53 1 54 -4 53 10 
+54 17 53 8 54 7 1862 837 100 MP stroke
+53 10 54 5 54 -13 53 -25 54 -26 53 -22 54 -13 53 -8 
+54 -5 54 -4 53 -2 54 0 53 0 54 0 53 0 54 0 
+53 0 54 0 54 0 53 0 54 0 53 0 54 0 53 0 
+54 0 53 0 54 0 54 0 53 0 54 0 53 0 54 0 
+53 0 54 0 53 -1 53 0 35 0 -100 941 38 MP stroke
+SO
+
+gr 
+gs 0 424 1722 157 MR c np
+  36   36 1648  497 FO
+
+gr 
+gs 898 388 5357 4226 MR c np
+
+gr 
+gs 0 424 1722 157 MR c np
+
+gr 
+gs 898 388 5357 4226 MR c np
+
+gr 
+
+end
+
+eplot
+%%EndObject graph 1
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%EOF
+
+%%EndDocument
+FMENDEPSF
+468.1 625.12 543.8 760.84 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+2 Z
+N
+476.93 646.3 548.17 748.35 R
+V
+1 9 Q
+0 X
+(Dashed line:) 476.93 742.35 T
+(\050) 501.99 726.35 T
+2 F
+(A) 504.99 726.35 T
+1 F
+(\050) 510.49 726.35 T
+2 F
+(t) 513.49 726.35 T
+1 F
+(\051\051) 515.99 726.35 T
+(Solid line:) 476.93 710.35 T
+(\050log\050) 501.99 694.35 T
+2 F
+(A) 519.49 694.35 T
+1 F
+(\050) 524.99 694.35 T
+2 F
+(t) 527.99 694.35 T
+1 F
+(\051\051\051) 530.49 694.35 T
+(where) 476.93 678.35 T
+2 F
+(A) 501.17 678.35 T
+1 F
+(\050) 506.67 678.35 T
+2 F
+(t) 509.66 678.35 T
+1 F
+(\051 denotes) 512.16 678.35 T
+-0.12 (the amplitude enve-) 476.93 667.35 P
+(lope function.) 476.93 656.35 T
+491.1 716.28 501.99 739.3 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(d) 493.8 731.55 T
+(d) 492.28 720.53 T
+(t) 497.31 720.53 T
+1 F
+(-) 492.28 726.56 T
+(-) 493.78 726.56 T
+(-) 495.28 726.56 T
+(-) 496.78 726.56 T
+(-) 496.82 726.56 T
+313.23 589.61 549.92 771.02 C
+491.1 684.28 501.99 707.3 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(d) 493.8 699.55 T
+(d) 492.28 688.53 T
+(t) 497.31 688.53 T
+1 F
+(-) 492.28 694.56 T
+(-) 493.78 694.56 T
+(-) 495.28 694.56 T
+(-) 496.78 694.56 T
+(-) 496.82 694.56 T
+313.23 589.61 549.92 771.02 C
+316.86 636.13 326.36 755.21 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 9 Q
+0 X
+(6) 321.86 749.21 T
+(5) 321.86 728.21 T
+(4) 321.86 707.21 T
+(3) 321.86 686.21 T
+(2) 321.86 665.21 T
+(1) 321.86 644.21 T
+J
+318.19 640.63 357.87 640.63 357.87 623.62 318.19 623.62 4 Y
+7 X
+V
+J
+318.19 640.63 357.87 640.63 357.87 623.62 318.19 623.62 4 Y
+J
+318.19 639.88 318.19 640.63 318.94 640.63 3 L
+0.5 H
+2 Z
+N
+[1.414 4.243] 1.414 I
+318.94 640.63 357.12 640.63 2 L
+N
+J
+357.12 640.63 357.87 640.63 357.87 639.88 3 L
+N
+[1.41 4.229] 1.41 I
+357.87 639.88 357.87 624.37 2 L
+N
+J
+357.87 624.37 357.87 623.62 357.12 623.62 3 L
+N
+[1.414 4.243] 1.414 I
+357.12 623.62 318.94 623.62 2 L
+N
+J
+318.94 623.62 318.19 623.62 318.19 624.37 3 L
+N
+[1.41 4.229] 1.41 I
+318.19 624.37 318.19 639.88 2 L
+N
+J
+323.86 600.95 539.29 632.37 R
+V
+0 F
+0 X
+2.32 (Figur) 323.86 626.37 P
+2.32 (e 2.) 345.2 626.37 P
+1 F
+2.32 (Onset of a piano sound. First order) 365.08 626.37 P
+2 F
+2.32 (absolute) 508.79 626.37 P
+1 F
+2.39 (\050dashed\051 and) 323.86 615.37 P
+2 F
+2.39 (r) 377.12 615.37 P
+2.39 (elative) 380.29 615.37 P
+1 F
+2.39 ( \050solid\051 dif) 404.28 615.37 P
+2.39 (ference functions of the) 446.9 615.37 P
+(amplitude envelopes of six dif) 323.86 604.37 T
+(ferent frequency bands.) 432.69 604.37 T
+313.23 130.39 549.92 771.02 C
+0 -158.11 1000 841.89 C
+327.4 519.54 401.77 542.56 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(D) 328.4 529.61 T
+(t) 340.79 529.61 T
+4 F
+(\050) 336.93 529.61 T
+(\051) 343.71 529.61 T
+2 F
+(d) 363.96 534.81 T
+(d) 362.45 523.79 T
+(t) 367.48 523.79 T
+1 F
+(-) 362.45 529.82 T
+(-) 363.95 529.82 T
+(-) 365.44 529.82 T
+(-) 366.94 529.82 T
+(-) 366.98 529.82 T
+2 F
+(A) 376.05 529.61 T
+(t) 387.44 529.61 T
+4 F
+(\050) 383.58 529.61 T
+(\051) 390.36 529.61 T
+(\050) 372.19 529.61 T
+(\051) 395.27 529.61 T
+1 F
+(=) 352.7 529.61 T
+0 -158.11 1000 841.89 C
+327.4 432.54 425.44 455.56 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(W) 328.4 442.61 T
+(t) 341.79 442.61 T
+4 F
+(\050) 337.93 442.61 T
+(\051) 344.7 442.61 T
+2 F
+(d) 364.96 447.81 T
+(d) 363.45 436.79 T
+(t) 368.48 436.79 T
+1 F
+(-) 363.45 442.82 T
+(-) 364.94 442.82 T
+(-) 366.44 442.82 T
+(-) 367.94 442.82 T
+(-) 367.98 442.82 T
+2 F
+(A) 394.81 442.61 T
+(t) 406.2 442.61 T
+4 F
+(\050) 402.34 442.61 T
+(\051) 409.12 442.61 T
+(\050) 390.95 442.61 T
+(\051) 414.03 442.61 T
+1 F
+(l) 377.05 442.61 T
+(o) 379.55 442.61 T
+(g) 384.05 442.61 T
+4 F
+(\050) 373.19 442.61 T
+(\051) 418.94 442.61 T
+1 F
+(=) 353.7 442.61 T
+0 -158.11 1000 841.89 C
+313.23 323.36 360.87 335.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(D) 314.23 327.61 T
+2 F
+(I) 320.27 327.61 T
+(t) 329.15 327.61 T
+4 F
+(\050) 325.3 327.61 T
+(\051) 332.07 327.61 T
+2 F
+(I) 342.57 327.61 T
+(t) 351.45 327.61 T
+4 F
+(\050) 347.59 327.61 T
+(\051) 354.37 327.61 T
+(\244) 338.82 327.61 T
+0 -158.11 1000 841.89 C
+313.23 312.36 374.64 324.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(I) 314.23 316.61 T
+(t) 323.12 316.61 T
+4 F
+(\050) 319.26 316.61 T
+(\051) 326.03 316.61 T
+2 F
+(A) 344.59 316.61 T
+(t) 355.98 316.61 T
+4 F
+(\050) 352.12 316.61 T
+(\051) 358.9 316.61 T
+2 F
+(f) 370.14 316.61 T
+4 F
+(\327) 365.64 316.61 T
+1 F
+(=) 335.02 316.61 T
+0 -158.11 1000 841.89 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 1 0.5 0 0 0 0.5 1]
+[ 0.5 0.4 0.3 0 0.5 0.6 0.7]
+[ 0.8 0.05 0 0 0.2 0.95 1]
+[ 0 0.08 0.16 0 1 0.92 0.84]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+0.1 (momentarily steady and take the increase in level to be due to the) 53.86 765.02 P
+0.8 (onsetting sound\050s\051. Thus the asked intensity can be picked from) 53.86 754.02 P
+1.6 (the \336rst order dif) 53.86 743.02 P
+1.6 (ference function) 119.24 743.02 P
+2 F
+1.6 (D) 183.41 743.02 P
+1 F
+1.6 (\050) 189.91 743.02 P
+2 F
+1.6 (t) 192.9 743.02 P
+1 F
+1.6 (\051, multiplied by the band) 195.4 743.02 P
+1.99 (center frequency) 53.86 732.02 P
+2 F
+1.99 (f) 120.31 732.02 P
+1 7.2 Q
+1.6 (B) 122.82 729.77 P
+2 9 Q
+1.99 (.) 127.62 732.02 P
+1 F
+1.99 (The intensity is needed later when onset) 134.11 732.02 P
+(components are combined to yield onsets of the overall signal.) 53.86 721.02 T
+0.14 (An appropriate point in time to pick the intensity from) 53.86 705.02 P
+2 F
+0.14 (D) 253.27 705.02 P
+1 F
+0.14 (\050) 259.77 705.02 P
+2 F
+0.14 (t) 262.76 705.02 P
+1 F
+0.14 (\051 is not) 265.27 705.02 P
+0.46 (as early as where the onset was determined to occur) 53.86 694.02 P
+0.46 (. Instead, we) 244.15 694.02 P
+1.89 (scan forward up to the point where amplitude envelope starts) 53.86 683.02 P
+0.77 (decreasing and determine the intensity at the point of maximum) 53.86 672.02 P
+0.77 (slope, i.e., at the maximum value of) 53.86 661.02 P
+2 F
+0.77 (D) 190.49 661.02 P
+1 F
+0.77 (\050) 196.99 661.02 P
+2 F
+0.77 (t) 199.99 661.02 P
+1 F
+0.77 (\051 between the onset and) 202.49 661.02 P
+(the point where amplitude stops increasing.) 53.86 650.02 T
+0.33 (After intensities has been determined for all onset components at) 53.86 634.02 P
+0.8 (the band, we check them through and drop out components that) 53.86 623.02 P
+1.11 (are closer than 50) 53.86 612.02 P
+1.11 (ms to a more intense component. Remaining) 123.16 612.02 P
+(ones are accepted.) 53.86 601.02 T
+0 10 Q
+-0.11 (4.  COMBINING THE RESUL) 53.86 580.36 P
+-0.11 (TS FROM THE BANDS) 185.58 580.36 P
+1 9 Q
+1.16 (In the \336nal phase we combine onset components from separate) 53.86 564.02 P
+0.86 (bands to yield onsets of the overall signal. For this purpose, we) 53.86 553.02 P
+0.19 (implemented the model of loudness as proposed by Moore, Glas-) 53.86 542.02 P
+1.72 (ber) 53.86 531.02 P
+1.72 (g and Baer [8]. Input to our implementation is a vector of) 65.19 531.02 P
+3.89 (sound intensities at third-octave bands between 44) 53.86 520.02 P
+3.89 (Hz and) 260.92 520.02 P
+1.16 (18) 53.86 509.02 P
+1.16 (kHz, from which the program calculates the loudness of the) 65.11 509.02 P
+0.78 (signal in phons. T) 53.86 498.02 P
+0.78 (o optimize the computational ef) 120.07 498.02 P
+0.78 (\336ciency of the) 237.51 498.02 P
+0.41 (procedure, we slightly simpli\336ed the model by making the shape) 53.86 487.02 P
+0.94 (of the excitation pattern, i.e., the intensity spread between adja-) 53.86 476.02 P
+1.12 (cent critical bands independent from sound pressure level. This) 53.86 465.02 P
+0.26 (accelerated the computations remarkably) 53.86 454.02 P
+0.26 (, but did not make a sig-) 201.76 454.02 P
+0.35 (ni\336cant dif) 53.86 443.02 P
+0.35 (ference to the estimated loudness values for the sound) 93.29 443.02 P
+(intensity levels we are using.) 53.86 432.02 T
+-0.12 (The onsets of the overall signal are calculated as follows. First the) 53.86 416.02 P
+2.18 (onset components from dif) 53.86 405.02 P
+2.18 (ferent bands are all sorted in time) 156.98 405.02 P
+0.21 (order) 53.86 394.02 P
+0.21 (, and are regarded as sound onset candidates hereafter) 72.49 394.02 P
+0.21 (. Then) 267.35 394.02 P
+-0 (each onset candidate is assigned a loudness value, which is calcu-) 53.86 383.02 P
+1.58 (lated by collecting onset components in a 50) 53.86 372.02 P
+1.58 (ms time window) 227.39 372.02 P
+1.5 (around the candidate and feeding their intensities to the corre-) 53.86 361.02 P
+0.5 (sponding frequency bands of the loudness model of Moore et al.) 53.86 350.02 P
+1.05 (Since most candidates have only a couple of contributing onset) 53.86 339.02 P
+1.12 (components at dif) 53.86 328.02 P
+1.12 (ferent bands, we must use minimum level, or) 120.44 328.02 P
+1.54 (background noise level for the other bands in the input of the) 53.86 317.02 P
+0.41 (model. Repeating this procedure to each onset candidate yields a) 53.86 306.02 P
+1.6 (vector of candidate loudnesses as a function of their times, as) 53.86 295.02 P
+(illustrated in Figure) 53.86 284.02 T
+(3 for a popular music signal.) 127.11 284.02 T
+1.42 (Onset loudnesses that were estimated using the abovementined) 53.86 268.02 P
+0.41 (procedure corresponded very well to the perceived loudnesses of) 53.86 257.02 P
+0.16 (the onsets in veri\336cative listening tests. It turned out that a robust) 53.86 246.02 P
+1.04 (detection of onsets in very diverse kinds of signals can now be) 53.86 235.02 P
+1.69 (achieved by a simple peak picking operation, which looks for) 53.86 224.02 P
+1.13 (onset candidates above a global threshold value) 53.86 213.02 P
+2 F
+1.13 (T) 235.47 213.02 P
+2 7.2 Q
+0.9 (\336nal) 240.48 210.77 P
+1 9 Q
+1.13 (. W) 253.28 213.02 P
+1.13 (e drop) 266.68 213.02 P
+1.43 (out onset candidates whose loudness falls below the threshold.) 53.86 202.02 P
+0.58 (Then we also drop out candidates that are too close \05050) 53.86 191.02 P
+0.58 (ms\051 to a) 260.39 191.02 P
+0.96 (louder candidate. Among equally loud but too close candidates,) 53.86 180.02 P
+0.35 (the middle one \050median\051 is chosen and the others are abandoned.) 53.86 169.02 P
+-0.05 (The remaining onset candidates are accepted as true ones. A good) 53.86 158.02 P
+0.29 (value for) 53.86 147.02 P
+2 F
+0.29 (T) 88.93 147.02 P
+2 7.2 Q
+0.23 (\336nal) 93.93 144.77 P
+1 9 Q
+0.29 ( was found to be 25) 106.73 147.02 P
+0.29 (dB for signals, whose average) 181.17 147.02 P
+(loudnesses had been normalized to 70) 53.86 136.02 T
+(dB level.) 192.84 136.02 T
+0 10 Q
+(5.  V) 355.92 613.62 T
+(ALIDA) 374.35 613.62 T
+(TION EXPERIMENTS) 405.83 613.62 T
+1 9 Q
+0.72 (The presented procedure was veri\336ed by testing its performance) 313.23 597.29 P
+0.69 (in detecting onsets in musical signals. The signals were selected) 313.23 586.29 P
+0.84 (to comprise a lar) 313.23 575.29 P
+0.84 (ge variation of musical instruments and a wide) 375.82 575.29 P
+1.19 (dynamic and pitch range. Signals both with and without drums) 313.23 564.29 P
+3.89 (were included. Another goal was to include representative) 313.23 553.29 P
+1.77 (excerpts from dif) 313.23 542.29 P
+1.77 (ferent musical genres, ranging from jazz and) 378.59 542.29 P
+(rock to classical and big band music.) 313.23 531.29 T
+0.28 (Approximately ten second excerpts were sampled from each per-) 313.23 515.29 P
+0.31 (formance. These periods were carefully inspected and their onset) 313.23 504.29 P
+1 (times were marked. The excerpts were then feeded to the onset) 313.23 493.29 P
+1.77 (detection system and its results were compared to the manual) 313.23 482.29 P
+0.37 (transcription. All simulation cases were computed using the very) 313.23 471.29 P
+0.03 (same set of parameter values and thresholds, without separate tai-) 313.23 460.29 P
+2.64 (loring for each simulation case. The algorithm itself was as) 313.23 449.29 P
+1.11 (explained above. Higher) 313.23 438.29 P
+1.11 (-level rhythmic properties and regulari-) 403.5 438.29 P
+(ties of musical signals were not utilized in the detection.) 313.23 427.29 T
+-0.05 (It is interesting to note that the limitations of our detection system) 313.23 411.29 P
+0.05 (resemble those of human perception. W) 313.23 400.29 P
+0.05 (e de\336ne a) 456.23 400.29 P
+2 F
+0.05 (pseudo-onset) 493.12 400.29 P
+1 F
+0.05 ( to) 540.62 400.29 P
+0.67 (be a sound beginning, which undisputably exists in a signal, but) 313.23 389.29 P
+1.1 (cannot be detected by a human listener if the signal is not pre-) 313.23 378.29 P
+-0.09 (sented in short segments and several times. Since objective listen-) 313.23 367.29 P
+-0.14 (ing test could not be arranged, we regard undetected pseudo-onset) 313.23 356.29 P
+1.36 (as errors, too. It turned out that the detection of some pseudo-) 313.23 345.29 P
+0.62 (onsets could not be achieved without giving rise to several erro-) 313.23 334.29 P
+0.92 (neous extra onsets that are due to gradual changes and modula-) 313.23 323.29 P
+(tions during the ringing of sounds.) 313.23 312.29 T
+0.52 (Onset detection results for ten dif) 313.23 296.29 P
+0.52 (ferent musical signals are sum-) 435.88 296.29 P
+0.37 (marized in T) 313.23 285.29 P
+0.37 (able 1. The total number of onsets, number of unde-) 359.34 285.29 P
+0.2 (tected onsets and the number of erroneous extra onsets are given.) 313.23 274.29 P
+(A measure of correctness in the rightmost column is calculated as) 313.23 263.29 T
+(%.) 495.23 245.29 T
+(A more detailed discussion of each case follows.) 313.23 229.29 T
+2 F
+0.73 (Chopin) 313.23 213.29 P
+1 F
+0.73 (\325) 339.73 213.29 P
+0.73 (s classical piano etude \050op. 25, no. 4\051 was a trivial case.) 342.23 213.29 P
+0.17 (Still three onsets fell below threshold because the notes were low) 313.23 202.29 P
+0.57 (pitched, played softly and masked by other notes.) 313.23 191.29 P
+2 F
+0.57 (Al Di Meola) 498.28 191.29 P
+1 F
+0.57 (\325) 543.92 191.29 P
+0.57 (s) 546.42 191.29 P
+0.42 (\324Orient Blue\325 represents a much more dif) 313.23 180.29 P
+0.42 (\336cult case. The piece is) 464.03 180.29 P
+1.11 (polyphonic and employs the whole dynamic and pitch range of) 313.23 169.29 P
+1.77 (the acoustic guitar) 313.23 158.29 P
+1.77 (. Shortest inter) 382.26 158.29 P
+1.77 (-note intervals are only a \336f-) 438.36 158.29 P
+(teenth of a second. Good results were achieved partly because of) 313.23 147.29 T
+313.23 130.39 549.92 771.02 C
+313.23 629.29 549.92 771.02 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 78 196 550 600 255.12 136.06 318.19 646.3 FMBEGINEPSF
+%%BeginDocument: /home/klap/frame/papers/icasspfi.eps
+%!PS-Adobe-2.0 EPSF-1.2
+%%Creator: MATLAB, The Mathworks, Inc.
+%%Title: /home/klap/frame/icasspfi.ps
+%%CreationDate: 09/17/98  14:00:23
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%Pages: 1
+%%BoundingBox:    78   196   550   600
+%%EndComments
+
+%%BeginProlog
+
+% MathWorks dictionary
+/MathWorks 160 dict begin
+
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s /show ldef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+
+% orientation switch
+/portraitMode 	0 def
+/landscapeMode 	1 def
+
+% coordinate system mappings
+/dpi2point 0 def
+
+% font control
+/FontSize 0 def
+/FMS {
+	/FontSize xstore		%save size off stack
+	findfont
+	[FontSize 0 0 FontSize neg 0 0]
+	makefont
+	setfont
+	}bdef
+
+/reencode {
+exch dup where
+{pop load} {pop StandardEncoding} ifelse
+exch
+dup 3 1 roll
+findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def
+  currentdict
+end
+definefont pop
+} bdef
+
+/isroman {
+findfont /CharStrings get
+/Agrave known
+} bdef
+
+/FMSR {
+3 1 roll 1 index
+dup isroman
+{reencode} {pop pop} ifelse
+exch FMS
+} bdef
+
+/csm {
+	1 dpi2point div -1 dpi2point div scale
+	neg translate
+	landscapeMode eq {90 rotate} if
+	} bdef
+
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+
+% macros for lines and objects
+/L {
+	lineto
+	stroke
+	} bdef
+/MP {
+	3 1 roll moveto
+	1 sub {rlineto} repeat
+	} bdef
+/AP {
+	{rlineto} repeat
+	} bdef
+/PP {
+	closepath eofill
+	} bdef
+/DP {
+	closepath stroke
+	} bdef
+/MR {
+	4 -2 roll moveto
+	dup  0 exch rlineto
+	exch 0 rlineto
+	neg  0 exch rlineto
+	closepath
+	} bdef
+/FR {
+	MR stroke
+	} bdef
+/PR {
+	MR fill
+	} bdef
+/L1i {
+	{ currentfile picstr readhexstring pop } image
+	} bdef
+
+/tMatrix matrix def
+/MakeOval {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 0 360 arc
+	tMatrix setmatrix
+	} bdef
+/FO {
+	MakeOval
+	stroke
+	} bdef
+/PO {
+	MakeOval
+	fill
+	} bdef
+
+/PD {
+	currentlinecap 1 setlinecap 3 1 roll 2 copy moveto lineto stroke setlinecap
+	} bdef
+
+/FA {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 5 -2 roll arc
+	tMatrix setmatrix
+	stroke
+	} bdef
+/PA {
+	newpath
+	tMatrix currentmatrix pop
+	translate 0 0 moveto scale
+	0 0 1 5 -2 roll arc
+	closepath
+	tMatrix setmatrix
+	fill
+	} bdef
+
+/FAn {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 5 -2 roll arcn
+	tMatrix setmatrix
+	stroke
+	} bdef
+/PAn {
+	newpath
+	tMatrix currentmatrix pop
+	translate 0 0 moveto scale
+	0 0 1 5 -2 roll arcn
+	closepath
+	tMatrix setmatrix
+	fill
+	} bdef
+
+/MRR {
+	/vradius xdef
+	/hradius xdef
+	/lry xdef
+	/lrx xdef
+	/uly xdef
+	/ulx xdef
+	newpath
+	tMatrix currentmatrix pop
+	ulx hradius add uly vradius add translate
+	hradius vradius scale
+	0 0 1 180 270 arc 
+	tMatrix setmatrix
+	lrx hradius sub uly vradius add translate
+	hradius vradius scale
+	0 0 1 270 360 arc
+	tMatrix setmatrix
+	lrx hradius sub lry vradius sub translate
+	hradius vradius scale
+	0 0 1 0 90 arc
+	tMatrix setmatrix
+	ulx hradius add lry vradius sub translate
+	hradius vradius scale
+	0 0 1 90 180 arc
+	tMatrix setmatrix
+	closepath
+	} bdef
+/FRR {
+	MRR stroke } bdef
+/PRR {
+	MRR fill } bdef
+
+/MlrRR {
+	/lry xdef
+	/lrx xdef
+	/uly xdef
+	/ulx xdef
+	/rad lry uly sub 2 div def
+	newpath
+	tMatrix currentmatrix pop
+	ulx rad add uly rad add translate
+	rad rad scale
+	0 0 1 90 270 arc
+	tMatrix setmatrix
+	lrx rad sub lry rad sub translate
+	rad rad scale
+	0 0 1 270 90 arc
+	tMatrix setmatrix
+	closepath
+	} bdef
+/FlrRR {
+	MlrRR stroke } bdef
+/PlrRR {
+	MlrRR fill } bdef
+
+/MtbRR {
+	/lry xdef
+	/lrx xdef
+	/uly xdef
+	/ulx xdef
+	/rad lrx ulx sub 2 div def
+	newpath
+	tMatrix currentmatrix pop
+	ulx rad add uly rad add translate
+	rad rad scale
+	0 0 1 180 360 arc
+	tMatrix setmatrix
+	lrx rad sub lry rad sub translate
+	rad rad scale
+	0 0 1 0 180 arc
+	tMatrix setmatrix
+	closepath
+	} bdef
+/FtbRR {
+	MtbRR stroke } bdef
+/PtbRR {
+	MtbRR fill } bdef
+
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:    78   196   550   600
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: graph1 1
+bplot
+
+/dpi2point 12 def
+portraitMode 0216 7344 csm
+
+  730   134  5656  4855 MR c np
+88 dict begin %Colortable dictionary
+/c0 { 0 0 0 sr} bdef
+/c1 { 1 1 1 sr} bdef
+/c2 { 1 0 0 sr} bdef
+/c3 { 0 1 0 sr} bdef
+/c4 { 0 0 1 sr} bdef
+/c5 { 1 1 0 sr} bdef
+/c6 { 1 0 1 sr} bdef
+/c7 { 0 1 1 sr} bdef
+1 j
+1 sg
+   0    0 6913 5186 PR
+6 w
+0 4225 5356 0 0 -4225 898 4613 4 MP
+PP
+-5356 0 0 4225 5356 0 0 -4225 898 4613 5 MP stroke
+4 w
+DO
+SO
+6 w
+0 sg
+ 898 4613 mt 6254 4613 L
+ 898 4613 mt  898  388 L
+ 898 4613 mt  898 4559 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+ 865 4759 mt 
+(0) s
+1969 4613 mt 1969 4559 L
+1886 4759 mt 
+(0.5) s
+3040 4613 mt 3040 4559 L
+3007 4759 mt 
+(1) s
+4112 4613 mt 4112 4559 L
+4029 4759 mt 
+(1.5) s
+5183 4613 mt 5183 4559 L
+5150 4759 mt 
+(2) s
+6254 4613 mt 6254 4559 L
+6171 4759 mt 
+(2.5) s
+5984 4961 mt 
+(x 10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+6210 4887 mt 
+(5) s
+ 898 4613 mt  952 4613 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+ 730 4657 mt 
+(10) s
+ 898 4144 mt  952 4144 L
+ 730 4188 mt 
+(15) s
+ 898 3674 mt  952 3674 L
+ 730 3718 mt 
+(20) s
+ 898 3205 mt  952 3205 L
+ 730 3249 mt 
+(25) s
+ 898 2735 mt  952 2735 L
+ 730 2779 mt 
+(30) s
+ 898 2266 mt  952 2266 L
+ 730 2310 mt 
+(35) s
+ 898 1796 mt  952 1796 L
+ 730 1840 mt 
+(40) s
+ 898 1327 mt  952 1327 L
+ 730 1371 mt 
+(45) s
+ 898  857 mt  952  857 L
+ 730  901 mt 
+(50) s
+ 898  388 mt  952  388 L
+ 730  432 mt 
+(55) s
+gs 898 388 5357 4226 MR c np
+0 4 0 -4 0 4 0 -4 0 4 0 -4 0 149 0 -149 
+0 755 0 -755 0 755 0 -755 0 1140 0 -1140 2 0 0 1294 
+0 -1294 2 0 0 1294 0 -1294 2 0 0 1431 0 -1431 1 0 
+0 1431 0 -1431 0 1582 0 -1582 0 1582 0 -1582 46 0 0 4 
+0 -4 73 0 0 4 0 -4 10 0 0 161 0 -161 9 0 
+0 516 0 -516 6 0 0 516 0 -516 6 0 0 516 0 -516 
+0 1243 0 -1243 4 0 0 1586 0 -1586 4 0 0 1793 0 -1793 
+6 0 0 1821 0 -1821 6 0 0 2021 0 -2021 0 2132 0 -2132 
+0 2248 0 -2248 0 2374 0 -2374 0 2511 0 -2511 154 0 0 151 
+0 -151 2 0 0 509 0 -509 2 0 0 1404 0 -1404 2 0 
+0 1829 0 -1829 2 0 0 1862 0 -1862 0 2084 0 -2084 0 2234 
+0 -2234 0 2531 0 -2531 0 2590 0 -2590 2 0 0 2740 0 -2740 
+2 0 0 2957 0 -2957 5219 4050 100 MP stroke
+0 3124 0 -3124 0 3124 0 -3124 2 0 0 3163 0 -3163 1 0 
+0 3195 0 -3195 67 0 0 634 0 -634 4 0 0 870 0 -870 
+4 0 0 870 0 -870 56 0 0 197 0 -197 25 0 0 593 
+0 -593 6 0 0 1104 0 -1104 0 1302 0 -1302 0 1333 0 -1333 
+2 0 0 1333 0 -1333 2 0 0 1493 0 -1493 0 1874 0 -1874 
+0 2131 0 -2131 2 0 0 2271 0 -2271 2 0 0 2411 0 -2411 
+0 2411 0 -2411 0 2450 0 -2450 4 0 0 2513 0 -2513 4 0 
+0 2635 0 -2635 0 2751 0 -2751 0 2807 0 -2807 0 2828 0 -2828 
+118 0 0 4 0 -4 8 0 0 4 0 -4 8 0 0 4 
+0 -4 4 0 0 4 0 -4 12 0 0 4 0 -4 8 0 
+0 214 0 -214 5 0 0 347 0 -347 6 0 0 446 0 -446 
+0 846 0 -846 0 1096 0 -1096 0 1253 0 -1253 0 1467 0 -1467 
+0 1660 0 -1660 138 0 4731 4050 100 MP stroke
+0 602 0 -602 0 747 0 -747 0 983 0 -983 4 0 0 983 
+0 -983 4 0 0 1383 0 -1383 4 0 0 1629 0 -1629 4 0 
+0 1941 0 -1941 18 0 0 1753 0 -1753 2 0 0 1915 0 -1915 
+4 0 0 2031 0 -2031 4 0 0 2129 0 -2129 2 0 0 2302 
+0 -2302 2 0 0 2488 0 -2488 98 0 0 4 0 -4 2 0 
+0 49 0 -49 2 0 0 114 0 -114 34 0 0 207 0 -207 
+21 0 0 207 0 -207 0 156 0 -156 2 0 0 194 0 -194 
+2 0 0 194 0 -194 0 258 0 -258 119 0 0 4 0 -4 
+9 0 0 151 0 -151 28 0 0 773 0 -773 18 0 0 873 
+0 -873 0 1021 0 -1021 0 1782 0 -1782 2 0 0 2223 0 -2223 
+2 0 0 2414 0 -2414 2 0 0 2502 0 -2502 2 0 0 2484 
+0 -2484 0 2545 0 -2545 0 2579 0 -2579 0 2733 0 -2733 0 2911 
+0 -2911 0 2960 0 -2960 4340 4050 100 MP stroke
+2 0 0 3071 0 -3071 2 0 0 3257 0 -3257 0 3363 0 -3363 
+114 0 0 67 0 -67 2 0 0 195 0 -195 2 0 0 265 
+0 -265 0 265 0 -265 0 265 0 -265 35 0 0 190 0 -190 
+4 0 0 355 0 -355 4 0 0 604 0 -604 2 0 0 853 
+0 -853 2 0 0 1496 0 -1496 4 0 0 1892 0 -1892 4 0 
+0 2001 0 -2001 6 0 0 2222 0 -2222 6 0 0 2574 0 -2574 
+4 0 0 2688 0 -2688 6 0 0 2663 0 -2663 2 0 0 2608 
+0 -2608 90 0 0 49 0 -49 0 53 0 -53 0 53 0 -53 
+2 0 0 310 0 -310 2 0 0 382 0 -382 2 0 0 815 
+0 -815 2 0 0 1053 0 -1053 16 0 0 1254 0 -1254 16 0 
+0 1543 0 -1543 0 1866 0 -1866 0 2078 0 -2078 2 0 0 2090 
+0 -2090 2 0 0 2090 0 -2090 0 2335 0 -2335 0 2639 0 -2639 
+0 2690 0 -2690 0 2690 4005 1360 100 MP stroke
+0 -2690 169 0 0 662 0 -662 2 0 0 662 0 -662 2 0 
+0 662 0 -662 0 950 0 -950 0 950 0 -950 0 950 0 -950 
+0 1095 0 -1095 2 0 0 1339 0 -1339 2 0 0 1675 0 -1675 
+0 1780 0 -1780 0 2103 0 -2103 0 2195 0 -2195 130 0 0 4 
+0 -4 2 0 0 4 0 -4 2 0 0 573 0 -573 12 0 
+0 688 0 -688 12 0 0 716 0 -716 0 985 0 -985 0 985 
+0 -985 2 0 0 1039 0 -1039 2 0 0 1073 0 -1073 0 1164 
+0 -1164 0 1385 0 -1385 2 0 0 1474 0 -1474 140 0 0 456 
+0 -456 2 0 0 606 0 -606 2 0 0 732 0 -732 5 0 
+0 1131 0 -1131 6 0 0 1285 0 -1285 2 0 0 1471 0 -1471 
+2 0 0 1483 0 -1483 0 1483 0 -1483 0 1577 0 -1577 2 0 
+0 1624 0 -1624 2 0 0 1700 0 -1700 0 1877 0 -1877 0 2099 
+0 -2099 2 0 0 2291 3499 1759 100 MP stroke
+0 -2291 2 0 0 2468 0 -2468 0 2569 0 -2569 0 2664 0 -2664 
+0 2723 0 -2723 0 2765 0 -2765 170 0 0 4 0 -4 2 0 
+0 734 0 -734 2 0 0 971 0 -971 0 1071 0 -1071 0 1113 
+0 -1113 0 1385 0 -1385 0 1556 0 -1556 2 0 0 1702 0 -1702 
+2 0 0 1927 0 -1927 0 2182 0 -2182 0 2348 0 -2348 153 0 
+0 169 0 -169 2 0 0 491 0 -491 2 0 0 733 0 -733 
+0 922 0 -922 0 979 0 -979 0 1319 0 -1319 0 1450 0 -1450 
+0 1593 0 -1593 0 1679 0 -1679 2 0 0 1774 0 -1774 2 0 
+0 1774 0 -1774 0 1809 0 -1809 0 1833 0 -1833 0 1944 0 -1944 
+0 2096 0 -2096 0 2238 0 -2238 0 2371 0 -2371 0 2401 0 -2401 
+174 0 0 4 0 -4 10 0 0 4 0 -4 9 0 0 191 
+0 -191 4 0 0 1328 0 -1328 4 0 0 1814 0 -1814 2 0 
+0 2058 0 -2058 2 0 2953 4050 100 MP stroke
+0 2186 0 -2186 0 2317 0 -2317 0 2386 0 -2386 0 2541 0 -2541 
+0 2702 0 -2702 0 2722 0 -2722 0 2722 0 -2722 0 2766 0 -2766 
+0 2786 0 -2786 0 2814 0 -2814 0 2878 0 -2878 99 0 0 216 
+0 -216 10 0 0 431 0 -431 9 0 0 497 0 -497 0 833 
+0 -833 0 881 0 -881 4 0 0 1307 0 -1307 4 0 0 1385 
+0 -1385 0 1546 0 -1546 0 1742 0 -1742 4 0 0 1793 0 -1793 
+4 0 0 2000 0 -2000 0 2107 0 -2107 0 2187 0 -2187 0 2316 
+0 -2316 2 0 0 2397 0 -2397 2 0 0 2397 0 -2397 0 2447 
+0 -2447 0 2478 0 -2478 2 0 0 2513 0 -2513 156 0 0 4 
+0 -4 6 0 0 4 0 -4 6 0 0 209 0 -209 0 737 
+0 -737 0 1233 0 -1233 12 0 0 1525 0 -1525 11 0 0 1550 
+0 -1550 0 1741 0 -1741 0 1863 0 -1863 0 1960 0 -1960 2 0 
+0 1960 0 -1960 2 0 2618 4050 100 MP stroke
+0 1960 0 -1960 0 2000 0 -2000 0 1954 0 -1954 0 1954 0 -1954 
+0 1978 0 -1978 28 0 0 493 0 -493 130 0 0 599 0 -599 
+0 849 0 -849 0 1251 0 -1251 2 0 0 1306 0 -1306 2 0 
+0 1325 0 -1325 0 1325 0 -1325 0 1457 0 -1457 0 1541 0 -1541 
+0 1659 0 -1659 2 0 0 1901 0 -1901 2 0 0 2185 0 -2185 
+0 2574 0 -2574 0 2731 0 -2731 0 2841 0 -2841 0 2949 0 -2949 
+0 2989 0 -2989 0 3011 0 -3011 0 3147 0 -3147 130 0 0 259 
+0 -259 4 0 0 664 0 -664 4 0 0 837 0 -837 0 934 
+0 -934 0 1250 0 -1250 2 0 0 1440 0 -1440 2 0 0 1610 
+0 -1610 2 0 0 1612 0 -1612 2 0 0 1932 0 -1932 0 2066 
+0 -2066 0 2199 0 -2199 0 2274 0 -2274 0 2429 0 -2429 0 2536 
+0 -2536 0 2641 0 -2641 2 0 0 2641 0 -2641 2 0 0 2689 
+0 -2689 0 2713 0 -2713 2302 4050 100 MP stroke
+0 2748 0 -2748 86 0 0 4 0 -4 0 4 0 -4 52 0 
+0 4 0 -4 2 0 0 4 0 -4 2 0 0 120 0 -120 
+0 120 0 -120 0 299 0 -299 2 0 0 299 0 -299 1 0 
+0 299 0 -299 2 0 0 696 0 -696 2 0 0 828 0 -828 
+2 0 0 1030 0 -1030 2 0 0 1030 0 -1030 2 0 0 1251 
+0 -1251 2 0 0 1447 0 -1447 6 0 0 1447 0 -1447 6 0 
+0 1447 0 -1447 0 1537 0 -1537 6 0 0 1509 0 -1509 36 0 
+0 4 0 -4 23 0 0 4 0 -4 93 0 0 185 0 -185 
+4 0 0 610 0 -610 4 0 0 868 0 -868 0 882 0 -882 
+0 1337 0 -1337 0 1560 0 -1560 0 1722 0 -1722 2 0 0 1791 
+0 -1791 2 0 0 1815 0 -1815 0 2019 0 -2019 0 2109 0 -2109 
+0 2181 0 -2181 0 2430 0 -2430 0 2450 0 -2450 0 2580 0 -2580 
+0 2672 0 -2672 0 2751 1963 1299 100 MP stroke
+0 -2751 2 0 0 2875 0 -2875 2 0 0 3002 0 -3002 102 0 
+0 4 0 -4 10 0 0 51 0 -51 10 0 0 51 0 -51 
+8 0 0 208 0 -208 8 0 0 208 0 -208 0 409 0 -409 
+0 409 0 -409 4 0 0 409 0 -409 0 409 0 -409 0 625 
+0 -625 3 0 0 598 0 -598 2 0 0 598 0 -598 2 0 
+0 598 0 -598 8 0 0 598 0 -598 8 0 0 598 0 -598 
+0 598 0 -598 0 598 0 -598 178 0 0 170 0 -170 0 242 
+0 -242 0 764 0 -764 2 0 0 848 0 -848 1 0 0 848 
+0 -848 2 0 0 1042 0 -1042 2 0 0 1121 0 -1121 2 0 
+0 1242 0 -1242 2 0 0 1865 0 -1865 0 2196 0 -2196 0 2403 
+0 -2403 0 2515 0 -2515 0 2624 0 -2624 0 2697 0 -2697 0 2725 
+0 -2725 0 2846 0 -2846 0 2896 0 -2896 0 2966 0 -2966 0 3082 
+0 -3082 71 0 0 4 1534 4046 100 MP stroke
+0 -4 0 4 0 -4 0 4 0 -4 225 0 0 4 0 -4 
+4 0 0 212 0 -212 4 0 0 212 0 -212 6 0 0 581 
+0 -581 6 0 0 581 0 -581 2 0 0 581 0 -581 2 0 
+0 1085 0 -1085 0 1747 0 -1747 8 0 0 2122 0 -2122 7 0 
+0 2318 0 -2318 6 0 0 2385 0 -2385 6 0 0 2361 0 -2361 
+0 2463 0 -2463 0 2535 0 -2535 0 2605 0 -2605 0 2747 0 -2747 
+0 2747 0 -2747 126 0 0 314 0 -314 0 527 0 -527 0 598 
+0 -598 2 0 0 598 0 -598 2 0 0 813 0 -813 4 0 
+0 1018 0 -1018 4 0 0 1162 0 -1162 4 0 0 1372 0 -1372 
+12 0 0 1309 0 -1309 0 1347 0 -1347 6 0 0 1586 0 -1586 
+6 0 0 1734 0 -1734 6 0 0 1984 0 -1984 6 0 0 2280 
+0 -2280 2 0 0 2499 0 -2499 2 0 0 2634 0 -2634 142 0 
+0 521 0 -521 3 0 931 4050 100 MP stroke
+0 878 0 -878 4 0 0 1037 0 -1037 0 1229 0 -1229 0 1386 
+0 -1386 0 1549 0 -1549 927 4050 12 MP stroke
+0 -281 927 4425 2 MP stroke
+0 -281 1076 4425 2 MP stroke
+0 -281 1258 4425 2 MP stroke
+0 -281 1605 4425 2 MP stroke
+0 -281 1959 4425 2 MP stroke
+0 -281 2133 4425 2 MP stroke
+0 -281 2302 4425 2 MP stroke
+0 -281 2452 4425 2 MP stroke
+0 -281 2618 4425 2 MP stroke
+0 -281 2813 4425 2 MP stroke
+0 -281 2953 4425 2 MP stroke
+0 -281 3158 4425 2 MP stroke
+0 -281 3319 4425 2 MP stroke
+0 -281 3497 4425 2 MP stroke
+0 -281 3664 4425 2 MP stroke
+0 -281 3828 4425 2 MP stroke
+0 -281 4005 4425 2 MP stroke
+0 -281 4147 4425 2 MP stroke
+0 -281 4336 4425 2 MP stroke
+0 -281 4683 4425 2 MP stroke
+0 -281 4869 4425 2 MP stroke
+0 -281 5038 4425 2 MP stroke
+0 -281 5216 4425 2 MP stroke
+0 -281 5385 4425 2 MP stroke
+0 -281 5555 4425 2 MP stroke
+
+gr 
+0 j
+-41 71 -41 -71 82 0 886 4168 4 MP
+DP
+-41 71 -41 -71 82 0 1035 4168 4 MP
+DP
+-41 71 -41 -71 82 0 1217 4168 4 MP
+DP
+-41 71 -41 -71 82 0 1564 4168 4 MP
+DP
+-41 71 -41 -71 82 0 1918 4168 4 MP
+DP
+-41 71 -41 -71 82 0 2092 4168 4 MP
+DP
+-41 71 -41 -71 82 0 2261 4168 4 MP
+DP
+-41 71 -41 -71 82 0 2411 4168 4 MP
+DP
+-41 71 -41 -71 82 0 2577 4168 4 MP
+DP
+-41 71 -41 -71 82 0 2772 4168 4 MP
+DP
+-41 71 -41 -71 82 0 2912 4168 4 MP
+DP
+-41 71 -41 -71 82 0 3117 4168 4 MP
+DP
+-41 71 -41 -71 82 0 3278 4168 4 MP
+DP
+-41 71 -41 -71 82 0 3456 4168 4 MP
+DP
+-41 71 -41 -71 82 0 3623 4168 4 MP
+DP
+-41 71 -41 -71 82 0 3787 4168 4 MP
+DP
+-41 71 -41 -71 82 0 3964 4168 4 MP
+DP
+-41 71 -41 -71 82 0 4106 4168 4 MP
+DP
+-41 71 -41 -71 82 0 4295 4168 4 MP
+DP
+-41 71 -41 -71 82 0 4642 4168 4 MP
+DP
+-41 71 -41 -71 82 0 4828 4168 4 MP
+DP
+-41 71 -41 -71 82 0 4997 4168 4 MP
+DP
+-41 71 -41 -71 82 0 5175 4168 4 MP
+DP
+-41 71 -41 -71 82 0 5344 4168 4 MP
+DP
+-41 71 -41 -71 82 0 5514 4168 4 MP
+DP
+gs 898 388 5357 4226 MR c np
+
+gr 
+  36   36  927 2501 FO
+  36   36 1076 1416 FO
+  36   36 1258 1303 FO
+  36   36 1605  968 FO
+  36   36 1959 1048 FO
+  36   36 2133 2513 FO
+  36   36 2302 1302 FO
+  36   36 2452  903 FO
+  36   36 2618 2050 FO
+  36   36 2813 1537 FO
+  36   36 2953 1172 FO
+  36   36 3158 1649 FO
+  36   36 3319 1702 FO
+  36   36 3497 1285 FO
+  36   36 3664 2576 FO
+  36   36 3828 1855 FO
+  36   36 4005 1360 FO
+  36   36 4147 1362 FO
+  36   36 4336  687 FO
+  36   36 4683 1562 FO
+  36   36 4869 2390 FO
+  36   36 5038 1222 FO
+  36   36 5216  855 FO
+  36   36 5385 1539 FO
+  36   36 5555 2468 FO
+gs 898 388 5357 4226 MR c np
+
+gr 
+2227  293 mt 
+(/share/SpeechDat/klap/grusin01.wav   :   1..220000) s
+gs 898 388 5357 4226 MR c np
+DA
+4664 0 898 3205 2 MP stroke
+
+gr 
+DA
+SO
+
+end
+
+eplot
+%%EndObject graph 1
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%EOF
+
+%%EndDocument
+FMENDEPSF
+J
+318.19 663.31 550.63 663.31 550.63 646.3 318.19 646.3 4 Y
+7 X
+0 0 0 1 0 0 0 K
+V
+J
+318.19 663.31 550.63 663.31 550.63 646.3 318.19 646.3 4 Y
+J
+318.19 662.56 318.19 663.31 318.94 663.31 3 L
+0.5 H
+2 Z
+N
+[1.49 4.47] 1.49 I
+318.94 663.31 549.88 663.31 2 L
+N
+J
+549.88 663.31 550.63 663.31 550.63 662.56 3 L
+N
+[1.41 4.229] 1.41 I
+550.63 662.56 550.63 647.05 2 L
+N
+J
+550.63 647.05 550.63 646.3 549.88 646.3 3 L
+N
+[1.49 4.47] 1.49 I
+549.88 646.3 318.94 646.3 2 L
+N
+J
+318.94 646.3 318.19 646.3 318.19 647.05 3 L
+N
+[1.41 4.229] 1.41 I
+318.19 647.05 318.19 662.56 2 L
+N
+J
+313 764.89 330.5 764.89 330.5 755.14 313 755.14 4 Y
+V
+J
+313 764.89 330.5 764.89 330.5 755.14 313 755.14 4 Y
+J
+313 764.14 313 764.89 313.75 764.89 3 L
+N
+[1.455 4.364] 1.455 I
+313.75 764.89 329.75 764.89 2 L
+N
+J
+329.75 764.89 330.5 764.89 330.5 764.14 3 L
+N
+[1.179 3.536] 1.179 I
+330.5 764.14 330.5 755.89 2 L
+N
+J
+330.5 755.89 330.5 755.14 329.75 755.14 3 L
+N
+[1.455 4.364] 1.455 I
+329.75 755.14 313.75 755.14 2 L
+N
+J
+313.75 755.14 313 755.14 313 755.89 3 L
+N
+[1.179 3.536] 1.179 I
+313 755.89 313 764.14 2 L
+N
+J
+313.94 762.03 369.21 771.02 R
+V
+2 9 Q
+0 X
+(loudness \050dB\051) 313.94 765.02 T
+313.5 654.39 325 751.39 R
+7 X
+V
+1 F
+0 X
+(45) 316 745.39 T
+(40) 316 732.39 T
+(35) 316 719.39 T
+(30) 316 706.39 T
+(25) 316 693.39 T
+(20) 316 680.39 T
+J
+J
+323.86 630.59 539.29 651.97 R
+7 X
+V
+0 F
+0 X
+-0.06 (Figur) 323.86 645.97 P
+-0.06 (e 3.) 345.2 645.97 P
+1 F
+-0.06 (The loudness of onsets as a function of their time.) 360.33 645.97 P
+(The genuine onsets can now be quite easily discerned.) 323.86 634.97 T
+313.23 130.39 549.92 771.02 C
+0 0 595.28 841.89 C
+327.4 235.22 495.23 258.25 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(c) 328.4 245.29 T
+(o) 332.93 245.29 T
+(r) 337.96 245.29 T
+(r) 341.99 245.29 T
+(e) 346.02 245.29 T
+(c) 350.55 245.29 T
+(t) 355.07 245.29 T
+(t) 371.82 250.5 T
+(o) 374.85 250.5 T
+(t) 379.88 250.5 T
+(a) 382.91 250.5 T
+(l) 387.94 250.5 T
+(u) 399.44 250.5 T
+(n) 404.47 250.5 T
+(d) 409.5 250.5 T
+(e) 414.53 250.5 T
+(t) 419.06 250.5 T
+(e) 422.09 250.5 T
+(c) 426.61 250.5 T
+(t) 431.14 250.5 T
+(e) 434.17 250.5 T
+(d) 438.7 250.5 T
+1 F
+(\320) 392.69 250.5 T
+2 F
+(e) 452.19 250.5 T
+(x) 456.72 250.5 T
+(t) 461.24 250.5 T
+(r) 464.28 250.5 T
+(a) 468.31 250.5 T
+1 F
+(\320) 445.45 250.5 T
+2 F
+(t) 413 239.47 T
+(o) 416.03 239.47 T
+(t) 421.06 239.47 T
+(a) 424.1 239.47 T
+(l) 429.12 239.47 T
+1 F
+(-) 371.82 245.5 T
+(-) 373.32 245.5 T
+(-) 374.82 245.5 T
+(-) 376.31 245.5 T
+(-) 377.81 245.5 T
+(-) 379.31 245.5 T
+(-) 380.81 245.5 T
+(-) 382.31 245.5 T
+(-) 383.81 245.5 T
+(-) 385.3 245.5 T
+(-) 386.8 245.5 T
+(-) 388.3 245.5 T
+(-) 389.8 245.5 T
+(-) 391.3 245.5 T
+(-) 392.8 245.5 T
+(-) 394.3 245.5 T
+(-) 395.79 245.5 T
+(-) 397.29 245.5 T
+(-) 398.79 245.5 T
+(-) 400.29 245.5 T
+(-) 401.79 245.5 T
+(-) 403.29 245.5 T
+(-) 404.79 245.5 T
+(-) 406.28 245.5 T
+(-) 407.78 245.5 T
+(-) 409.28 245.5 T
+(-) 410.78 245.5 T
+(-) 412.28 245.5 T
+(-) 413.78 245.5 T
+(-) 415.27 245.5 T
+(-) 416.77 245.5 T
+(-) 418.27 245.5 T
+(-) 419.77 245.5 T
+(-) 421.27 245.5 T
+(-) 422.77 245.5 T
+(-) 424.27 245.5 T
+(-) 425.76 245.5 T
+(-) 427.26 245.5 T
+(-) 428.76 245.5 T
+(-) 430.26 245.5 T
+(-) 431.76 245.5 T
+(-) 433.26 245.5 T
+(-) 434.76 245.5 T
+(-) 436.25 245.5 T
+(-) 437.75 245.5 T
+(-) 439.25 245.5 T
+(-) 440.75 245.5 T
+(-) 442.25 245.5 T
+(-) 443.75 245.5 T
+(-) 445.24 245.5 T
+(-) 446.74 245.5 T
+(-) 448.24 245.5 T
+(-) 449.74 245.5 T
+(-) 451.24 245.5 T
+(-) 452.74 245.5 T
+(-) 454.23 245.5 T
+(-) 455.73 245.5 T
+(-) 457.23 245.5 T
+(-) 458.73 245.5 T
+(-) 460.23 245.5 T
+(-) 461.73 245.5 T
+(-) 463.23 245.5 T
+(-) 464.72 245.5 T
+(-) 466.22 245.5 T
+(-) 467.72 245.5 T
+(-) 469.22 245.5 T
+(-) 469.81 245.5 T
+(1) 479.73 245.29 T
+(0) 484.23 245.29 T
+(0) 488.73 245.29 T
+4 F
+(\327) 475.23 245.29 T
+1 F
+(=) 362.07 245.29 T
+0 0 595.28 841.89 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 1 0.5 0 0 0 0.5 1]
+[ 0.5 0.4 0.3 0 0.5 0.6 0.7]
+[ 0.8 0.05 0 0 0.2 0.95 1]
+[ 0 0.08 0.16 0 1 0.92 0.84]
+ 12 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(the absense of noise and other instruments.) 53.86 583.02 T
+2 F
+1.19 (Police) 53.86 567.02 P
+1 F
+1.19 (\325) 76.85 567.02 P
+1.19 (s \324It\325) 79.36 567.02 P
+1.19 (s Alright for Y) 97.29 567.02 P
+1.19 (ou\325 is from rock music genre, domi-) 153.2 567.02 P
+1.22 (nated in loudness by singing, electric guitars and drums. Onset) 53.86 556.02 P
+0.28 (detection is a success and resembles the results that were derived) 53.86 545.02 P
+0.37 (with other rock-pieces. At some moments singing produced dou-) 53.86 534.02 P
+-0.14 (ble-onsets for phonem combinations like \322-ps-\323, where both) 53.86 523.02 P
+2 F
+-0.14 (p) 270.95 523.02 P
+1 F
+-0.14 ( and) 275.45 523.02 P
+2 F
+0.95 (s) 53.86 512.02 P
+1 F
+0.95 ( produce an onset. All of these occurred inside the 50) 57.36 512.02 P
+0.95 (ms time) 260.84 512.02 P
+-0.05 (window) 53.86 501.02 P
+-0.05 (, however) 82.27 501.02 P
+-0.05 (, and were therefore fused.) 117.34 501.02 P
+2 F
+-0.05 (U2) 215.28 501.02 P
+1 F
+-0.05 ( is an electric gui-) 226.28 501.02 P
+2.15 (tar rif, taken from the band\325) 53.86 490.02 P
+2.15 (s performance of \324Last Night on) 164.08 490.02 P
+3.09 (Earth\325. The excerpt is played with distorted sound, without) 53.86 479.02 P
+0.25 (accompanying instruments. This case illustrates that even ambig-) 53.86 468.02 P
+-0.06 (uos situations, i.e., rough sounds, can be handled.) 53.86 457.02 P
+2 F
+-0.06 (Grusin) 233.86 457.02 P
+1 F
+-0.06 (\325) 258.86 457.02 P
+-0.06 (s \324Punta) 261.36 457.02 P
+2 (del Soul\325 is classi\336ed to fusion jazz, but the selected excerpt) 53.86 446.02 P
+1.83 (resembles mostly popular music. V) 53.86 435.02 P
+1.83 (arious percussions included) 187.41 435.02 P
+(were detected without trouble.) 53.86 424.02 T
+2 F
+2.39 (Miles Davis) 53.86 408.02 P
+1 F
+2.39 (\325) 99.49 408.02 P
+2.39 (s \324So What\325 introduces a selection of jazz band) 101.99 408.02 P
+-0 (instruments: a trumpet, tenor and alto saxophones, piano, plucked) 53.86 397.02 P
+0.75 (double-bass and gentle drums. Both brass instrument onsets and) 53.86 386.02 P
+-0.09 (soft pluckings of the double bass were consistently detected.) 53.86 375.02 P
+2 F
+-0.09 (Glen) 273.05 375.02 P
+0.94 (Miller) 53.86 364.02 P
+1 F
+0.94 (\325) 76.69 364.02 P
+0.94 (s \324In the Mood\325 is dominated by big band\325) 79.19 364.02 P
+0.94 (s brass instru-) 238.68 364.02 P
+0.14 (ments of the performing orchestra. All undetections occurred in a) 53.86 353.02 P
+(clarinet melody) 53.86 342.02 T
+(, which was partly masked by louder instruments.) 109.51 342.02 T
+2 F
+-0.19 (Bach) 53.86 326.02 P
+1 F
+-0.19 (\325) 72.35 326.02 P
+-0.19 (s Brandenbur) 74.86 326.02 P
+-0.19 (g Concerto was sampled from the performance) 122.74 326.02 P
+1 (of Munich Chamber Ensemble, which comprises strings, wood-) 53.86 315.02 P
+0.9 (winds and brass instruments. It is worth notice that onsets were) 53.86 304.02 P
+0.67 (detected even at moments where strings alone were carrying the) 53.86 293.02 P
+(rhythm and played tying consecutive notes to each other) 53.86 282.02 T
+(.) 256.33 282.02 T
+-0 (As a sharp contrast to the robust detections, all symphony orches-) 53.86 266.02 P
+0.55 (tra performances turned out to be resolved very poorly) 53.86 255.02 P
+0.55 (.) 254.16 255.02 P
+2 F
+0.55 (V) 259.21 255.02 P
+0.55 (ivaldi) 264.05 255.02 P
+1 F
+0.55 (\325) 284.55 255.02 P
+0.55 (s) 287.05 255.02 P
+0.69 (\324The Four Seasons\325 and) 53.86 244.02 P
+2 F
+0.69 (Beethoven) 144.61 244.02 P
+1 F
+0.69 (\325) 182.1 244.02 P
+0.69 (s Symphony No. 5 are given) 184.6 244.02 P
+0.96 (as examples in T) 53.86 233.02 P
+0.96 (able 1. The clear discrepancy with human per-) 116.86 233.02 P
+0.38 (ception is not due to the type of instruments involved, since they) 53.86 222.02 P
+0.44 (were detected well in smaller ensembles. Instead, two causes are) 53.86 211.02 P
+0.35 (supposed. Firstly) 53.86 200.02 P
+0.35 (, individual physical sound sources can no more) 115.13 200.02 P
+0.47 (be followed in a symphony orchestra, but resulting onsets derive) 53.86 189.02 P
+0.06 (from several sources and are smoothed. Secondly) 53.86 178.02 P
+0.06 (, it was revealed) 231.87 178.02 P
+-0.06 (by a certain hammond or) 53.86 167.02 P
+-0.06 (gan solo that a strong amplitude modula-) 143.43 167.02 P
+0.55 (tion at the middle frequencies confuses the system. It seems that) 53.86 156.02 P
+0.59 (the human auditory system has a special ability to ignore even a) 53.86 145.02 P
+0.74 (very loud amplitude modulation if it is inconsistent, and to con-) 53.86 134.02 P
+(T) 91.9 765.02 T
+(able 1: Summary of onset detection results.) 96.77 765.02 T
+(signal) 64.16 739.52 T
+(worth notice in contents) 99.57 739.52 T
+(onsets) 192.64 745.02 T
+(in total) 191.26 734.02 T
+(unde-) 219.15 745.02 T
+(tected) 218.65 734.02 T
+(extra) 243.08 739.52 T
+-1.07 (correct) 265.1 745.02 P
+(\050%\051) 270.84 734.02 T
+(Chopin) 61.66 719.02 T
+( acoustic piano) 115.94 719.02 T
+(59) 199.39 719.02 T
+(3) 227.15 719.02 T
+(\320) 249.82 719.02 T
+(95) 273.09 719.02 T
+(AldiMeola) 55.41 706.02 T
+(acoustic guitar) 116.57 706.02 T
+(62) 199.39 706.02 T
+(5) 227.15 706.02 T
+(1) 249.82 706.02 T
+(92) 273.09 706.02 T
+(Police) 63.66 693.02 T
+(singing, el.guitar) 99.25 693.02 T
+(, drums) 159.64 693.02 T
+(49) 199.39 693.02 T
+(4) 227.15 693.02 T
+(1) 249.82 693.02 T
+(90) 273.09 693.02 T
+(U2) 69.41 680.02 T
+(el. guitar rif, distorted) 103.57 680.02 T
+(19) 199.39 680.02 T
+(1) 227.15 680.02 T
+(2) 249.82 680.02 T
+(84) 273.09 680.02 T
+(Grusin) 62.66 667.02 T
+(piano, percussion, drums) 97.94 667.02 T
+(51) 199.39 667.02 T
+(3) 227.15 667.02 T
+(\320) 249.82 667.02 T
+(94) 273.09 667.02 T
+(MDavis) 60.41 654.02 T
+(brasses, double-bass) 106.2 654.02 T
+(34) 199.39 654.02 T
+(2) 227.15 654.02 T
+(1) 249.82 654.02 T
+(91) 273.09 654.02 T
+(Miller) 63.66 641.02 T
+(big band) 127.32 641.02 T
+(46) 199.39 641.02 T
+(5) 227.15 641.02 T
+(1) 249.82 641.02 T
+(87) 273.09 641.02 T
+(Bach) 65.66 628.02 T
+(chamber ensemble) 109.33 628.02 T
+(51) 199.39 628.02 T
+(3) 227.15 628.02 T
+(1) 249.82 628.02 T
+(92) 273.09 628.02 T
+(V) 61.68 615.02 T
+(ivaldi) 67.64 615.02 T
+(symphony orchestra) 106.57 615.02 T
+(33) 199.39 615.02 T
+(7) 227.15 615.02 T
+(10) 247.57 615.02 T
+(48) 273.09 615.02 T
+(Beethoven) 55.66 602.02 T
+(symphony orchestra) 106.57 602.02 T
+(30) 199.39 602.02 T
+(\320) 227.15 602.02 T
+(28) 247.57 602.02 T
+(7) 275.34 602.02 T
+95.67 757.02 95.67 597.77 2 L
+V
+0.5 H
+0 Z
+N
+189.21 757.02 189.21 597.77 2 L
+V
+N
+217.56 757.02 217.56 597.77 2 L
+V
+N
+240.24 757.02 240.24 597.77 2 L
+V
+N
+262.91 757.02 262.91 597.77 2 L
+V
+N
+53.15 756.02 291.26 756.02 2 L
+V
+2 H
+N
+53.15 728.02 291.26 728.02 2 L
+V
+N
+53.15 715.02 291.26 715.02 2 L
+V
+0.5 H
+N
+53.15 702.02 291.26 702.02 2 L
+V
+N
+53.15 689.02 291.26 689.02 2 L
+V
+N
+53.15 676.02 291.26 676.02 2 L
+V
+N
+53.15 663.02 291.26 663.02 2 L
+V
+N
+53.15 650.02 291.26 650.02 2 L
+V
+N
+53.15 637.02 291.26 637.02 2 L
+V
+N
+53.15 624.02 291.26 624.02 2 L
+V
+N
+53.15 611.02 291.26 611.02 2 L
+V
+N
+53.15 598.02 291.26 598.02 2 L
+V
+N
+(centrate on frequencies where structure is found.) 313.23 765.02 T
+0 10 Q
+(6.  CONCLUSIONS) 388.65 744.36 T
+1 9 Q
+0.02 (W) 313.23 728.02 P
+0.02 (e \336rst discussed problems that arise in the one-by-one detection) 321 728.02 P
+0.02 (of sound onsets. Then a system was described, which builds upon) 313.23 717.02 P
+0.34 (the use of relative dif) 313.23 706.02 P
+0.34 (ference function and application of the psy-) 390.91 706.02 P
+1.91 (choacoustic models of intensity coding. This was done in the) 313.23 695.02 P
+4 (framework of the band-wise processing idea. Experimental) 313.23 684.02 P
+0.44 (results show that the presented system exhibits a signi\336cant gen-) 313.23 673.02 P
+-0.12 (erality in regard to the sounds and signal types involved. This was) 313.23 662.02 P
+0.93 (achieved without higher) 313.23 651.02 P
+0.93 (-level logic or a grouping of the onsets.) 401.9 651.02 P
+-0.03 (The system introduces only two thresholds that need to be experi-) 313.23 640.02 P
+1.53 (mentally found, i.e., that are not deduced from psychoacoustic) 313.23 629.02 P
+(metrics. These thresholds are common to all input signals.) 313.23 618.02 T
+0.1 (One of the shortcomings of our method lies in its inability to deal) 313.23 602.02 P
+1.99 (with a strong amplitude modulation which is met in classical) 313.23 591.02 P
+-0 (ensembles and in certain instrumental sounds. In general, the pro-) 313.23 580.02 P
+1.33 (posed system was well able to discern between genuine onsets) 313.23 569.02 P
+0.87 (and gradual changes and modulations in the sounds themselves.) 313.23 558.02 P
+0.32 (In the case of musical signals, an additional higher) 313.23 547.02 P
+0.32 (-level analysis) 497.86 547.02 P
+(would still signi\336cantly improve the accuracy of the system.) 313.23 536.02 T
+0 10 Q
+(7.  REFERENCES) 391.71 515.36 T
+1 9 Q
+2.3 ([1] Moelants D., Rampazzo C. \322A Computer System for the) 313.23 499.02 P
+0.82 (Automatic Detection of Perceptual Onsets in a Musical Sig-) 327.4 488.02 P
+-0.11 (nal\323. In Camurri, Antonio \050Ed.\051. \322) 327.4 477.02 P
+2 F
+-0.11 (KANSEI, The T) 449.08 477.02 P
+-0.11 (echnology of) 503.79 477.02 P
+(Emotion) 327.4 466.02 T
+1 F
+(\323, pp. 140\320146. Genova, 1997.) 357.9 466.02 T
+-0.07 ([2] Bilmes J. \322T) 313.23 455.02 P
+-0.07 (iming is of the Essence: Perceptual and Computa-) 370.69 455.02 P
+0.28 (tional T) 327.4 444.02 P
+0.28 (echniques for Representing, Learning, and Reproduc-) 355.3 444.02 P
+1.3 (ing Expressive T) 327.4 433.02 P
+1.3 (iming in Percussive Rhythm\323. MSc thesis,) 390.67 433.02 P
+(Massachusetts Instute of T) 327.4 422.02 T
+(echnology) 423.01 422.02 T
+(, 1993.) 459.92 422.02 T
+1.72 ([3] Schloss A. \323On the Automatic T) 313.23 411.02 P
+1.72 (ranscription of Percussive) 452.99 411.02 P
+2.08 (Music \321 From Acoustic Signal to High-Level Analysis\323.) 327.4 400.02 P
+(Ph.D. thesis, Stanford University) 327.4 389.02 T
+(, 1985. Report ST) 445.81 389.02 T
+(AN-M-27.) 509.35 389.02 T
+1.1 ([4] Scheirer E. \322T) 313.23 378.02 P
+1.1 (empo and Beat Analysis of Acoustic Musical) 380.36 378.02 P
+0.73 (Signals\323. Machine Listening Group, MIT Media Laboratory) 327.4 367.02 P
+0.73 (,) 547.67 367.02 P
+(1996.) 327.4 356.02 T
+-0.03 ([5] Goto M., Muraoka Y) 313.23 345.02 P
+-0.03 (. \322Beat T) 400.92 345.02 P
+-0.03 (racking based on Multiple-agent) 433.29 345.02 P
+0.8 (Architecture - A Real-time Beat T) 327.4 334.02 P
+0.8 (racking System for Audio) 454.29 334.02 P
+1.6 (Signals\323.) 327.4 323.02 P
+2 F
+1.6 (Pr) 364.01 323.02 P
+1.6 (oceedings of The Second International Confer-) 372.67 323.02 P
+(ence on Multiagent Systems) 327.4 312.02 T
+1 F
+(, pp.103\3201) 427.63 312.02 T
+(10, 1996.) 465.55 312.02 T
+0.15 ([6] Goto M., Muraoka Y) 313.23 301.02 P
+0.15 (. \322A Real-time Beat T) 401.63 301.02 P
+0.15 (racking System for) 481.14 301.02 P
+0.48 (Audio Signals\323.) 327.4 290.02 P
+2 F
+0.48 (Pr) 388.11 290.02 P
+0.48 (oceedings of the 1995 International Com-) 396.78 290.02 P
+(puter Music Confer) 327.4 279.02 T
+(ence) 397.57 279.02 T
+1 F
+(, pp.171\320174, September 1995.) 414.05 279.02 T
+0.81 ([7] Chafe C., Jaf) 313.23 268.02 P
+0.81 (fe D., Kashima K., Mont-Reunaud B., Smith J.) 375.24 268.02 P
+2.51 (\322Source Separation and Note Identi\336cation in Polyphonic) 327.4 257.02 P
+1.73 (Music\323. Stanford University) 327.4 246.02 P
+1.73 (, Department of Music, Report) 432.52 246.02 P
+(ST) 327.4 235.02 T
+(AN-M-29. 1985) 337.18 235.02 T
+-0.18 ([8] Moore B., Glasber) 313.23 224.02 P
+-0.18 (g B., Baer T) 392.25 224.02 P
+-0.18 (. \322A Model for the Prediction of) 435.28 224.02 P
+0.86 (Thresholds, Loudness, and Partial Loudness\323.) 327.4 213.02 P
+2 F
+0.86 (J. Audio Eng.) 499.2 213.02 P
+(Soc) 327.4 202.02 T
+1 F
+(., V) 340.4 202.02 T
+(ol. 45, No. 4, pp. 224\320240. April 1997) 352.48 202.02 T
+1.05 ([9] T) 313.23 191.02 P
+1.05 (odd, McAulay) 331.9 191.02 P
+1.05 (. \322The Auditory Primal Sketch: a Multiscale) 384.36 191.02 P
+3.79 (Model of Rhythmic Grouping\323.) 327.4 180.02 P
+2 F
+3.79 (Journal of New Music) 458.8 180.02 P
+(Resear) 327.4 169.02 T
+(ch,) 352.06 169.02 T
+1 F
+( 23, pp. 25\32070, 1992.) 362.81 169.02 T
+-0.14 ([10] Moore B. \050ed\051. \322Hearing\323. Handbook of Perception and Cog-) 313.23 158.02 P
+(nition, 2nd Edition. Academic Press, 1995.) 327.4 147.02 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "4" 4
+%%Trailer
+%%BoundingBox: 0 0 595.28 841.89
+%%PageOrder: Ascend
+%%Pages: 4
+%%DocumentFonts: Times-Bold
+%%+ Times-Roman
+%%+ Times-Italic
+%%+ Courier
+%%+ Symbol
+%%EOF

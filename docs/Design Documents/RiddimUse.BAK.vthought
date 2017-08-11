@@ -1,0 +1,414 @@
+; Visual Thought 1.0
+
+(header
+  (program "vthought")
+  (version "1.4")
+  (buildDate "$Date: 1998/07/17 01:33:32 $")
+  (writeDate "Tue Apr 24, 2001 2:00:23 PM ")
+  (documentPath "D:\Thesis\Design Documents\RiddimUse.vthought")
+)
+
+(document
+  (palette F)
+  (layout
+    (page "Letter")
+    (units "Inches")
+    (orientation "portrait")
+    (numberOfPages 1 1)
+    (scale 100)
+    (margins 18 18 18 18)
+  )
+)
+
+(views
+  (view
+    (location 266 188)
+    (size 630 722)
+    (zoom 1)
+    (documentLocation 0 121)
+    (gridSnap T)
+    (gridVisibility F)
+    (gridSpacing 9)
+    (pageBreaks T)
+    (toolVisibility T)
+    (rulerVisibility T)
+  )
+)
+
+(shapes
+  (shape
+    (id 1)
+    (layer 0)
+    (type "Rectangle")
+    (location 472.5 702)
+    (size 117 36)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled F)
+      (fillColor 65535 65535 65535)
+      (stroked F)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText T)
+    (textVerticalAlignment "top")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard denotes an audio signal path})
+  )
+  (shape
+    (id 3)
+    (layer 2)
+    (type "Rectangle")
+    (location 369 715.5)
+    (size 72 27)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled F)
+      (fillColor 65535 65535 65535)
+      (stroked F)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical T)
+    (showText T)
+    (textVerticalAlignment "top")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard {\b Legend}})
+  )
+  (shape
+    (id 4)
+    (layer 3)
+    (type "Rectangle")
+    (location 432 697.5)
+    (size 198 63)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed T)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText T)
+    (textVerticalAlignment "center")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc })
+  )
+  (shape
+    (id 5)
+    (layer 4)
+    (type "Rectangle")
+    (location 108 679.5)
+    (size 126 99)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText F)
+    (textVerticalAlignment "center")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc Text})
+    (image "D:\Thesis\Design Documents\monitors.gif")
+  )
+  (shape
+    (id 8)
+    (layer 7)
+    (type "Rectangle")
+    (location 481.5 472.5)
+    (size 153 45)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled F)
+      (fillColor 65535 65535 65535)
+      (stroked F)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText T)
+    (textVerticalAlignment "top")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard laptop running  a real-time version of {\i Riddim}})
+  )
+  (shape
+    (id 9)
+    (layer 8)
+    (type "Rectangle")
+    (location 472.5 549)
+    (size 117 90)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText T)
+    (textVerticalAlignment "center")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc })
+    (image "D:\Thesis\Design Documents\laptop.gif")
+  )
+  (shape
+    (id 10)
+    (layer 9)
+    (type "Rectangle")
+    (location 108 549)
+    (size 144 54)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText F)
+    (textVerticalAlignment "center")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc Text})
+    (image "D:\Thesis\Design Documents\mixer.gif")
+  )
+  (shape
+    (id 13)
+    (layer 12)
+    (type "Rectangle")
+    (location 108 409.5)
+    (size 180 63)
+    (rotation 0)
+    (locked F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (flipHorizontal F)
+    (flipVertical F)
+    (showText T)
+    (textVerticalAlignment "center")
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc Digital Audio Playback Unit 
+\par [Laptop, turntables, CD player]})
+  )
+)
+
+(connections
+  (connection
+    (id 2)
+    (layer 1)
+    (rotation 0)
+    (textRotation 0)
+    (locked F)
+    (points
+      (342 702)
+      (405 702)
+    )
+    (curved F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (showText F)
+    (textDistancePercentage 0.5)
+    (textWidth 72)
+    (textOffset 0)
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc Text})
+    (drawStartArrowhead F)
+    (drawEndArrowhead T)
+    (startArrowhead "HollowStandardArrow")
+    (endArrowhead "HollowStandardArrow")
+  )
+  (connection
+    (id 6)
+    (layer 5)
+    (rotation 0)
+    (textRotation 0)
+    (locked F)
+    (start 10)
+    (end 5)
+    (curved F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (showText F)
+    (textDistancePercentage 0.5)
+    (textWidth 72)
+    (textOffset 0)
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc Text})
+    (drawStartArrowhead F)
+    (drawEndArrowhead T)
+    (startArrowhead "HollowStandardArrow")
+    (endArrowhead "HollowStandardArrow")
+  )
+  (connection
+    (id 7)
+    (layer 6)
+    (rotation 0)
+    (textRotation 0)
+    (locked F)
+    (start 13)
+    (end 10)
+    (curved F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (showText F)
+    (textDistancePercentage 0.5)
+    (textWidth 72)
+    (textOffset 0)
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc Text})
+    (drawStartArrowhead F)
+    (drawEndArrowhead T)
+    (startArrowhead "HollowStandardArrow")
+    (endArrowhead "HollowStandardArrow")
+  )
+  (connection
+    (id 11)
+    (layer 10)
+    (rotation 0)
+    (textRotation 0)
+    (locked F)
+    (start 13)
+    (end 9)
+    (curved F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (showText F)
+    (textDistancePercentage 0.5)
+    (textWidth 72)
+    (textOffset 0)
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc Text})
+    (drawStartArrowhead F)
+    (drawEndArrowhead T)
+    (startArrowhead "HollowStandardArrow")
+    (endArrowhead "HollowStandardArrow")
+  )
+  (connection
+    (id 12)
+    (layer 11)
+    (rotation 0)
+    (textRotation 0)
+    (locked F)
+    (start 9)
+    (end 10)
+    (curved F)
+    (style
+      (filled T)
+      (fillColor 65535 65535 65535)
+      (stroked T)
+      (strokeColor 0 0 0)
+      (lineWidth 1)
+      (shadowed F)
+      (shadowColor 39321 39321 39321)
+    )
+    (showText T)
+    (textDistancePercentage 0.5)
+    (textWidth 144)
+    (textOffset 0)
+    (rtfText{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial medium;}}
+{\colortbl\red0\green0\blue0;}
+\cf0\plain\pard\qc resynthesized patterns from extracted timing data})
+    (drawStartArrowhead F)
+    (drawEndArrowhead T)
+    (startArrowhead "HollowStandardArrow")
+    (endArrowhead "HollowStandardArrow")
+  )
+)
+
+(groups
+)

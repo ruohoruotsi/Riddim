@@ -1,0 +1,3 @@
+timidity=/usr/bin/timidity
+metronome=/home/simon/beatroot-0.1/33-metclick.wav
+classpath=/home/simon/beatroot-0.1/

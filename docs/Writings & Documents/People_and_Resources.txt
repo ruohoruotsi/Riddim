@@ -1,0 +1,22 @@
+1) Names of people to email about the thesis
+ 
+a) peter cariani - peter@epl.meei.harvard.edu 
+b) neil todd - todd@psy.man.ac.uk
+c) richard parncutt - richard.parncutt@kfunigraz.ac.at
+d) stephen mcadams - Steve.McAdams@IRCAM.FR
+e) peter desain - desain@nici.kun.nl 
+f) henkjan honing - honing@nici.kun.nl
+g) ansi klap - klap@cs.tut.fi
+h) eric f. clarke -
+i) large E. W. - large@grip.cis.upenn.edu
+j) roger  - roger.dannenberg@cs.cmu.edu 
+k) eric scheirer - eds@media.mit.edu
+l) Masataka Goto - goto@muraoka.info.waseda.ac.jp
+
+
+tae hong - 
+john puterbaugh - 
+ko umezaki - 
+michael kinney -  
+ray guillette - voidengine@hotmail.com
+Jeff A. Bilmes - bilmes@icsi.berkeley.edu

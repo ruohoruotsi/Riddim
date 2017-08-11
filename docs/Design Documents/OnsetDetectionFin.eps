@@ -1,0 +1,676 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: Visual Thought-1.4
+%%For: FAZI BEAR
+%%Title: OnsetDetectionFin.vthought
+%%CreationDate: Tue May 22, 2001 3:10:31 PM 
+%%BoundingBox: 0 0 366 741 
+%%Orientation: Portrait
+%%Pages: 0
+%%DocumentFonts: (atend)
+%%DocumentNeededFonts: (atend)
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+50 dict begin
+/ifdef {1 index where {pop pop pop}{def} ifelse} bind def
+/rrcurveto {4 {2 index sub 6 1 roll} repeat
+2 {6 1 roll} repeat} bind ifdef
+/arct {arcto pop pop pop pop} bind ifdef
+/rect {4 -2 roll moveto
+1 index 0 rlineto 0 exch rlineto neg 0 rlineto
+closepath} bind def
+/rectfill {gsave newpath rect fill grestore} bind ifdef
+/rectstroke {gsave newpath rect stroke grestore} bind ifdef
+/xshow {pop show} bind ifdef
+/xyshow {pop show} bind ifdef
+/yshow {pop show} bind ifdef
+/z /closepath load def
+/c /curveto load def
+/l /lineto load def
+/m /moveto load def
+/a /newpath load def
+/C /rcurveto load def
+/L /rlineto load def
+/M /rmoveto load def
+/CC /rrcurveto load def
+/rc {newpath {rect} repeat clip newpath} bind def
+/rf {{rectfill} repeat} bind def
+/rs {{rectstroke} repeat} bind def
+/rp {{rect} repeat} bind def
+/S /awidthshow load def
+/s /show load def
+/pc /clip load def
+/pC /eoclip load def
+/pf /fill load def
+/pF /eofill load def
+/ps /stroke load def
+/ibuf 1024 string def
+/iproc {3 -1 roll mul 7 add 8 idiv mul
+/bc 1 index 1024 idiv def /bp exch 1024 mod def
+{currentfile ibuf
+bc 0 gt {/bc bc 1 sub def}{0 bp getinterval} ifelse
+readhexstring pop}} bind def
+/i {3 index 3 index 3 index iproc image} bind def
+/im {3 index 3 index 1 iproc imagemask} bind def
+/ci {3 index 3 index 3 index 3 mul iproc false 3 colorimage} bind def
+/mtx matrix def
+/ii {currentpoint exch neg exch neg mtx translate i} bind def
+/imi {currentpoint exch neg exch neg mtx translate im} bind def
+/cii {currentpoint exch neg exch neg mtx translate ci} bind def
+/gr /grestore load def
+/gs /gsave load def
+/rm /rotate load def
+/sm /scale load def
+/tm /translate load def
+/sc /setrgbcolor load def
+/sw /setlinewidth load def
+/ssf {1.3333 mul exch findfont exch scalefont setfont} bind def
+/msf {1.3333 mul exch findfont exch makefont setfont} bind def
+%%EndProlog
+%%BeginSetup
+
+%%IncludeFont: System_font-Medium
+/System_font-Medium 8.25 ssf
+%%EndSetup
+save
+gs
+0 0 366 741 1 rc
+[1 0 0 1 -188 -7 ] concat
+1 1 1 sc
+188 7 366 741 1 rf
+0 0 0 sc
+a gs
+1 1 1 sc
+gr
+gs
+1 1 1 sc
+198 639 153 45 1 rf
+0 0 0 sc
+1 sw
+[] 0 setdash
+198 639 153 45 1 rs
+gr
+gs
+gs
+200 641 149 40 1 rc
+0 666 m 
+%%IncludeFont: Helvetica
+/Helvetica 9 ssf
+0 0 0 sc
+212 669 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(Normalize and remove ) s
+0 0 0 sc
+0 651 m /Helvetica 9 ssf
+0 0 0 sc
+233 654 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(mean of signal ) s
+0 0 0 sc
+0 636 m /Helvetica 9 ssf
+0 0 0 sc
+274 639 m 0 0 0 sc
+0 0 0 sc
+gr
+gs
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+274.5 720 m 274.5 695.64 l ps
+gs
+274.5 684 tm
+-90 rm
+[] 0 setdash
+a 0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z pf
+1 sw
+0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z ps
+90 rm
+-274.5 -684 tm
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+274.5 639 m 274.5 614.64 l ps
+gs
+274.5 603 tm
+-90 rm
+[] 0 setdash
+a 0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z pf
+1 sw
+0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z ps
+90 rm
+-274.5 -603 tm
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 1 1 sc
+216 567 117 36 1 rf
+0 0 0 sc
+1 sw
+[] 0 setdash
+216 567 117 36 1 rs
+gr
+gs
+gs
+218 576 113 17 1 rc
+0 578 m /Helvetica 9 ssf
+0 0 0 sc
+230 581 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(Half-wave rectify) s
+0 0 0 sc
+gr
+gs
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 1 1 sc
+216 495 117 36 1 rf
+0 0 0 sc
+1 sw
+[] 0 setdash
+216 495 117 36 1 rs
+gr
+gs
+gs
+218 504 113 17 1 rc
+0 506 m /Helvetica 9 ssf
+0 0 0 sc
+228 509 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(Threshold signal) s
+0 0 0 sc
+gr
+gs
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+274.5 567 m 274.5 542.64 l ps
+gs
+274.5 531 tm
+-90 rm
+[] 0 setdash
+a 0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z pf
+1 sw
+0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z ps
+90 rm
+-274.5 -531 tm
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 1 1 sc
+216 396 117 63 1 rf
+0 0 0 sc
+1 sw
+[] 0 setdash
+216 396 117 63 1 rs
+gr
+gs
+gs
+218 398 113 58 1 rc
+0 441 m /Helvetica 9 ssf
+0 0 0 sc
+250 444 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(6th order ) s
+0 0 0 sc
+0 426 m /Helvetica 9 ssf
+0 0 0 sc
+224 429 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(Chebychev IIR low ) s
+0 0 0 sc
+0 411 m /Helvetica 9 ssf
+0 0 0 sc
+228 414 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(pass decimation ) s
+0 0 0 sc
+0 396 m /Helvetica 9 ssf
+0 0 0 sc
+263 399 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(filter ) s
+0 0 0 sc
+gr
+gs
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+274.5 495 m 274.5 470.64 l ps
+gs
+274.5 459 tm
+-90 rm
+[] 0 setdash
+a 0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z pf
+1 sw
+0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z ps
+90 rm
+-274.5 -459 tm
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 1 1 sc
+216 315 117 36 1 rf
+0 0 0 sc
+1 sw
+[] 0 setdash
+216 315 117 36 1 rs
+gr
+gs
+gs
+218 324 113 17 1 rc
+0 326 m /Helvetica 9 ssf
+0 0 0 sc
+248 329 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(Decimate) s
+0 0 0 sc
+gr
+gs
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+274.5 396 m 274.5 362.64 l ps
+gs
+274.5 351 tm
+-90 rm
+[] 0 setdash
+a 0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z pf
+1 sw
+0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z ps
+90 rm
+-274.5 -351 tm
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 1 1 sc
+189 243 171 45 1 rf
+0 0 0 sc
+1 sw
+[] 0 setdash
+189 243 171 45 1 rs
+gr
+gs
+gs
+191 249 167 32 1 rc
+0 266 m /Helvetica 9 ssf
+0 0 0 sc
+198 269 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(Convolve with raised cosine ) s
+0 0 0 sc
+0 251 m /Helvetica 9 ssf
+0 0 0 sc
+253 254 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(window) s
+0 0 0 sc
+gr
+gs
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+274.5 315 m 274.5 299.64 l ps
+gs
+274.5 288 tm
+-90 rm
+[] 0 setdash
+a 0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z pf
+1 sw
+0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z ps
+90 rm
+-274.5 -288 tm
+gr
+gr
+gs
+1 sw
+gr
+gs
+0.799985 0.799985 0.799985 sc
+a 225 737.55 m 234.45 737.55 9.45 180 90 arcn 314.55 747 l 314.55 737.55 9.45 90 0 arcn 324 729.45 l 314.55 729.45 9.45 0 270 arcn 234.45 720 l 234.45 729.45 9.45 270 180 arcn z pf
+0 0 0 sc
+1 sw
+[] 0 setdash
+a 225 737.55 m 234.45 737.55 9.45 180 90 arcn 314.55 747 l 314.55 737.55 9.45 90 0 arcn 324 729.45 l 314.55 729.45 9.45 0 270 arcn 234.45 720 l 234.45 729.45 9.45 270 180 arcn z ps
+gr
+gs
+gs
+230 725 89 16 1 rc
+0 726 m /Helvetica 9 ssf
+0 0 0 sc
+240 729 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(Audio Signal) s
+0 0 0 sc
+gr
+gs
+gr
+gr
+gs
+1 sw
+gr
+gs
+0.799985 0.799985 0.799985 sc
+a 207 194.4 m 219.6 194.4 12.6 180 90 arcn 329.4 207 l 329.4 194.4 12.6 90 0 arcn 342 183.6 l 329.4 183.6 12.6 0 270 arcn 219.6 171 l 219.6 183.6 12.6 270 180 arcn z pf
+0 0 0 sc
+1 sw
+[] 0 setdash
+a 207 194.4 m 219.6 194.4 12.6 180 90 arcn 329.4 207 l 329.4 194.4 12.6 90 0 arcn 342 183.6 l 329.4 183.6 12.6 0 270 arcn 219.6 171 l 219.6 183.6 12.6 270 180 arcn z ps
+gr
+gs
+gs
+213 180 123 17 1 rc
+0 182 m /Helvetica 9 ssf
+0 0 0 sc
+227 185 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(Smoothed Signal) s
+0 0 0 sc
+gr
+gs
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+274.5 243 m 274.5 218.64 l ps
+gs
+274.5 207 tm
+-90 rm
+[] 0 setdash
+a 0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z pf
+1 sw
+0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z ps
+90 rm
+-274.5 -207 tm
+gr
+gr
+gs
+1 sw
+gr
+gs
+0.799985 0.799985 0.799985 sc
+a 189 44.1 m 207.9 44.1 18.9 180 90 arcn 341.1 63 l 341.1 44.1 18.9 90 0 arcn 360 27.9 l 341.1 27.9 18.9 0 270 arcn 207.9 9 l 207.9 27.9 18.9 270 180 arcn z pf
+0 0 0 sc
+1 sw
+[] 0 setdash
+a 189 44.1 m 207.9 44.1 18.9 180 90 arcn 341.1 63 l 341.1 44.1 18.9 90 0 arcn 360 27.9 l 341.1 27.9 18.9 0 270 arcn 207.9 9 l 207.9 27.9 18.9 270 180 arcn z ps
+gr
+gs
+gs
+197 20 155 32 1 rc
+0 37 m /Helvetica 9 ssf
+0 0 0 sc
+200 40 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(Return peaks in the relative ) s
+0 0 0 sc
+0 22 m /Helvetica 9 ssf
+0 0 0 sc
+206 25 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(difference function \(RDF\)) s
+0 0 0 sc
+gr
+gs
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+274.5 171 m 274.5 146.64 l ps
+gs
+274.5 135 tm
+-90 rm
+[] 0 setdash
+a 0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z pf
+1 sw
+0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z ps
+90 rm
+-274.5 -135 tm
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 1 1 sc
+489 684.5 63 27 1 rf
+0 0 0 sc
+1 sw
+[] 0 setdash
+489 684.5 63 27 1 rs
+gr
+gs
+gs
+491 690 59 17 1 rc
+0 692 m /Helvetica 9 ssf
+0 0 0 sc
+494 695 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(Algorithm) s
+0 0 0 sc
+gr
+gs
+gr
+gr
+gs
+1 sw
+gr
+gs
+0.799985 0.799985 0.799985 sc
+a 489 666.05 m 498.45 666.05 9.45 180 90 arcn 542.55 675.5 l 542.55 666.05 9.45 90 0 arcn 552 657.95 l 542.55 657.95 9.45 0 270 arcn 498.45 648.5 l 498.45 657.95 9.45 270 180 arcn z pf
+0 0 0 sc
+1 sw
+[] 0 setdash
+a 489 666.05 m 498.45 666.05 9.45 180 90 arcn 542.55 675.5 l 542.55 666.05 9.45 90 0 arcn 552 657.95 l 542.55 657.95 9.45 0 270 arcn 498.45 648.5 l 498.45 657.95 9.45 270 180 arcn z ps
+gr
+gs
+gs
+494 653 53 17 1 rc
+0 655 m /Helvetica 9 ssf
+0 0 0 sc
+507 658 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(Data) s
+0 0 0 sc
+gr
+gs
+gr
+gr
+gs
+1 sw
+gr
+gs
+gr
+gs
+gs
+491 717 59 19 1 rc
+0 719 m /Helvetica 10.5 ssf
+0 0 0 sc
+492 722 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 10.5 ssf
+0 0 0 sc
+0 0 0 sc
+(Legend) s
+0 0 0 sc
+gr
+gs
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 1 1 sc
+216 99 117 36 1 rf
+0 0 0 sc
+1 sw
+[] 0 setdash
+216 99 117 36 1 rs
+gr
+gs
+gs
+218 108 113 17 1 rc
+0 110 m /Helvetica 9 ssf
+0 0 0 sc
+234 113 m 0 0 0 sc
+0 0 0 sc
+/Helvetica 9 ssf
+0 0 0 sc
+0 0 0 sc
+(Calculate RDF) s
+0 0 0 sc
+gr
+gs
+gr
+gr
+gs
+1 sw
+gr
+gs
+1 setlinejoin
+1 sw
+[] 0 setdash
+0 0 0 sc
+274.5 99 m 274.5 74.64 l ps
+gs
+274.5 63 tm
+-90 rm
+[] 0 setdash
+a 0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z pf
+1 sw
+0 0 m -12 5 L 0 -5 L 0 -5 L 0 0 l z ps
+90 rm
+-274.5 -63 tm
+gr
+gr
+gs
+1 sw
+gr
+gr
+restore
+%%Trailer
+end
+%%DocumentFonts: System_font-Medium Helvetica 
+%%DocumentNeededFonts: System_font-Medium Helvetica 
+%%EOF
